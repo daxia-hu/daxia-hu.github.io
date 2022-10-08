@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>对讲机嵌入式软件架构设计</title>
+    <link href="/2022/10/08/%E5%AF%B9%E8%AE%B2%E6%9C%BA%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2022/10/08/%E5%AF%B9%E8%AE%B2%E6%9C%BA%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="对讲机嵌入式软件系统架构设计"><a href="#对讲机嵌入式软件系统架构设计" class="headerlink" title="对讲机嵌入式软件系统架构设计"></a>对讲机嵌入式软件系统架构设计</h1><p><img src="/%E5%AF%B9%E8%AE%B2%E6%9C%BA%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/test.jpg" alt="test"></p><h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h2 id="模块划分"><a href="#模块划分" class="headerlink" title="模块划分"></a>模块划分</h2><h2 id="设计原理"><a href="#设计原理" class="headerlink" title="设计原理"></a>设计原理</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>架构设计</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>架构设计</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>酸辣白菜</title>
     <link href="/2022/10/03/%E9%85%B8%E8%BE%A3%E7%99%BD%E8%8F%9C/"/>
     <url>/2022/10/03/%E9%85%B8%E8%BE%A3%E7%99%BD%E8%8F%9C/</url>
