@@ -16,20 +16,18 @@
   <meta name="author" content="胡大侠">
   <meta name="keywords" content="学习">
   
-    <meta name="description" content="嵌入式软件架构设计 此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在错误谨慎食用.  尽信书,不如无书 -《孟子·尽心下》  为什么需要设计一般嵌入式项目按照产品特点可以分为产品类和项目类,产品类如消费电子类产品或者 设计也是需求的一部分嵌入式软件项目因为产品的多样性以及所依赖的硬件平台的特性很少有现成的架构框架套用，所以基本上在产品的设计之初会根据项目的特性进行软件架构设计。一般">
+    <meta name="description" content="嵌入式软件架构设计 此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在错误谨慎食用.  尽信书,不如无书 -《孟子·尽心下》  基本介绍嵌入式软件架构设计,按照黄金圈法则”wwh What-Why-How”分别给出解释.  what:嵌入式软件架构设计是什么?  嵌入式软件架构设计是针对嵌入式设备端软件做的架构设计,架构设计包含项目整体设计及项目模块的详细设计.整体设计包含项目整体的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="嵌入式软件架构设计">
 <meta property="og:url" content="http://example.com/2022/10/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/index.html">
 <meta property="og:site_name" content="HuDaXia">
-<meta property="og:description" content="嵌入式软件架构设计 此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在错误谨慎食用.  尽信书,不如无书 -《孟子·尽心下》  为什么需要设计一般嵌入式项目按照产品特点可以分为产品类和项目类,产品类如消费电子类产品或者 设计也是需求的一部分嵌入式软件项目因为产品的多样性以及所依赖的硬件平台的特性很少有现成的架构框架套用，所以基本上在产品的设计之初会根据项目的特性进行软件架构设计。一般">
+<meta property="og:description" content="嵌入式软件架构设计 此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在错误谨慎食用.  尽信书,不如无书 -《孟子·尽心下》  基本介绍嵌入式软件架构设计,按照黄金圈法则”wwh What-Why-How”分别给出解释.  what:嵌入式软件架构设计是什么?  嵌入式软件架构设计是针对嵌入式设备端软件做的架构设计,架构设计包含项目整体设计及项目模块的详细设计.整体设计包含项目整体的">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%88%86%E5%B1%82.png">
 <meta property="article:published_time" content="2022-10-08T03:51:58.000Z">
-<meta property="article:modified_time" content="2022-10-08T07:44:49.318Z">
+<meta property="article:modified_time" content="2022-10-08T11:55:28.344Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="架构设计">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%88%86%E5%B1%82.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -250,7 +248,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          387 字
+          730 字
         
       </span>
     
@@ -261,7 +259,7 @@
         
         
         
-          4 分钟
+          7 分钟
         
       </span>
     
@@ -312,7 +310,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：16 分钟前
+                    本文最后更新于：几秒前
                   
                 
               </p>
@@ -326,7 +324,40 @@
 <p>尽信书,不如无书</p>
 <div align="right">-《孟子·尽心下》</div>
 
-<h2 id="为什么需要设计"><a href="#为什么需要设计" class="headerlink" title="为什么需要设计"></a>为什么需要设计</h2><p>一般嵌入式项目按照产品特点可以分为产品类和项目类,产品类如消费电子类产品或者</p>
+<h2 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h2><p>嵌入式软件架构设计,按照黄金圈法则”wwh What-Why-How”分别给出解释.</p>
+<ul>
+<li>what:嵌入式软件架构设计是什么?</li>
+</ul>
+<p>嵌入式软件架构设计是针对嵌入式设备端软件做的架构设计,架构设计包含项目整体设计及项目模块的详细设计.整体设计包含项目整体的设计思路,设计原则,横向设计,竖向设计还有项目软件实施过程中的规范设计.模块的详细设计包含模块设计思路,设计原则,模块内部业务实现原理,关键业务的实现流程.</p>
+<ul>
+<li><p>why:为什么要做嵌入式软件架构设计</p>
+</li>
+<li><p>how:怎么做嵌入式软件架构设计</p>
+</li>
+</ul>
+<p>一般嵌入式项目按照研发的维护特点可以分为产品类和项目类</p>
+<ul>
+<li>产品类</li>
+</ul>
+<p>消费电子类产品或者大型设备的网关产品等,这种产品项目的特点就是产品生命周期长,在产品的整个生命周期内需要一直维护,也就意味着</p>
+<ul>
+<li>项目类</li>
+</ul>
+<p>外包项目等基本上软件最终交付后很少需要维护迭代的产品,此类产品需要重点关注</p>
+<ul>
+<li>设计目标<ul>
+<li>可维护性<ul>
+<li>可读性</li>
+<li>可扩展性</li>
+</ul>
+</li>
+<li>稳定性<ul>
+<li>鲁棒性</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="设计也是需求的一部分"><a href="#设计也是需求的一部分" class="headerlink" title="设计也是需求的一部分"></a>设计也是需求的一部分</h2><p>嵌入式软件项目因为产品的多样性以及所依赖的硬件平台的特性很少有现成的架构框架套用，所以基本上在产品的设计之初会根据项目的特性进行软件架构设计。<br>一般嵌入式项目分为几类:</p>
 <ol>
 <li>产品的功能非常简单，使用的可编程器件资源非常有限。比如简单的台灯、电子密码锁项目。<blockquote>
@@ -334,10 +365,9 @@
 </blockquote>
 </li>
 <li>产品的功能相对复杂，项目基于OS实现</li>
-<li>linux大型项目,</li>
+<li>linux大型项目</li>
 </ol>
-<h2 id="如何进行需求分析"><a href="#如何进行需求分析" class="headerlink" title="如何进行需求分析?"></a>如何进行需求分析?</h2><h2 id="怎么进行模块划分"><a href="#怎么进行模块划分" class="headerlink" title="怎么进行模块划分?"></a>怎么进行模块划分?</h2><h2 id="架构设计实践"><a href="#架构设计实践" class="headerlink" title="架构设计实践"></a>架构设计实践</h2><p><img src="/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%88%86%E5%B1%82.png" srcset="/img/loading.gif" lazyload></p>
-
+<h2 id="如何进行需求分析"><a href="#如何进行需求分析" class="headerlink" title="如何进行需求分析?"></a>如何进行需求分析?</h2><h2 id="怎么进行模块划分"><a href="#怎么进行模块划分" class="headerlink" title="怎么进行模块划分?"></a>怎么进行模块划分?</h2><h2 id="架构设计实践"><a href="#架构设计实践" class="headerlink" title="架构设计实践"></a>架构设计实践</h2>
                 
               </div>
             
