@@ -5,8 +5,8 @@
   
   <entry>
     <title>嵌入式软件架构设计</title>
-    <link href="/daxia-hu/daxia-hu.github.io/2022/10/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/"/>
-    <url>/daxia-hu/daxia-hu.github.io/2022/10/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</url>
+    <link href="/2022/10/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2022/10/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</url>
     
     <content type="html"><![CDATA[<h1 id="嵌入式软件架构设计"><a href="#嵌入式软件架构设计" class="headerlink" title="嵌入式软件架构设计"></a>嵌入式软件架构设计</h1><blockquote><p>此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在错误谨慎食用.</p></blockquote><p>尽信书,不如无书</p><div align="right">-《孟子·尽心下》</div><h2 id="为什么需要设计"><a href="#为什么需要设计" class="headerlink" title="为什么需要设计"></a>为什么需要设计</h2><p>一般嵌入式项目按照产品特点可以分为产品类和项目类,产品类如消费电子类产品或者</p><h2 id="设计也是需求的一部分"><a href="#设计也是需求的一部分" class="headerlink" title="设计也是需求的一部分"></a>设计也是需求的一部分</h2><p>嵌入式软件项目因为产品的多样性以及所依赖的硬件平台的特性很少有现成的架构框架套用，所以基本上在产品的设计之初会根据项目的特性进行软件架构设计。<br>一般嵌入式项目分为几类:</p><ol><li>产品的功能非常简单，使用的可编程器件资源非常有限。比如简单的台灯、电子密码锁项目。<blockquote><p>此类产品的软件规模偏小,在设计中只需要将需求梳理清楚,基本代码按照需求就能写出来,而且因为此类项目的资源非常有限,强行设计复杂的结构反而会占用太多资源,所以需要避免”为了设计而设计”</p></blockquote></li><li>产品的功能相对复杂，项目基于OS实现</li><li>linux大型项目,</li></ol><h2 id="如何进行需求分析"><a href="#如何进行需求分析" class="headerlink" title="如何进行需求分析?"></a>如何进行需求分析?</h2><h2 id="怎么进行模块划分"><a href="#怎么进行模块划分" class="headerlink" title="怎么进行模块划分?"></a>怎么进行模块划分?</h2><h2 id="架构设计实践"><a href="#架构设计实践" class="headerlink" title="架构设计实践"></a>架构设计实践</h2><p><img src="/daxia-hu/daxia-hu.github.io/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%88%86%E5%B1%82.png"></p>]]></content>
     
@@ -30,8 +30,8 @@
   
   <entry>
     <title>酸辣白菜</title>
-    <link href="/daxia-hu/daxia-hu.github.io/2022/10/03/%E9%85%B8%E8%BE%A3%E7%99%BD%E8%8F%9C/"/>
-    <url>/daxia-hu/daxia-hu.github.io/2022/10/03/%E9%85%B8%E8%BE%A3%E7%99%BD%E8%8F%9C/</url>
+    <link href="/2022/10/03/%E9%85%B8%E8%BE%A3%E7%99%BD%E8%8F%9C/"/>
+    <url>/2022/10/03/%E9%85%B8%E8%BE%A3%E7%99%BD%E8%8F%9C/</url>
     
     <content type="html"><![CDATA[<h2 id="食材"><a href="#食材" class="headerlink" title="食材:"></a>食材:</h2><ol><li>一颗大白菜</li></ol><h2 id="做法"><a href="#做法" class="headerlink" title="做法:"></a>做法:</h2><ol><li>把大白菜按叶子摘掉洗干净。</li><li>把白菜叶子的根部和叶子头部分开，将菜根斜刀切片。</li><li>兑一个酸辣料汁：取一勺酱油、一勺香醋、少许耗油、辣椒油、食盐、土豆淀粉准备好。</li><li>准备干辣椒、大蒜、小米辣切沫。</li><li>锅中下油将菜根炒至断生后捞出。</li><li>重新烧油后将干辣椒、大蒜、小米辣低温慢慢将香味炸出来。</li><li>将菜根和菜叶一起放进锅中，大火炒10~20s，将料汁一起倒入锅中大炒5s中后盛出装盘。</li></ol><h2 id="参考"><a href="#参考" class="headerlink" title="参考:"></a>参考:</h2><p>b站美食强《如果你爱吃“酸辣白菜”可以试一下我的做法》<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://www.bilibili.com/video/BV1ar4y187hW/?is_story_h5=false&p=1&share_from=ugc&share_medium=android&share_plat=android&share_session_id=7a050736-b318-4d88-b9d1-e2e37c17bfb5&share_source=WEIXIN&share_tag=s_i&timestamp=1665195327&unique_k=oxnVFPP">[1]</span></a></sup></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://www.bilibili.com/video/BV1ar4y187hW/?is_story_h5=false&amp;p=1&amp;share_from=ugc&amp;share_medium=android&amp;share_plat=android&amp;share_session_id=7a050736-b318-4d88-b9d1-e2e37c17bfb5&amp;share_source=WEIXIN&amp;share_tag=s_i&amp;timestamp=1665195327&amp;unique_k=oxnVFPP">https://www.bilibili.com/video/BV1ar4y187hW/?is_story_h5=false&amp;p=1&amp;share_from=ugc&amp;share_medium=android&amp;share_plat=android&amp;share_session_id=7a050736-b318-4d88-b9d1-e2e37c17bfb5&amp;share_source=WEIXIN&amp;share_tag=s_i&amp;timestamp=1665195327&amp;unique_k=oxnVFPP</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
     
@@ -55,8 +55,8 @@
   
   <entry>
     <title>冰糖雪梨</title>
-    <link href="/daxia-hu/daxia-hu.github.io/2022/10/03/%E5%86%B0%E7%B3%96%E9%9B%AA%E6%A2%A8/"/>
-    <url>/daxia-hu/daxia-hu.github.io/2022/10/03/%E5%86%B0%E7%B3%96%E9%9B%AA%E6%A2%A8/</url>
+    <link href="/2022/10/03/%E5%86%B0%E7%B3%96%E9%9B%AA%E6%A2%A8/"/>
+    <url>/2022/10/03/%E5%86%B0%E7%B3%96%E9%9B%AA%E6%A2%A8/</url>
     
     <content type="html"><![CDATA[<h1 id="冰糖雪梨的做法"><a href="#冰糖雪梨的做法" class="headerlink" title="冰糖雪梨的做法"></a>冰糖雪梨的做法</h1><h2 id="食材"><a href="#食材" class="headerlink" title="食材:"></a>食材:</h2><ol><li>一个大白梨 </li><li>银耳</li><li>红枣</li><li>冰糖</li><li>枸杞</li></ol><h2 id="做法"><a href="#做法" class="headerlink" title="做法:"></a>做法:</h2><ol><li>先把梨洗干净，可以表面搓盐洗。</li><li>把银耳洗干净后用温水泡发。</li><li>将梨沿着头部切开，切开后去掉里面的核，注意可以用勺子，会比刀安全一点。</li><li>将一个大枣、4~8个枸杞、两颗冰糖洗干净后和泡发的银耳一起放进掏空的大白梨中。</li><li>往梨中加入适量的水后盖上切掉的梨头，加入蒸锅中蒸30min。</li><li>用牙签插梨感觉梨软了以后可以出锅食用。</li></ol><h2 id="参考"><a href="#参考" class="headerlink" title="参考:"></a>参考:</h2><p>b站妙招姐《教你冰糖雪梨的正确做法，润肺止咳，做法简单，大人小孩都爱喝》<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://www.bilibili.com/video/BV11E411h7k2/?is_story_h5=false&p=1&share_from=ugc&share_medium=android&share_plat=android&share_session_id=9599f247-a702-4e08-9edd-05982ab5e9ae&share_source=WEIXIN&share_tag=s_i&timestamp=1664758324&unique_k=o991YfV">[1]</span></a></sup></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://www.bilibili.com/video/BV11E411h7k2/?is_story_h5=false&amp;p=1&amp;share_from=ugc&amp;share_medium=android&amp;share_plat=android&amp;share_session_id=9599f247-a702-4e08-9edd-05982ab5e9ae&amp;share_source=WEIXIN&amp;share_tag=s_i&amp;timestamp=1664758324&amp;unique_k=o991YfV">https://www.bilibili.com/video/BV11E411h7k2/?is_story_h5=false&amp;p=1&amp;share_from=ugc&amp;share_medium=android&amp;share_plat=android&amp;share_session_id=9599f247-a702-4e08-9edd-05982ab5e9ae&amp;share_source=WEIXIN&amp;share_tag=s_i&amp;timestamp=1664758324&amp;unique_k=o991YfV</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
     
@@ -80,8 +80,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/daxia-hu/daxia-hu.github.io/2022/09/30/hello-world/"/>
-    <url>/daxia-hu/daxia-hu.github.io/2022/09/30/hello-world/</url>
+    <link href="/2022/09/30/hello-world/"/>
+    <url>/2022/09/30/hello-world/</url>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
