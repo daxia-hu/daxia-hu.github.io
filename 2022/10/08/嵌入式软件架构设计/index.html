@@ -7,29 +7,29 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/daxia-hu/daxia-hu.github.io/img/fluid.png">
+  <link rel="icon" href="/daxia-hu/daxia-hu.github.io/img/fluid.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
   <meta name="author" content="胡大侠">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="学习">
   
-    <meta name="description" content="嵌入式软件架构设计 此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在问题谨慎食用.  尽信书,不如无书 -《孟子·尽心下》  为什么需要设计一般嵌入式项目按照产品特点可以分为产品类和项目类,产品类如消费电子类产品或者 设计也是需求的一部分嵌入式软件项目因为产品的多样性以及所依赖的硬件平台的特性很少有现成的架构框架套用，所以基本上在产品的设计之初会根据项目的特性进行软件架构设计。一般">
+    <meta name="description" content="嵌入式软件架构设计 此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在错误谨慎食用.  尽信书,不如无书 -《孟子·尽心下》  为什么需要设计一般嵌入式项目按照产品特点可以分为产品类和项目类,产品类如消费电子类产品或者 设计也是需求的一部分嵌入式软件项目因为产品的多样性以及所依赖的硬件平台的特性很少有现成的架构框架套用，所以基本上在产品的设计之初会根据项目的特性进行软件架构设计。一般">
 <meta property="og:type" content="article">
 <meta property="og:title" content="嵌入式软件架构设计">
-<meta property="og:url" content="http://example.com/2022/10/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/index.html">
+<meta property="og:url" content="https://github.com/daxia-hu/daxia-hu.github.io/2022/10/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/index.html">
 <meta property="og:site_name" content="HuDaXia">
-<meta property="og:description" content="嵌入式软件架构设计 此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在问题谨慎食用.  尽信书,不如无书 -《孟子·尽心下》  为什么需要设计一般嵌入式项目按照产品特点可以分为产品类和项目类,产品类如消费电子类产品或者 设计也是需求的一部分嵌入式软件项目因为产品的多样性以及所依赖的硬件平台的特性很少有现成的架构框架套用，所以基本上在产品的设计之初会根据项目的特性进行软件架构设计。一般">
+<meta property="og:description" content="嵌入式软件架构设计 此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在错误谨慎食用.  尽信书,不如无书 -《孟子·尽心下》  为什么需要设计一般嵌入式项目按照产品特点可以分为产品类和项目类,产品类如消费电子类产品或者 设计也是需求的一部分嵌入式软件项目因为产品的多样性以及所依赖的硬件平台的特性很少有现成的架构框架套用，所以基本上在产品的设计之初会根据项目的特性进行软件架构设计。一般">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%88%86%E5%B1%82.png">
+<meta property="og:image" content="https://github.com/daxia-hu/daxia-hu.github.io/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%88%86%E5%B1%82.png">
 <meta property="article:published_time" content="2022-10-08T03:51:58.000Z">
-<meta property="article:modified_time" content="2022-10-08T07:08:27.434Z">
+<meta property="article:modified_time" content="2022-10-08T07:11:40.725Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="架构设计">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%88%86%E5%B1%82.png">
+<meta name="twitter:image" content="https://github.com/daxia-hu/daxia-hu.github.io/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%88%86%E5%B1%82.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -59,12 +59,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="/daxia-hu/daxia-hu.github.io/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/daxia-hu/daxia-hu.github.io/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/daxia-hu/daxia-hu.github.io/css/highlight-dark.css" />
   
 
 
@@ -73,15 +73,15 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"github.com","root":"/daxia-hu/daxia-hu.github.io/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/daxia-hu/daxia-hu.github.io/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="/daxia-hu/daxia-hu.github.io/js/utils.js" ></script>
+  <script  src="/daxia-hu/daxia-hu.github.io/js/color-schema.js" ></script>
   
 
   
@@ -113,7 +113,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/daxia-hu/daxia-hu.github.io/">
       <strong>DaXiaHu</strong>
     </a>
 
@@ -132,7 +132,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="/daxia-hu/daxia-hu.github.io/">
                 <i class="iconfont icon-home-fill"></i>
                 首页
               </a>
@@ -144,7 +144,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/">
+              <a class="nav-link" href="/daxia-hu/daxia-hu.github.io/archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 归档
               </a>
@@ -156,7 +156,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/">
+              <a class="nav-link" href="/daxia-hu/daxia-hu.github.io/categories/">
                 <i class="iconfont icon-category-fill"></i>
                 分类
               </a>
@@ -168,7 +168,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/">
+              <a class="nav-link" href="/daxia-hu/daxia-hu.github.io/tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 标签
               </a>
@@ -180,7 +180,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
+              <a class="nav-link" href="/daxia-hu/daxia-hu.github.io/about/">
                 <i class="iconfont icon-user-fill"></i>
                 关于
               </a>
@@ -192,7 +192,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/links/">
+              <a class="nav-link" href="/daxia-hu/daxia-hu.github.io/links/">
                 <i class="iconfont icon-link-fill"></i>
                 友链
               </a>
@@ -221,7 +221,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/daxia-hu/daxia-hu.github.io/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -312,7 +312,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：几秒前
+                    本文最后更新于：5 分钟前
                   
                 
               </p>
@@ -321,7 +321,7 @@
               <div class="markdown-body">
                 
                 <h1 id="嵌入式软件架构设计"><a href="#嵌入式软件架构设计" class="headerlink" title="嵌入式软件架构设计"></a>嵌入式软件架构设计</h1><blockquote>
-<p>此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在问题谨慎食用.</p>
+<p>此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在错误谨慎食用.</p>
 </blockquote>
 <p>尽信书,不如无书</p>
 <div align="right">-《孟子·尽心下》</div>
@@ -336,7 +336,7 @@
 <li>产品的功能相对复杂，项目基于OS实现</li>
 <li>linux大型项目,</li>
 </ol>
-<h2 id="如何进行需求分析"><a href="#如何进行需求分析" class="headerlink" title="如何进行需求分析?"></a>如何进行需求分析?</h2><h2 id="怎么进行模块划分"><a href="#怎么进行模块划分" class="headerlink" title="怎么进行模块划分?"></a>怎么进行模块划分?</h2><h2 id="架构设计实践"><a href="#架构设计实践" class="headerlink" title="架构设计实践"></a>架构设计实践</h2><p><img src="/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%88%86%E5%B1%82.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="如何进行需求分析"><a href="#如何进行需求分析" class="headerlink" title="如何进行需求分析?"></a>如何进行需求分析?</h2><h2 id="怎么进行模块划分"><a href="#怎么进行模块划分" class="headerlink" title="怎么进行模块划分?"></a>怎么进行模块划分?</h2><h2 id="架构设计实践"><a href="#架构设计实践" class="headerlink" title="架构设计实践"></a>架构设计实践</h2><p><img src="/daxia-hu/daxia-hu.github.io/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%88%86%E5%B1%82.png" srcset="/daxia-hu/daxia-hu.github.io/img/loading.gif" lazyload></p>
 
                 
               </div>
@@ -355,7 +355,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" class="category-chain-item">架构设计</a>
+  <a href="/daxia-hu/daxia-hu.github.io/categories/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" class="category-chain-item">架构设计</a>
   
   
 
@@ -370,7 +370,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/">#架构设计</a>
+        <a href="/daxia-hu/daxia-hu.github.io/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/">#架构设计</a>
       
     </div>
   
@@ -383,7 +383,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>嵌入式软件架构设计</div>
-      <div>http://example.com/2022/10/08/嵌入式软件架构设计/</div>
+      <div>https://github.com/daxia-hu/daxia-hu.github.io/2022/10/08/嵌入式软件架构设计/</div>
     </div>
     <div class="license-meta">
       
@@ -436,7 +436,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/10/03/%E9%85%B8%E8%BE%A3%E7%99%BD%E8%8F%9C/" title="酸辣白菜">
+                      <a href="/daxia-hu/daxia-hu.github.io/2022/10/03/%E9%85%B8%E8%BE%A3%E7%99%BD%E8%8F%9C/" title="酸辣白菜">
                         <span class="hidden-mobile">酸辣白菜</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -590,7 +590,7 @@
         >
           
             <span style="visibility: hidden; width: 0">|</span>
-            <img src="/img/police_beian.png" srcset="/img/loading.gif" lazyload alt="police-icon"/>
+            <img src="/daxia-hu/daxia-hu.github.io/img/police_beian.png" srcset="/daxia-hu/daxia-hu.github.io/img/loading.gif" lazyload alt="police-icon"/>
           
           <span>京公网安备12345678号</span>
         </a>
@@ -621,8 +621,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="/daxia-hu/daxia-hu.github.io/js/events.js" ></script>
+<script  src="/daxia-hu/daxia-hu.github.io/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -644,7 +644,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="/daxia-hu/daxia-hu.github.io/js/img-lazyload.js" ></script>
   
 
 
@@ -743,7 +743,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="/daxia-hu/daxia-hu.github.io/js/local-search.js" ></script>
 
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
@@ -753,7 +753,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="/daxia-hu/daxia-hu.github.io/js/boot.js" ></script>
 
 
   
