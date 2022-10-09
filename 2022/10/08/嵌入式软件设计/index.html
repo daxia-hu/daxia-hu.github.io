@@ -16,24 +16,25 @@
   <meta name="author" content="胡大侠">
   <meta name="keywords" content="学习">
   
-    <meta name="description" content="嵌入式软件架构设计 此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在错误谨慎食用.  尽信书,不如无书 -《孟子·尽心下》  基本介绍嵌入式软件架构设计,按照黄金圈法则”wwh What-Why-How”分别给出解释.  what:嵌入式软件架构设计是什么?  嵌入式软件架构设计是针对嵌入式设备端软件做的架构设计,架构设计包含项目整体设计及项目模块的详细设计.整体设计包含项目整体的">
+    <meta name="description" content="嵌入式软件架构设计 此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在错误谨慎食用.  尽信书,不如无书 -《孟子·尽心下》  一、基本介绍嵌入式软件架构设计,按照黄金圈法则”wwh What-Why-How”分别给出解释. what:嵌入式软件架构设计是什么?   嵌入式软件架构设计是针对嵌入式设备端软件做的架构设计,架构设计包含项目整体设计及项目模块的详细设计。 整体设计包含项目">
 <meta property="og:type" content="article">
-<meta property="og:title" content="嵌入式软件架构设计">
-<meta property="og:url" content="http://example.com/2022/10/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/index.html">
+<meta property="og:title" content="嵌入式软件设计">
+<meta property="og:url" content="http://example.com/2022/10/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/index.html">
 <meta property="og:site_name" content="HuDaXia">
-<meta property="og:description" content="嵌入式软件架构设计 此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在错误谨慎食用.  尽信书,不如无书 -《孟子·尽心下》  基本介绍嵌入式软件架构设计,按照黄金圈法则”wwh What-Why-How”分别给出解释.  what:嵌入式软件架构设计是什么?  嵌入式软件架构设计是针对嵌入式设备端软件做的架构设计,架构设计包含项目整体设计及项目模块的详细设计.整体设计包含项目整体的">
+<meta property="og:description" content="嵌入式软件架构设计 此文章中的所有内容都是基于我个人工作学习经验的个人理解,可能存在错误谨慎食用.  尽信书,不如无书 -《孟子·尽心下》  一、基本介绍嵌入式软件架构设计,按照黄金圈法则”wwh What-Why-How”分别给出解释. what:嵌入式软件架构设计是什么?   嵌入式软件架构设计是针对嵌入式设备端软件做的架构设计,架构设计包含项目整体设计及项目模块的详细设计。 整体设计包含项目">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-10-08T03:51:58.000Z">
-<meta property="article:modified_time" content="2022-10-08T11:55:28.344Z">
+<meta property="article:modified_time" content="2022-10-09T09:22:17.834Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="架构设计">
+<meta property="article:tag" content="嵌入式">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>嵌入式软件架构设计 - HuDaXia</title>
+  <title>嵌入式软件设计 - HuDaXia</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -225,7 +226,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="嵌入式软件架构设计"></span>
+            <span id="subtitle" data-typed-text="嵌入式软件设计"></span>
           
         </div>
 
@@ -248,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          730 字
+          1.3k 字
         
       </span>
     
@@ -259,7 +260,7 @@
         
         
         
-          7 分钟
+          11 分钟
         
       </span>
     
@@ -305,12 +306,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">嵌入式软件架构设计</h1>
+            <h1 style="display: none">嵌入式软件设计</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：20 小时前
+                    本文最后更新于：几秒前
                   
                 
               </p>
@@ -324,27 +325,24 @@
 <p>尽信书,不如无书</p>
 <div align="right">-《孟子·尽心下》</div>
 
-<h2 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h2><p>嵌入式软件架构设计,按照黄金圈法则”wwh What-Why-How”分别给出解释.</p>
-<ul>
+<h2 id="一、基本介绍"><a href="#一、基本介绍" class="headerlink" title="一、基本介绍"></a>一、基本介绍</h2><h3 id="嵌入式软件架构设计-按照黄金圈法则”wwh-What-Why-How”分别给出解释"><a href="#嵌入式软件架构设计-按照黄金圈法则”wwh-What-Why-How”分别给出解释" class="headerlink" title="嵌入式软件架构设计,按照黄金圈法则”wwh What-Why-How”分别给出解释."></a>嵌入式软件架构设计,按照黄金圈法则”wwh What-Why-How”分别给出解释.</h3><ul>
 <li>what:嵌入式软件架构设计是什么?</li>
 </ul>
-<p>嵌入式软件架构设计是针对嵌入式设备端软件做的架构设计,架构设计包含项目整体设计及项目模块的详细设计.整体设计包含项目整体的设计思路,设计原则,横向设计,竖向设计还有项目软件实施过程中的规范设计.模块的详细设计包含模块设计思路,设计原则,模块内部业务实现原理,关键业务的实现流程.</p>
+<ol>
+<li>嵌入式软件架构设计是针对嵌入式设备端软件做的架构设计,架构设计包含项目整体设计及项目模块的详细设计。</li>
+<li>整体设计包含项目整体的设计思路,设计原则,横向设计,竖向设计还有项目软件实施过程中的规范设计。</li>
+<li>模块的详细设计包含模块设计思路,设计原则,模块内部业务实现原理、关键业务的实现流程。</li>
+<li>软件架构设计就像是建造大楼时需要在前期根据大楼的外观、材料、层数等已知因素同时基于建造效率、大楼稳定性、安全性等性能考虑针对建造过程进行实施建模。</li>
+</ol>
 <ul>
-<li><p>why:为什么要做嵌入式软件架构设计</p>
-</li>
-<li><p>how:怎么做嵌入式软件架构设计</p>
-</li>
+<li>why:为什么要做嵌入式软件架构设计</li>
 </ul>
-<p>一般嵌入式项目按照研发的维护特点可以分为产品类和项目类</p>
-<ul>
-<li>产品类</li>
-</ul>
-<p>消费电子类产品或者大型设备的网关产品等,这种产品项目的特点就是产品生命周期长,在产品的整个生命周期内需要一直维护,也就意味着</p>
-<ul>
-<li>项目类</li>
-</ul>
-<p>外包项目等基本上软件最终交付后很少需要维护迭代的产品,此类产品需要重点关注</p>
-<ul>
+<ol>
+<li>建筑工人在建造大厦的时候如果没有设计师的设计图纸和设计文档，每个建筑工人按照自己对大楼的理解去建造，那最终建造的大楼将无法正常交付，整个建造实施过程建造效率会非常低。</li>
+<li>软件做架构设计的原因是一样的，嵌入式软件与其他软件产品不同的在于在建造软件这座“大楼”的时候其他软件项目有很多非常成熟的框架可以套用，嵌入式软件产品因为产品规模的多样性和依赖平台的多样性往往没有相对固定的框架可以套用。</li>
+<li>软件设计一方面是为了软件开发过程中能有据可依，提高软件工程师的开发效率；另一方面是为了软件开发能做的“优雅”一点。</li>
+<li>嵌入式软件产品会经常出现每个产品每一种设计，或者同一个产品多个人多种设计的问题。设计只要能完整的交付软件产品，从公司软件产品的“乙方”角度，这个产品就是成功的。软件前期设计阶段一定要根据产品的需求、平台的特性、项目的开发时间全面谨慎评估，避免出现“为了设计而设计”的情况出现。</li>
+<li>软件设计的目的是为了软件交付时除了实现功能需求、性能需求以外的质量需求。质量需求包含不限于以下的设计目标。<ul>
 <li>设计目标<ul>
 <li>可维护性<ul>
 <li>可读性</li>
@@ -358,7 +356,20 @@
 </ul>
 </li>
 </ul>
-<h2 id="设计也是需求的一部分"><a href="#设计也是需求的一部分" class="headerlink" title="设计也是需求的一部分"></a>设计也是需求的一部分</h2><p>嵌入式软件项目因为产品的多样性以及所依赖的硬件平台的特性很少有现成的架构框架套用，所以基本上在产品的设计之初会根据项目的特性进行软件架构设计。<br>一般嵌入式项目分为几类:</p>
+</li>
+</ol>
+<ul>
+<li>how:怎么做嵌入式软件架构设计</li>
+</ul>
+<h3 id="一般嵌入式项目按照研发的维护特点可以分为产品类和项目类"><a href="#一般嵌入式项目按照研发的维护特点可以分为产品类和项目类" class="headerlink" title="一般嵌入式项目按照研发的维护特点可以分为产品类和项目类"></a>一般嵌入式项目按照研发的维护特点可以分为产品类和项目类</h3><ul>
+<li>产品类</li>
+</ul>
+<p>消费电子类产品或者大型设备的网关产品等,这种产品项目的特点就是产品生命周期长,在产品的整个生命周期内需要一直维护,也就意味着</p>
+<ul>
+<li>项目类</li>
+</ul>
+<p>外包项目等基本上软件最终交付后很少需要维护迭代的产品,此类产品需要重点关注</p>
+<h2 id="二、设计也是需求的一部分"><a href="#二、设计也是需求的一部分" class="headerlink" title="二、设计也是需求的一部分"></a>二、设计也是需求的一部分</h2><p>嵌入式软件项目因为产品的多样性以及所依赖的硬件平台的特性很少有现成的架构框架套用，所以基本上在产品的设计之初会根据项目的特性进行软件架构设计。<br>一般嵌入式项目分为几类:</p>
 <ol>
 <li>产品的功能非常简单，使用的可编程器件资源非常有限。比如简单的台灯、电子密码锁项目。<blockquote>
 <p>此类产品的软件规模偏小,在设计中只需要将需求梳理清楚,基本代码按照需求就能写出来,而且因为此类项目的资源非常有限,强行设计复杂的结构反而会占用太多资源,所以需要避免”为了设计而设计”</p>
@@ -367,7 +378,7 @@
 <li>产品的功能相对复杂，项目基于OS实现</li>
 <li>linux大型项目</li>
 </ol>
-<h2 id="如何进行需求分析"><a href="#如何进行需求分析" class="headerlink" title="如何进行需求分析?"></a>如何进行需求分析?</h2><h2 id="怎么进行模块划分"><a href="#怎么进行模块划分" class="headerlink" title="怎么进行模块划分?"></a>怎么进行模块划分?</h2><h2 id="架构设计实践"><a href="#架构设计实践" class="headerlink" title="架构设计实践"></a>架构设计实践</h2>
+<h2 id="三、如何进行需求分析"><a href="#三、如何进行需求分析" class="headerlink" title="三、如何进行需求分析?"></a>三、如何进行需求分析?</h2><h2 id="四、怎么进行模块划分"><a href="#四、怎么进行模块划分" class="headerlink" title="四、怎么进行模块划分?"></a>四、怎么进行模块划分?</h2><h2 id="五、架构设计实践"><a href="#五、架构设计实践" class="headerlink" title="五、架构设计实践"></a>五、架构设计实践</h2>
                 
               </div>
             
@@ -402,6 +413,8 @@
       
         <a href="/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/">#架构设计</a>
       
+        <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/">#嵌入式</a>
+      
     </div>
   
 </div>
@@ -412,8 +425,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>嵌入式软件架构设计</div>
-      <div>http://example.com/2022/10/08/嵌入式软件架构设计/</div>
+      <div>嵌入式软件设计</div>
+      <div>http://example.com/2022/10/08/嵌入式软件设计/</div>
     </div>
     <div class="license-meta">
       
@@ -431,7 +444,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2022年10月8日</div>
+          <div>2022年10月9日</div>
         </div>
       
       
