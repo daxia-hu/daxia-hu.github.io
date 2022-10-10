@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>java语言</title>
+    <link href="/2022/10/10/java%E8%AF%AD%E8%A8%80/"/>
+    <url>/2022/10/10/java%E8%AF%AD%E8%A8%80/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>我觉得每个程序员都应该学习一下java语言</p><ul><li>java语言具有全面性、安全性、简单性等特性。</li><li>相对于c、c++语言，java的语法非常简单明了；相对于python等语言，java适用场景非常全面。</li><li>java的面向对象可以做的非常好，真正做到了一切皆对象。</li><li>java的gc简单高效。</li><li>…</li></ul></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>计算机语言</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>JAVA</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>比特币及区块链技术</title>
     <link href="/2022/10/10/%E6%AF%94%E7%89%B9%E5%B8%81%E5%8F%8A%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/"/>
     <url>/2022/10/10/%E6%AF%94%E7%89%B9%E5%B8%81%E5%8F%8A%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/</url>
@@ -47,7 +72,7 @@
     
     <tags>
       
-      <tag>c语言</tag>
+      <tag>C</tag>
       
     </tags>
     
@@ -77,19 +102,6 @@
       <tag>嵌入式</tag>
       
     </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="/2022/09/30/hello-world/"/>
-    <url>/2022/09/30/hello-world/</url>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
     
   </entry>
   
