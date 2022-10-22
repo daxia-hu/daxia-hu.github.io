@@ -189,6 +189,91 @@
   
   
   <entry>
+    <title>CAN通讯协议</title>
+    <link href="/2022/10/12/CAN%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
+    <url>/2022/10/12/CAN%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式通讯协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>通讯协议</tag>
+      
+      <tag>CAN</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>USB通讯协议</title>
+    <link href="/2022/10/12/USB%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
+    <url>/2022/10/12/USB%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式通讯协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>通讯协议</tag>
+      
+      <tag>USB</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>嵌入式常用有线通讯协议</title>
+    <link href="/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%89%E5%A4%A7%E6%9C%89%E7%BA%BF%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
+    <url>/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%89%E5%A4%A7%E6%9C%89%E7%BA%BF%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
+    
+    <content type="html"><![CDATA[<h2 id="UART协议"><a href="#UART协议" class="headerlink" title="UART协议"></a>UART协议</h2><h2 id="SPI协议"><a href="#SPI协议" class="headerlink" title="SPI协议"></a>SPI协议</h2><h2 id="I2C协议"><a href="#I2C协议" class="headerlink" title="I2C协议"></a>I2C协议</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式通讯协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>通讯协议</tag>
+      
+      <tag>UART</tag>
+      
+      <tag>SPI</tag>
+      
+      <tag>I2C</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>常用设计模式</title>
     <link href="/2022/10/12/%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     <url>/2022/10/12/%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
@@ -258,91 +343,6 @@
     <tags>
       
       <tag>数据结构</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>CAN通讯协议</title>
-    <link href="/2022/10/12/CAN%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
-    <url>/2022/10/12/CAN%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式通讯协议</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>CAN</tag>
-      
-      <tag>通讯协议</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>USB通讯协议</title>
-    <link href="/2022/10/12/USB%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
-    <url>/2022/10/12/USB%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式通讯协议</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>USB</tag>
-      
-      <tag>通讯协议</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>嵌入式常用有线通讯协议</title>
-    <link href="/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%89%E5%A4%A7%E6%9C%89%E7%BA%BF%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
-    <url>/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%89%E5%A4%A7%E6%9C%89%E7%BA%BF%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
-    
-    <content type="html"><![CDATA[<h2 id="UART协议"><a href="#UART协议" class="headerlink" title="UART协议"></a>UART协议</h2><h2 id="SPI协议"><a href="#SPI协议" class="headerlink" title="SPI协议"></a>SPI协议</h2><h2 id="I2C协议"><a href="#I2C协议" class="headerlink" title="I2C协议"></a>I2C协议</h2>]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式通讯协议</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>UART</tag>
-      
-      <tag>SPI</tag>
-      
-      <tag>I2C</tag>
-      
-      <tag>通讯协议</tag>
       
     </tags>
     
@@ -519,7 +519,7 @@
     
     <tags>
       
-      <tag>JAVA</tag>
+      <tag>JAVA语言</tag>
       
     </tags>
     
@@ -571,7 +571,7 @@
     
     <tags>
       
-      <tag>C</tag>
+      <tag>C语言</tag>
       
     </tags>
     
@@ -596,7 +596,7 @@
     
     <tags>
       
-      <tag>PYTHON</tag>
+      <tag>PYTHON语言</tag>
       
     </tags>
     
@@ -650,7 +650,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><ul><li>Email:<blockquote><p><a href="mailto:&#100;&#97;&#120;&#105;&#x61;&#95;&#104;&#117;&#64;&#x31;&#x32;&#x36;&#x2e;&#x63;&#x6f;&#x6d;">&#100;&#97;&#120;&#105;&#x61;&#95;&#104;&#117;&#64;&#x31;&#x32;&#x36;&#x2e;&#x63;&#x6f;&#x6d;</a></p></blockquote></li><li>WeChat:<blockquote><p>OkoKokOKoooooooooook</p></blockquote></li><li>blogs:<blockquote><p><a href="https://hudaxia.top/">https://hudaxia.top/</a></p></blockquote></li><li>github:<blockquote><p><a href="https://github.com/daxia-hu">https://github.com/daxia-hu</a></p></blockquote></li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><ul><li>Email:<blockquote><p><a href="mailto:&#100;&#97;&#120;&#105;&#x61;&#95;&#x68;&#117;&#64;&#x31;&#x32;&#54;&#x2e;&#x63;&#x6f;&#x6d;">&#100;&#97;&#120;&#105;&#x61;&#95;&#x68;&#117;&#64;&#x31;&#x32;&#54;&#x2e;&#x63;&#x6f;&#x6d;</a></p></blockquote></li><li>WeChat:<blockquote><p>OkoKokOKoooooooooook</p></blockquote></li><li>blogs:<blockquote><p><a href="https://hudaxia.top/">https://hudaxia.top/</a></p></blockquote></li><li>github:<blockquote><p><a href="https://github.com/daxia-hu">https://github.com/daxia-hu</a></p></blockquote></li></ul>]]></content>
     
   </entry>
   
@@ -662,6 +662,28 @@
     <url>/</url>
     
     <content type="html"><![CDATA[<h2 id="图书资源"><a href="#图书资源" class="headerlink" title="图书资源"></a>图书资源</h2><h4 id="C"><a href="#C" class="headerlink" title="C"></a>C</h4><ul><li><a href="https://pan.baidu.com/s/1DdZJm8mRc7304AEbkQ3Fbg">C.Primer.Plus第五版中文版+源码</a> 提取码：nd2z </li><li><a href="https://pan.baidu.com/s/1drKfiFbjtBZSINowmJytng">C标准库</a> 提取码：wctp </li><li><a href="https://pan.baidu.com/s/1JtGnqNATv1TmWa-EU7etGQ">C专家编程</a> 提取码：zxmy</li><li><a href="https://pan.baidu.com/s/15EXOgnGtbfpsYvLq_ta4yQ">C和指针</a> 提取码：d67j</li><li><a href="https://pan.baidu.com/s/1t2HF3uPIX3JcS0_S0GYcCg">CPrimerPlus(6thEdition)</a> 提取码：wzgy</li><li><a href="https://pan.baidu.com/s/1lxAu5nGvekkXaT2Ob9-Big">C陷阱和缺陷</a> 提取码：tnga</li></ul><h4 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h4><ul><li><a href="https://pan.baidu.com/s/1DDAsBfJZMKMODrQ6xTjxEQ">C++沉思录(Ruminations on C++)中文第2版</a> 提取码：g9os</li></ul><h4 id="QT"><a href="#QT" class="headerlink" title="QT"></a>QT</h4><h4 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h4><ul><li><a href="https://pan.baidu.com/s/163SMtuJQGZIsMP2DxxuqWA">Java核心技术卷1基础知识原书第10版</a> 提取码：3iph</li><li><a href="https://pan.baidu.com/s/17yQ3vCrYTksZ9TU9zXmB9w">java开发手册2020</a> 提取码：fv7u</li></ul><h4 id="PYTHON"><a href="#PYTHON" class="headerlink" title="PYTHON"></a>PYTHON</h4><h4 id="善用工具"><a href="#善用工具" class="headerlink" title="善用工具"></a>善用工具</h4><h4 id="设计"><a href="#设计" class="headerlink" title="设计"></a>设计</h4><ul><li><a href="%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps://pan.baidu.com/s/1wJMJaRWZgSCcYKtmW5ttiA">代码整洁之道 中文版</a> 提取码：8uad </li><li><a href="https://pan.baidu.com/s/1GvKdxPd1Z-yx26moVvRE4g">重构_改善既有代码的设计-高清版</a> 提取码：muc1</li><li><a href="https://pan.baidu.com/s/1hWA_N2bZFIFX0kbhTMzoCg">设计模式_可复用面向对象软件的基础</a> 提取码：lqb2</li><li><a href="https://pan.baidu.com/s/1mjA6sm2hi_0lRZI0NPa09w">大话设计模式(带目录完整版)</a> 提取码：tckf</li><li><a href="https://pan.baidu.com/s/1GQ7UvdBT1uwoRkkqgtXJlg">Making Embedded Systems(2012)</a> 提取码：qbqz</li><li><a href="https://pan.baidu.com/s/18BcuRFXDnH7182L4XZLxCw">An Embedded Software Primer (1ed - Simon)</a> 提取码：265y</li><li><a href="https://pan.baidu.com/s/1Ib7v29HUYD4vahRArsmQYQ">Head First 设计模式(中文版)</a> 提取码：ek9c</li></ul><h4 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h4><h4 id="开发模式"><a href="#开发模式" class="headerlink" title="开发模式"></a>开发模式</h4><h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><ul><li><a href="https://pan.baidu.com/s/139Ii5NnN1P0PAL2fvUBTgQ">程序员的自我修养</a> 提取码：zlqf</li><li><a href="https://pan.baidu.com/s/1omkGyEbyAUoir1ojkdyYIw">人月神话</a> 提取码：xf4c</li><li><a href="https://pan.baidu.com/s/1MulttspChabGJVzMuVqrlA">人件</a> 提取码：jg8k</li><li><a href="https://pan.baidu.com/s/1eAEFSpaYXtQIzlCF8NZ0ag">黑客与画家</a> 提取码：xp7i</li><li><a href="https://pan.baidu.com/s/1ij8FEmRG3A1DavyieSvZRg">浪潮之巅</a> 提取码：3qrg</li><li><a href="https://pan.baidu.com/s/1aaDd0JcWUWrISa58tV-lrA">代码大全（第二版)</a> 提取码：yz3v</li><li><a href="https://pan.baidu.com/s/1aaGejvCOtT43tki6UsId9A">代码大全</a> 提取码：cyea</li><li><a href="https://pan.baidu.com/s/1kK29AhRN-QfFhNqx_UoxWA">编程珠玑高清</a> 提取码：eyco</li></ul><h2 id="读书笔记"><a href="#读书笔记" class="headerlink" title="读书笔记"></a>读书笔记</h2><ul><li><a href="%E8%B0%81%E5%8A%A8%E4%BA%86%E6%88%91%E7%9A%84%E5%A5%B6%E9%85%AA.html">《谁动了我的奶酪》</a></li><li><a href="%E5%9C%A8%E7%BB%9D%E6%9C%9B%E4%B8%AD%E5%AF%BB%E6%89%BE%E5%B8%8C%E6%9C%9B.html">《在绝望中寻找希望》</a></li></ul>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>《在绝望中寻找希望》</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<h1 id="关于教育"><a href="#关于教育" class="headerlink" title="关于教育"></a>关于教育</h1><h1 id="关于学习"><a href="#关于学习" class="headerlink" title="关于学习"></a>关于学习</h1><h1 id="关于韧性"><a href="#关于韧性" class="headerlink" title="关于韧性"></a>关于韧性</h1><h1 id="关于朋友"><a href="#关于朋友" class="headerlink" title="关于朋友"></a>关于朋友</h1><h1 id="关于心态"><a href="#关于心态" class="headerlink" title="关于心态"></a>关于心态</h1>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>《谁动了我的奶酪》</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<h2 id="《谁动了我的奶酪》读书笔记"><a href="#《谁动了我的奶酪》读书笔记" class="headerlink" title="《谁动了我的奶酪》读书笔记"></a>《谁动了我的奶酪》读书笔记</h2><blockquote><p>《谁动了我的奶酪》是美国作家斯宾塞·约翰逊与1998年出版的一个寓言故事，其中描写了两个老鼠和两个小人在迷宫中找奶酪的故事，故事简洁寓意深刻，故事的寓意耐人寻味，在出版的20多年间影响了很多读者。</p></blockquote><blockquote><p>故事大概描述：在很久以前的一个迷宫里，住着两个老鼠和两个小人，老鼠的名字分别叫“匆匆”和“嗅嗅”，小人的名字分别叫“哼哼”和“唧唧”，他们四个每天在迷宫里面四处寻找奶酪维持生活，迷宫里面的生存环境非常不好，他们经常迷路或者在迷宫里面摔伤，但是每天早上他们都信心满满的出发重新寻找。突然有一天他们在迷宫的奶酪C区看到了非常多新鲜的奶酪，里面还有蛋糕芝士等等，他们开心极了，此后的几年时间里他们都每天准时出发到达奶酪C区。<br>两只小老鼠会把鞋子绑在一起挂在脖子上，原因是他们习惯了之前寻找奶酪的那段时间，把鞋子挂在脖子上是为了当奶酪没有时随时寻找新的奶酪，慢慢的随着时间的推移，两个小人“哼哼”和“唧唧”每天来的越来越晚，他们觉得这里就是天堂，这里的奶酪都够他们吃一辈子的了。可是他们没注意到奶酪越来越少，而且奶酪也慢慢发霉了，直到有一天两只小老鼠“匆匆”和“嗅嗅”到达C区后发现奶酪已经没有了，他们没有迟疑和以前的很多次一样穿上鞋子重新进入迷宫寻找新的奶酪，等到两个小人“哼哼”和“唧唧”到达奶酪C区后他们简直不敢相信自己的眼睛，奶酪C区竟然一点奶酪都没有了，他们以为是自己走错了地方或者产生了幻觉，因为他们觉得这里的奶酪不可能没有的。后面他们就在奶酪C区思考奶酪去了哪里，“哼哼”甚至在想这肯定是什么阴谋，不停的抱怨这不公平，此后的每一天他们每天都来到奶酪C区，幻想着这一切都没发生过，渐渐地由于他们没有奶酪吃老是会产生幻觉，他们幻想自己还和以前一样每天到这里享用美味的奶酪，“唧唧”也想过离开这里去寻找新的奶酪，就像最开始那样。但是这里待着实在太舒服了，想到以前在迷宫里面那些迷路和受伤的场景，他们又开始抱怨上天的不公平，渐渐地他们的身体越来越虚弱。突然有一天“唧唧”觉得不能再这样下去了，他叫“哼哼”和自己一起出去寻找新的奶酪，但是“哼哼”还在抱怨，抱怨慢慢的转为愤怒，他不愿意去重新进入迷宫寻找奶酪，以前在迷宫受的那些伤让他非常的恐惧。就这样“唧唧”重新出发了，刚开始“唧唧”每天都想回去奶酪C区在里面舒服的待着，迷宫里面的奶酪还是不太好找，但是当他想起奶酪C区那段充满恐惧与怨气的时间时，他又有了去寻找的动力，他甚至想到在另外一个地方和奶酪C区一样，也有很多很多新鲜的奶酪，想到这里他就浑身充满力气。直到有一天，“唧唧”来到奶酪F区，他在这里又看到了很多奶酪和他的老朋友“嗅嗅”和“匆匆”，他开心极了他把鞋子挂到了脖子上开始享用美味的奶酪。</p></blockquote><h2 id="关于工作"><a href="#关于工作" class="headerlink" title="关于工作"></a>关于工作</h2><h2 id="关于心态"><a href="#关于心态" class="headerlink" title="关于心态"></a>关于心态</h2><h2 id="资料来源"><a href="#资料来源" class="headerlink" title="资料来源"></a>资料来源</h2><p>微信读书《谁动了我的奶酪》<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://weread.qq.com/web/bookDetail/9eb32a6059b42c9ebc1da49">[1]</span></a></sup></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://weread.qq.com/web/bookDetail/9eb32a6059b42c9ebc1da49">https://weread.qq.com/web/bookDetail/9eb32a6059b42c9ebc1da49</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
     
   </entry>
   
@@ -728,28 +750,6 @@
     <url>/</url>
     
     <content type="html"><![CDATA[<h2 id="食材"><a href="#食材" class="headerlink" title="食材:"></a>食材:</h2><ol><li>一颗大白菜</li></ol><h2 id="做法"><a href="#做法" class="headerlink" title="做法:"></a>做法:</h2><ol><li>把大白菜按叶子摘掉洗干净。</li><li>把白菜叶子的根部和叶子头部分开，将菜根斜刀切片。</li><li>兑一个酸辣料汁：取一勺酱油、一勺香醋、少许耗油、辣椒油、食盐、土豆淀粉准备好。</li><li>准备干辣椒、大蒜、小米辣切沫。</li><li>锅中下油将菜根炒至断生后捞出。</li><li>重新烧油后将干辣椒、大蒜、小米辣低温慢慢将香味炸出来。</li><li>将菜根和菜叶一起放进锅中，大火炒10~20s，将料汁一起倒入锅中大炒5s中后盛出装盘。</li></ol><h2 id="参考"><a href="#参考" class="headerlink" title="参考:"></a>参考:</h2><p>b站美食强《如果你爱吃“酸辣白菜”可以试一下我的做法》<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://www.bilibili.com/video/BV1ar4y187hW/?is_story_h5=false&p=1&share_from=ugc&share_medium=android&share_plat=android&share_session_id=7a050736-b318-4d88-b9d1-e2e37c17bfb5&share_source=WEIXIN&share_tag=s_i&timestamp=1665195327&unique_k=oxnVFPP">[1]</span></a></sup></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://www.bilibili.com/video/BV1ar4y187hW/?is_story_h5=false&amp;p=1&amp;share_from=ugc&amp;share_medium=android&amp;share_plat=android&amp;share_session_id=7a050736-b318-4d88-b9d1-e2e37c17bfb5&amp;share_source=WEIXIN&amp;share_tag=s_i&amp;timestamp=1665195327&amp;unique_k=oxnVFPP">https://www.bilibili.com/video/BV1ar4y187hW/?is_story_h5=false&amp;p=1&amp;share_from=ugc&amp;share_medium=android&amp;share_plat=android&amp;share_session_id=7a050736-b318-4d88-b9d1-e2e37c17bfb5&amp;share_source=WEIXIN&amp;share_tag=s_i&amp;timestamp=1665195327&amp;unique_k=oxnVFPP</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>《在绝望中寻找希望》</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<h1 id="关于教育"><a href="#关于教育" class="headerlink" title="关于教育"></a>关于教育</h1><h1 id="关于学习"><a href="#关于学习" class="headerlink" title="关于学习"></a>关于学习</h1><h1 id="关于韧性"><a href="#关于韧性" class="headerlink" title="关于韧性"></a>关于韧性</h1><h1 id="关于朋友"><a href="#关于朋友" class="headerlink" title="关于朋友"></a>关于朋友</h1><h1 id="关于心态"><a href="#关于心态" class="headerlink" title="关于心态"></a>关于心态</h1>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>《谁动了我的奶酪》</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<h2 id="《谁动了我的奶酪》读书笔记"><a href="#《谁动了我的奶酪》读书笔记" class="headerlink" title="《谁动了我的奶酪》读书笔记"></a>《谁动了我的奶酪》读书笔记</h2><blockquote><p>《谁动了我的奶酪》是美国作家斯宾塞·约翰逊与1998年出版的一个寓言故事，其中描写了两个老鼠和两个小人在迷宫中找奶酪的故事，故事简洁寓意深刻，故事的寓意耐人寻味，在出版的20多年间影响了很多读者。</p></blockquote><blockquote><p>故事大概描述：在很久以前的一个迷宫里，住着两个老鼠和两个小人，老鼠的名字分别叫“匆匆”和“嗅嗅”，小人的名字分别叫“哼哼”和“唧唧”，他们四个每天在迷宫里面四处寻找奶酪维持生活，迷宫里面的生存环境非常不好，他们经常迷路或者在迷宫里面摔伤，但是每天早上他们都信心满满的出发重新寻找。突然有一天他们在迷宫的奶酪C区看到了非常多新鲜的奶酪，里面还有蛋糕芝士等等，他们开心极了，此后的几年时间里他们都每天准时出发到达奶酪C区。<br>两只小老鼠会把鞋子绑在一起挂在脖子上，原因是他们习惯了之前寻找奶酪的那段时间，把鞋子挂在脖子上是为了当奶酪没有时随时寻找新的奶酪，慢慢的随着时间的推移，两个小人“哼哼”和“唧唧”每天来的越来越晚，他们觉得这里就是天堂，这里的奶酪都够他们吃一辈子的了。可是他们没注意到奶酪越来越少，而且奶酪也慢慢发霉了，直到有一天两只小老鼠“匆匆”和“嗅嗅”到达C区后发现奶酪已经没有了，他们没有迟疑和以前的很多次一样穿上鞋子重新进入迷宫寻找新的奶酪，等到两个小人“哼哼”和“唧唧”到达奶酪C区后他们简直不敢相信自己的眼睛，奶酪C区竟然一点奶酪都没有了，他们以为是自己走错了地方或者产生了幻觉，因为他们觉得这里的奶酪不可能没有的。后面他们就在奶酪C区思考奶酪去了哪里，“哼哼”甚至在想这肯定是什么阴谋，不停的抱怨这不公平，此后的每一天他们每天都来到奶酪C区，幻想着这一切都没发生过，渐渐地由于他们没有奶酪吃老是会产生幻觉，他们幻想自己还和以前一样每天到这里享用美味的奶酪，“唧唧”也想过离开这里去寻找新的奶酪，就像最开始那样。但是这里待着实在太舒服了，想到以前在迷宫里面那些迷路和受伤的场景，他们又开始抱怨上天的不公平，渐渐地他们的身体越来越虚弱。突然有一天“唧唧”觉得不能再这样下去了，他叫“哼哼”和自己一起出去寻找新的奶酪，但是“哼哼”还在抱怨，抱怨慢慢的转为愤怒，他不愿意去重新进入迷宫寻找奶酪，以前在迷宫受的那些伤让他非常的恐惧。就这样“唧唧”重新出发了，刚开始“唧唧”每天都想回去奶酪C区在里面舒服的待着，迷宫里面的奶酪还是不太好找，但是当他想起奶酪C区那段充满恐惧与怨气的时间时，他又有了去寻找的动力，他甚至想到在另外一个地方和奶酪C区一样，也有很多很多新鲜的奶酪，想到这里他就浑身充满力气。直到有一天，“唧唧”来到奶酪F区，他在这里又看到了很多奶酪和他的老朋友“嗅嗅”和“匆匆”，他开心极了他把鞋子挂到了脖子上开始享用美味的奶酪。</p></blockquote><h2 id="关于工作"><a href="#关于工作" class="headerlink" title="关于工作"></a>关于工作</h2><h2 id="关于心态"><a href="#关于心态" class="headerlink" title="关于心态"></a>关于心态</h2><h2 id="资料来源"><a href="#资料来源" class="headerlink" title="资料来源"></a>资料来源</h2><p>微信读书《谁动了我的奶酪》<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://weread.qq.com/web/bookDetail/9eb32a6059b42c9ebc1da49">[1]</span></a></sup></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://weread.qq.com/web/bookDetail/9eb32a6059b42c9ebc1da49">https://weread.qq.com/web/bookDetail/9eb32a6059b42c9ebc1da49</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
     
   </entry>
   
