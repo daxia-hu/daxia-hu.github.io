@@ -24,7 +24,7 @@
 <meta property="og:description" content="C语言简介简介 C语言是一门面向过程的计算机编程语言，与C++、C#、Java等面向对象编程语言有所不同。C语言的设计目标是提供一种能以简易的方式编译、处理低级存储器、仅产生少量的机器码以及不需要任何运行环境支持便能运行的编程语言。C语言描述问题比汇编语言迅速、工作量小、可读性好、易于调试、修改和移植，而代码质量与汇编语言相当。C语言一般只比汇编语言代码生成的目标程序效率低10%-20%。因此，C">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-10-09T11:01:52.000Z">
-<meta property="article:modified_time" content="2022-10-30T02:26:27.581Z">
+<meta property="article:modified_time" content="2022-11-09T13:32:05.627Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="C语言">
 <meta name="twitter:card" content="summary_large_image">
@@ -302,16 +302,27 @@
 <p>C语言继续发展，在1982年，很多有识之士和美国国家标准协会（ANSI）为了使C语言健康地发展下去，决定成立C标准委员会，建立C语言的标准。委员会由硬件厂商、编译器及其他软件工具生产商、软件设计师、顾问、学术界人士、C语言作者和应用程序员组成。1989年，ANSI发布了第一个完整的C语言标准——ANSI X3.159-1989，简称“C89”，不过人们也习惯称其为“ANSI C”。C89在1990年被国际标准化组织（International Standard Organization，ISO）一字不改地采纳，ISO官方给予的名称为：ISO&#x2F;IEC 9899，所以ISO&#x2F;IEC9899:1990也通常被简称为“C90”。1999年，在做了一些必要的修正和完善后，ISO发布了新的C语言标准，命名为ISO&#x2F;IEC 9899:1999，简称“C99”。在2011年12月8日，ISO又正式发布了新的标准，称为ISO&#x2F;IEC9899:2011，简称为“C11”。</p>
 </blockquote>
 <h3 id="简单示例"><a href="#简单示例" class="headerlink" title="简单示例"></a>简单示例</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;hello c!&quot;</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-<h2 id="C语言基础"><a href="#C语言基础" class="headerlink" title="C语言基础"></a>C语言基础</h2><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>可以使用sizeof运算符对不同计算机平台上的数据类型的字节大小进行计算。</p>
+<h2 id="C语言基础"><a href="#C语言基础" class="headerlink" title="C语言基础"></a>C语言基础</h2><h3 id="进制的概念"><a href="#进制的概念" class="headerlink" title="进制的概念"></a>进制的概念</h3><ul>
+<li>原码</li>
+<li>反码</li>
+<li>补码</li>
+</ul>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>可以使用sizeof运算符对不同计算机平台上的数据类型的字节大小进行计算。</p>
 <h4 id="有符号和无符号类型"><a href="#有符号和无符号类型" class="headerlink" title="有符号和无符号类型"></a>有符号和无符号类型</h4><pre><code class="hljs">1. 有符号类型
 2. 无符号类型
 </code></pre>
 <h4 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h4><pre><code class="hljs">1. int
-    整型，int类型大小一般是一个机器字长，
+    整型，int类型大小一般是一个机器字长，一般大小为4个字节；
 2. short
+   短整型，与short int是同一个类型，大小不能比整型大，一般大小为两个字节；
 3. long
+   长整型，与 long int是同一个类型，大小不能比整型小，一般占用大小为4个字节；
 4. long long
+   长长整型，与long long int是同一个类型，大小不能比长整型小，一般占用大小为8个字节；
 </code></pre>
+<ul>
+<li>计算整型占用内存大小<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&quot;stdio.h&quot;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;int :%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">int</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;short :%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">short</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;short int:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">short</span> <span class="hljs-type">int</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long :%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long int:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span> <span class="hljs-type">int</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long long:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span> <span class="hljs-type">long</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long long int:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-type">int</span>));<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br>输出结果：<br><span class="hljs-type">int</span> :<span class="hljs-number">4</span><br><span class="hljs-type">short</span> :<span class="hljs-number">2</span><br><span class="hljs-type">short</span> <span class="hljs-type">int</span>:<span class="hljs-number">2</span><br><span class="hljs-type">long</span> :<span class="hljs-number">4</span><br><span class="hljs-type">long</span> <span class="hljs-type">int</span>:<span class="hljs-number">4</span><br><span class="hljs-type">long</span> <span class="hljs-type">long</span>:<span class="hljs-number">8</span><br><span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-type">int</span>:<span class="hljs-number">8</span><br></code></pre></td></tr></table></figure></li>
+</ul>
 <h4 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h4><pre><code class="hljs">1. char
 </code></pre>
 <h4 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h4><pre><code class="hljs">1. float
@@ -335,6 +346,7 @@
 <li><a href="https://hudaxia.top/books/">c专家编程</a></li>
 <li><a href="https://hudaxia.top/books/">c primer plus</a></li>
 <li><a href="https://hudaxia.top/books/">c和指针</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.nowcoder.com/tutorial/10002/8f7c3e0e7efd441d8f7c9c8d43c2a0f4">牛客 c语言教程</a></li>
 </ul>
 <h2 id="代码仓库"><a href="#代码仓库" class="headerlink" title="代码仓库"></a>代码仓库</h2><ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/daxia-hu/c.git">c语言仓库</a></li>
