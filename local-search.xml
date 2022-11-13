@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>蓝牙技术基础</title>
+    <link href="/2022/11/13/%E8%93%9D%E7%89%99%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/"/>
+    <url>/2022/11/13/%E8%93%9D%E7%89%99%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>蓝牙技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>BT</tag>
+      
+      <tag>BLE</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>极限编程</title>
     <link href="/2022/10/14/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/"/>
     <url>/2022/10/14/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</url>
@@ -351,7 +378,7 @@
   
   
   <entry>
-    <title>常用算法</title>
+    <title>Cortex-M</title>
     <link href="/2022/10/12/cortex-m%E5%9F%BA%E7%A1%80/"/>
     <url>/2022/10/12/cortex-m%E5%9F%BA%E7%A1%80/</url>
     
@@ -360,39 +387,14 @@
     
     <categories>
       
-      <category>数据结构与算法</category>
+      <category>Cortex</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>算法</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>常用算法</title>
-    <link href="/2022/10/12/%E8%93%9D%E7%89%99%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/"/>
-    <url>/2022/10/12/%E8%93%9D%E7%89%99%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>数据结构与算法</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>算法</tag>
+      <tag>Cortex</tag>
       
     </tags>
     
@@ -553,7 +555,7 @@
   
   
   <entry>
-    <title>JAVA语言</title>
+    <title>JAVA基础</title>
     <link href="/2022/10/10/JAVA%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/"/>
     <url>/2022/10/10/JAVA%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</url>
     
@@ -605,7 +607,7 @@
   
   
   <entry>
-    <title>C语言</title>
+    <title>C基础</title>
     <link href="/2022/10/09/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/"/>
     <url>/2022/10/09/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</url>
     
@@ -630,7 +632,7 @@
   
   
   <entry>
-    <title>PYTHON语言</title>
+    <title>PYTHON基础</title>
     <link href="/2022/10/09/PYTHON%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/"/>
     <url>/2022/10/09/PYTHON%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</url>
     
@@ -655,7 +657,7 @@
   
   
   <entry>
-    <title>QT库学习-CPP</title>
+    <title>QT基础(CPP)</title>
     <link href="/2022/10/09/QT%E5%BA%93%E5%AD%A6%E4%B9%A0-CPP/"/>
     <url>/2022/10/09/QT%E5%BA%93%E5%AD%A6%E4%B9%A0-CPP/</url>
     
@@ -748,61 +750,6 @@
     <url>/</url>
     
     <content type="html"><![CDATA[<h2 id="《谁动了我的奶酪》读书笔记"><a href="#《谁动了我的奶酪》读书笔记" class="headerlink" title="《谁动了我的奶酪》读书笔记"></a>《谁动了我的奶酪》读书笔记</h2><blockquote><p>《谁动了我的奶酪》是美国作家斯宾塞·约翰逊与1998年出版的一个寓言故事，其中描写了两个老鼠和两个小人在迷宫中找奶酪的故事，故事简洁寓意深刻，故事的寓意耐人寻味，在出版的20多年间影响了很多读者。</p></blockquote><blockquote><p>故事大概描述：在很久以前的一个迷宫里，住着两个老鼠和两个小人，老鼠的名字分别叫“匆匆”和“嗅嗅”，小人的名字分别叫“哼哼”和“唧唧”，他们四个每天在迷宫里面四处寻找奶酪维持生活，迷宫里面的生存环境非常不好，他们经常迷路或者在迷宫里面摔伤，但是每天早上他们都信心满满的出发重新寻找。突然有一天他们在迷宫的奶酪C区看到了非常多新鲜的奶酪，里面还有蛋糕芝士等等，他们开心极了，此后的几年时间里他们都每天准时出发到达奶酪C区。<br>两只小老鼠会把鞋子绑在一起挂在脖子上，原因是他们习惯了之前寻找奶酪的那段时间，把鞋子挂在脖子上是为了当奶酪没有时随时寻找新的奶酪，慢慢的随着时间的推移，两个小人“哼哼”和“唧唧”每天来的越来越晚，他们觉得这里就是天堂，这里的奶酪都够他们吃一辈子的了。可是他们没注意到奶酪越来越少，而且奶酪也慢慢发霉了，直到有一天两只小老鼠“匆匆”和“嗅嗅”到达C区后发现奶酪已经没有了，他们没有迟疑和以前的很多次一样穿上鞋子重新进入迷宫寻找新的奶酪，等到两个小人“哼哼”和“唧唧”到达奶酪C区后他们简直不敢相信自己的眼睛，奶酪C区竟然一点奶酪都没有了，他们以为是自己走错了地方或者产生了幻觉，因为他们觉得这里的奶酪不可能没有的。后面他们就在奶酪C区思考奶酪去了哪里，“哼哼”甚至在想这肯定是什么阴谋，不停的抱怨这不公平，此后的每一天他们每天都来到奶酪C区，幻想着这一切都没发生过，渐渐地由于他们没有奶酪吃老是会产生幻觉，他们幻想自己还和以前一样每天到这里享用美味的奶酪，“唧唧”也想过离开这里去寻找新的奶酪，就像最开始那样。但是这里待着实在太舒服了，想到以前在迷宫里面那些迷路和受伤的场景，他们又开始抱怨上天的不公平，渐渐地他们的身体越来越虚弱。突然有一天“唧唧”觉得不能再这样下去了，他叫“哼哼”和自己一起出去寻找新的奶酪，但是“哼哼”还在抱怨，抱怨慢慢的转为愤怒，他不愿意去重新进入迷宫寻找奶酪，以前在迷宫受的那些伤让他非常的恐惧。就这样“唧唧”重新出发了，刚开始“唧唧”每天都想回去奶酪C区在里面舒服的待着，迷宫里面的奶酪还是不太好找，但是当他想起奶酪C区那段充满恐惧与怨气的时间时，他又有了去寻找的动力，他甚至想到在另外一个地方和奶酪C区一样，也有很多很多新鲜的奶酪，想到这里他就浑身充满力气。直到有一天，“唧唧”来到奶酪F区，他在这里又看到了很多奶酪和他的老朋友“嗅嗅”和“匆匆”，他开心极了他把鞋子挂到了脖子上开始享用美味的奶酪。</p></blockquote><h2 id="关于工作"><a href="#关于工作" class="headerlink" title="关于工作"></a>关于工作</h2><h2 id="关于心态"><a href="#关于心态" class="headerlink" title="关于心态"></a>关于心态</h2><h2 id="资料来源"><a href="#资料来源" class="headerlink" title="资料来源"></a>资料来源</h2><p>微信读书《谁动了我的奶酪》<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://weread.qq.com/web/bookDetail/9eb32a6059b42c9ebc1da49">[1]</span></a></sup></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://weread.qq.com/web/bookDetail/9eb32a6059b42c9ebc1da49">https://weread.qq.com/web/bookDetail/9eb32a6059b42c9ebc1da49</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>杂七杂八</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<h2 id="凡有所相"><a href="#凡有所相" class="headerlink" title="凡有所相"></a>凡有所相</h2><ul><li><a href="%E6%9E%97.html">林</a></li><li><a href="%E8%A5%BF%E5%AE%89%E4%B9%B0%E6%88%BF.html">西安买房</a></li></ul><h2 id="食谱"><a href="#食谱" class="headerlink" title="食谱"></a>食谱</h2><ul><li><a href="%E5%86%B0%E7%B3%96%E9%9B%AA%E6%A2%A8.html">冰糖雪梨</a></li><li><a href="%E9%85%B8%E8%BE%A3%E7%99%BD%E8%8F%9C.html">酸辣白菜</a></li></ul>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>林</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>西安买房</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>冰糖雪梨</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<h1 id="冰糖雪梨的做法"><a href="#冰糖雪梨的做法" class="headerlink" title="冰糖雪梨的做法"></a>冰糖雪梨的做法</h1><h2 id="食材"><a href="#食材" class="headerlink" title="食材:"></a>食材:</h2><ol><li>一个大白梨 </li><li>银耳</li><li>红枣</li><li>冰糖</li><li>枸杞</li></ol><h2 id="做法"><a href="#做法" class="headerlink" title="做法:"></a>做法:</h2><ol><li>先把梨洗干净，可以表面搓盐洗。</li><li>把银耳洗干净后用温水泡发。</li><li>将梨沿着头部切开，切开后去掉里面的核，注意可以用勺子，会比刀安全一点。</li><li>将一个大枣、4~8个枸杞、两颗冰糖洗干净后和泡发的银耳一起放进掏空的大白梨中。</li><li>往梨中加入适量的水后盖上切掉的梨头，加入蒸锅中蒸30min。</li><li>用牙签插梨感觉梨软了以后可以出锅食用。</li></ol><h2 id="参考"><a href="#参考" class="headerlink" title="参考:"></a>参考:</h2><p>b站妙招姐《教你冰糖雪梨的正确做法，润肺止咳，做法简单，大人小孩都爱喝》<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://www.bilibili.com/video/BV11E411h7k2/?is_story_h5=false&p=1&share_from=ugc&share_medium=android&share_plat=android&share_session_id=9599f247-a702-4e08-9edd-05982ab5e9ae&share_source=WEIXIN&share_tag=s_i&timestamp=1664758324&unique_k=o991YfV">[1]</span></a></sup></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://www.bilibili.com/video/BV11E411h7k2/?is_story_h5=false&amp;p=1&amp;share_from=ugc&amp;share_medium=android&amp;share_plat=android&amp;share_session_id=9599f247-a702-4e08-9edd-05982ab5e9ae&amp;share_source=WEIXIN&amp;share_tag=s_i&amp;timestamp=1664758324&amp;unique_k=o991YfV">https://www.bilibili.com/video/BV11E411h7k2/?is_story_h5=false&amp;p=1&amp;share_from=ugc&amp;share_medium=android&amp;share_plat=android&amp;share_session_id=9599f247-a702-4e08-9edd-05982ab5e9ae&amp;share_source=WEIXIN&amp;share_tag=s_i&amp;timestamp=1664758324&amp;unique_k=o991YfV</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>酸辣白菜</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<h2 id="食材"><a href="#食材" class="headerlink" title="食材:"></a>食材:</h2><ol><li>一颗大白菜</li></ol><h2 id="做法"><a href="#做法" class="headerlink" title="做法:"></a>做法:</h2><ol><li>把大白菜按叶子摘掉洗干净。</li><li>把白菜叶子的根部和叶子头部分开，将菜根斜刀切片。</li><li>兑一个酸辣料汁：取一勺酱油、一勺香醋、少许耗油、辣椒油、食盐、土豆淀粉准备好。</li><li>准备干辣椒、大蒜、小米辣切沫。</li><li>锅中下油将菜根炒至断生后捞出。</li><li>重新烧油后将干辣椒、大蒜、小米辣低温慢慢将香味炸出来。</li><li>将菜根和菜叶一起放进锅中，大火炒10~20s，将料汁一起倒入锅中大炒5s中后盛出装盘。</li></ol><h2 id="参考"><a href="#参考" class="headerlink" title="参考:"></a>参考:</h2><p>b站美食强《如果你爱吃“酸辣白菜”可以试一下我的做法》<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://www.bilibili.com/video/BV1ar4y187hW/?is_story_h5=false&p=1&share_from=ugc&share_medium=android&share_plat=android&share_session_id=7a050736-b318-4d88-b9d1-e2e37c17bfb5&share_source=WEIXIN&share_tag=s_i&timestamp=1665195327&unique_k=oxnVFPP">[1]</span></a></sup></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://www.bilibili.com/video/BV1ar4y187hW/?is_story_h5=false&amp;p=1&amp;share_from=ugc&amp;share_medium=android&amp;share_plat=android&amp;share_session_id=7a050736-b318-4d88-b9d1-e2e37c17bfb5&amp;share_source=WEIXIN&amp;share_tag=s_i&amp;timestamp=1665195327&amp;unique_k=oxnVFPP">https://www.bilibili.com/video/BV1ar4y187hW/?is_story_h5=false&amp;p=1&amp;share_from=ugc&amp;share_medium=android&amp;share_plat=android&amp;share_session_id=7a050736-b318-4d88-b9d1-e2e37c17bfb5&amp;share_source=WEIXIN&amp;share_tag=s_i&amp;timestamp=1665195327&amp;unique_k=oxnVFPP</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
     
   </entry>
   
