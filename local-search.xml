@@ -31,6 +31,31 @@
   
   
   <entry>
+    <title>Cortex-M</title>
+    <link href="/2022/11/12/cortex-m%E5%9F%BA%E7%A1%80/"/>
+    <url>/2022/11/12/cortex-m%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>Cortex</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Cortex</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>极限编程</title>
     <link href="/2022/10/14/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/"/>
     <url>/2022/10/14/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</url>
@@ -378,31 +403,6 @@
   
   
   <entry>
-    <title>Cortex-M</title>
-    <link href="/2022/10/12/cortex-m%E5%9F%BA%E7%A1%80/"/>
-    <url>/2022/10/12/cortex-m%E5%9F%BA%E7%A1%80/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>Cortex</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Cortex</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>领域驱动设计</title>
     <link href="/2022/10/12/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/"/>
     <url>/2022/10/12/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/</url>
@@ -607,7 +607,7 @@
   
   
   <entry>
-    <title>C基础</title>
+    <title>C语言基础</title>
     <link href="/2022/10/09/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/"/>
     <url>/2022/10/09/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</url>
     
