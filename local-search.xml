@@ -345,37 +345,6 @@
   
   
   <entry>
-    <title>嵌入式常用有线通讯协议</title>
-    <link href="/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%89%E5%A4%A7%E6%9C%89%E7%BA%BF%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
-    <url>/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%89%E5%A4%A7%E6%9C%89%E7%BA%BF%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
-    
-    <content type="html"><![CDATA[<h2 id="UART协议"><a href="#UART协议" class="headerlink" title="UART协议"></a>UART协议</h2><h2 id="SPI协议"><a href="#SPI协议" class="headerlink" title="SPI协议"></a>SPI协议</h2><h2 id="I2C协议"><a href="#I2C协议" class="headerlink" title="I2C协议"></a>I2C协议</h2>]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式通讯协议</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>通讯协议</tag>
-      
-      <tag>UART</tag>
-      
-      <tag>SPI</tag>
-      
-      <tag>I2C</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>常用设计模式</title>
     <link href="/2022/10/12/%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     <url>/2022/10/12/%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
@@ -645,6 +614,81 @@
     <tags>
       
       <tag>数据结构</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>IIC通讯协议</title>
+    <link href="/2022/10/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-IIC/"/>
+    <url>/2022/10/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-IIC/</url>
+    
+    <content type="html"><![CDATA[<h2 id="UART协议"><a href="#UART协议" class="headerlink" title="UART协议"></a>UART协议</h2><h2 id="SPI协议"><a href="#SPI协议" class="headerlink" title="SPI协议"></a>SPI协议</h2><h2 id="I2C协议"><a href="#I2C协议" class="headerlink" title="I2C协议"></a>I2C协议</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>通讯协议</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>SPI通讯协议</title>
+    <link href="/2022/10/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-SPI/"/>
+    <url>/2022/10/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-SPI/</url>
+    
+    <content type="html"><![CDATA[<h2 id="UART协议"><a href="#UART协议" class="headerlink" title="UART协议"></a>UART协议</h2><h2 id="SPI协议"><a href="#SPI协议" class="headerlink" title="SPI协议"></a>SPI协议</h2><h2 id="I2C协议"><a href="#I2C协议" class="headerlink" title="I2C协议"></a>I2C协议</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>通讯协议</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>UART通讯协议</title>
+    <link href="/2022/10/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-UART/"/>
+    <url>/2022/10/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-UART/</url>
+    
+    <content type="html"><![CDATA[<h2 id="UART协议"><a href="#UART协议" class="headerlink" title="UART协议"></a>UART协议</h2><h2 id="SPI协议"><a href="#SPI协议" class="headerlink" title="SPI协议"></a>SPI协议</h2><h2 id="I2C协议"><a href="#I2C协议" class="headerlink" title="I2C协议"></a>I2C协议</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>通讯协议</tag>
       
     </tags>
     
