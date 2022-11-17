@@ -13,20 +13,14 @@
     
     <categories>
       
-      <category>嵌入式通用组件设计</category>
+      <category>嵌入式</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>嵌入式</tag>
-      
       <tag>嵌入式组件</tag>
-      
-      <tag>malloc</tag>
-      
-      <tag>heap</tag>
       
     </tags>
     
@@ -44,18 +38,14 @@
     
     <categories>
       
-      <category>嵌入式通用组件设计</category>
+      <category>嵌入式</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>嵌入式</tag>
-      
       <tag>嵌入式组件</tag>
-      
-      <tag>IPC</tag>
       
     </tags>
     
@@ -73,18 +63,14 @@
     
     <categories>
       
-      <category>嵌入式通用组件设计</category>
+      <category>嵌入式</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>嵌入式</tag>
-      
       <tag>嵌入式组件</tag>
-      
-      <tag>shell</tag>
       
     </tags>
     
@@ -102,14 +88,12 @@
     
     <categories>
       
-      <category>嵌入式通用组件设计</category>
+      <category>嵌入式</category>
       
     </categories>
     
     
     <tags>
-      
-      <tag>嵌入式</tag>
       
       <tag>嵌入式组件</tag>
       
@@ -131,18 +115,14 @@
     
     <categories>
       
-      <category>嵌入式通用组件设计</category>
+      <category>嵌入式</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>嵌入式</tag>
-      
       <tag>嵌入式组件</tag>
-      
-      <tag>按键检测</tag>
       
     </tags>
     
@@ -160,16 +140,14 @@
     
     <categories>
       
-      <category>蓝牙技术</category>
+      <category>嵌入式</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>BT</tag>
-      
-      <tag>BLE</tag>
+      <tag>蓝牙技术</tag>
       
     </tags>
     
@@ -187,16 +165,12 @@
     
     <categories>
       
-      <category>嵌入式通用组件设计</category>
+      <category>嵌入式</category>
       
     </categories>
     
     
     <tags>
-      
-      <tag>嵌入式</tag>
-      
-      <tag>GUI</tag>
       
       <tag>嵌入式组件</tag>
       
@@ -216,7 +190,7 @@
     
     <categories>
       
-      <category>Cortex</category>
+      <category>嵌入式</category>
       
     </categories>
     
@@ -291,16 +265,14 @@
     
     <categories>
       
-      <category>嵌入式通用型模块设计</category>
+      <category>嵌入式</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>嵌入式</tag>
-      
-      <tag>OTA</tag>
+      <tag>嵌入式模块设计</tag>
       
     </tags>
     
@@ -325,9 +297,7 @@
     
     <tags>
       
-      <tag>嵌入式</tag>
-      
-      <tag>STORAGE</tag>
+      <tag>嵌入式模块设计</tag>
       
     </tags>
     
@@ -352,9 +322,7 @@
     
     <tags>
       
-      <tag>嵌入式</tag>
-      
-      <tag>GUI</tag>
+      <tag>嵌入式模块设计</tag>
       
     </tags>
     
@@ -379,9 +347,7 @@
     
     <tags>
       
-      <tag>嵌入式</tag>
-      
-      <tag>PSM</tag>
+      <tag>嵌入式模块设计</tag>
       
     </tags>
     
@@ -424,16 +390,14 @@
     
     <categories>
       
-      <category>OS</category>
+      <category>嵌入式</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>RTOS</tag>
-      
-      <tag>嵌入式</tag>
+      <tag>OS</tag>
       
     </tags>
     
@@ -458,7 +422,7 @@
     
     <tags>
       
-      <tag>SDL</tag>
+      <tag>图形库</tag>
       
     </tags>
     
@@ -476,7 +440,7 @@
     
     <categories>
       
-      <category>嵌入式通讯协议</category>
+      <category>嵌入式协议</category>
       
     </categories>
     
@@ -484,8 +448,6 @@
     <tags>
       
       <tag>通讯协议</tag>
-      
-      <tag>CAN</tag>
       
     </tags>
     
@@ -503,7 +465,7 @@
     
     <categories>
       
-      <category>嵌入式通讯协议</category>
+      <category>嵌入式</category>
       
     </categories>
     
@@ -511,8 +473,6 @@
     <tags>
       
       <tag>通讯协议</tag>
-      
-      <tag>USB</tag>
       
     </tags>
     
@@ -782,7 +742,7 @@
     
     <categories>
       
-      <category>嵌入式协议</category>
+      <category>嵌入式</category>
       
     </categories>
     
@@ -807,7 +767,7 @@
     
     <categories>
       
-      <category>嵌入式协议</category>
+      <category>嵌入式</category>
       
     </categories>
     
@@ -832,7 +792,7 @@
     
     <categories>
       
-      <category>嵌入式协议</category>
+      <category>嵌入式</category>
       
     </categories>
     
@@ -882,7 +842,7 @@
     
     <categories>
       
-      <category>开发模式</category>
+      <category>开发方法</category>
       
     </categories>
     
@@ -939,8 +899,6 @@
     
     <tags>
       
-      <tag>架构设计</tag>
-      
       <tag>设计原则</tag>
       
     </tags>
@@ -984,7 +942,7 @@
     
     <categories>
       
-      <category>学习</category>
+      <category>学习方法</category>
       
     </categories>
     
@@ -1086,16 +1044,16 @@
     
     <categories>
       
-      <category>架构设计</category>
+      <category>嵌入式</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>嵌入式</tag>
-      
       <tag>架构设计</tag>
+      
+      <tag>嵌入式模块设计</tag>
       
     </tags>
     
