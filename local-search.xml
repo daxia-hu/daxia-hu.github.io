@@ -4,6 +4,153 @@
   
   
   <entry>
+    <title>动态内存管理实现</title>
+    <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2022/11/17/%E7%BB%84%E4%BB%B6-%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%AE%9E%E7%8E%B0/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式通用组件设计</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式</tag>
+      
+      <tag>嵌入式组件</tag>
+      
+      <tag>malloc</tag>
+      
+      <tag>heap</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>IPC实现</title>
+    <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-IPC/"/>
+    <url>/2022/11/17/%E7%BB%84%E4%BB%B6-IPC/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式通用组件设计</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式</tag>
+      
+      <tag>嵌入式组件</tag>
+      
+      <tag>IPC</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>交互shell实现</title>
+    <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E4%BA%A4%E4%BA%92shell%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2022/11/17/%E7%BB%84%E4%BB%B6-%E4%BA%A4%E4%BA%92shell%E5%AE%9E%E7%8E%B0/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式通用组件设计</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式</tag>
+      
+      <tag>嵌入式组件</tag>
+      
+      <tag>shell</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>任务调度实现</title>
+    <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2022/11/17/%E7%BB%84%E4%BB%B6-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式通用组件设计</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式</tag>
+      
+      <tag>嵌入式组件</tag>
+      
+      <tag>OS</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>按键检测实现</title>
+    <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%8C%89%E9%94%AE%E6%A3%80%E6%B5%8B%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%8C%89%E9%94%AE%E6%A3%80%E6%B5%8B%E5%AE%9E%E7%8E%B0/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式通用组件设计</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式</tag>
+      
+      <tag>嵌入式组件</tag>
+      
+      <tag>按键检测</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>蓝牙技术基础</title>
     <link href="/2022/11/13/%E8%93%9D%E7%89%99%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/"/>
     <url>/2022/11/13/%E8%93%9D%E7%89%99%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/</url>
@@ -23,6 +170,35 @@
       <tag>BT</tag>
       
       <tag>BLE</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>GUI实现</title>
+    <link href="/2022/11/12/%E7%BB%84%E4%BB%B6-UI%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2022/11/12/%E7%BB%84%E4%BB%B6-UI%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式通用组件设计</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式</tag>
+      
+      <tag>GUI</tag>
+      
+      <tag>嵌入式组件</tag>
       
     </tags>
     
@@ -161,8 +337,8 @@
   
   <entry>
     <title>嵌入式GUI设计</title>
-    <link href="/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8FGUI%E8%AE%BE%E8%AE%A1/"/>
-    <url>/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8FGUI%E8%AE%BE%E8%AE%A1/</url>
+    <link href="/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8FGUI%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8FGUI%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/</url>
     
     <content type="html"><![CDATA[]]></content>
     
