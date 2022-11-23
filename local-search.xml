@@ -833,6 +833,31 @@
   
   
   <entry>
+    <title>嵌入式软件需要掌握的简单硬件知识</title>
+    <link href="/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86/"/>
+    <url>/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86/</url>
+    
+    <content type="html"><![CDATA[<h2 id="三极管的通断判断"><a href="#三极管的通断判断" class="headerlink" title="三极管的通断判断"></a>三极管的通断判断</h2><h2 id="GPIO的内部上下拉选择"><a href="#GPIO的内部上下拉选择" class="headerlink" title="GPIO的内部上下拉选择"></a>GPIO的内部上下拉选择</h2><h2 id="常用运放电路公式"><a href="#常用运放电路公式" class="headerlink" title="常用运放电路公式"></a>常用运放电路公式</h2><h2 id="…"><a href="#…" class="headerlink" title="…"></a>…</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式软件需要掌握的简单硬件知识</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>领域驱动设计</title>
     <link href="/2022/10/12/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/"/>
     <url>/2022/10/12/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/</url>
