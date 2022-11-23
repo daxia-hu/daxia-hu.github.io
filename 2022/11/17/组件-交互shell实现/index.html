@@ -16,15 +16,15 @@
   <meta name="author" content="胡大侠">
   <meta name="keywords" content="学习">
   
-    <meta name="description" content="胡大侠的个人记录">
+    <meta name="description" content="基于链表的嵌入式交互shell实现需求分析 嵌入式产品中一般都会有一个通过串口或者USB等通讯方式实现的与开发人员或者测试人员交互的模块，每个产品可能的实现的方式不一样，本模块的目标是实现一个方便移植的通用性SHELL模块。 功能性需求： 实现可以在项目的任何地方都可以注册命令 实现用户输入命令或者带参命令可以调用相关回调函数以及对参数的解析 实现对用户输入的十进制、十六进制数字进行解析取值 实现">
 <meta property="og:type" content="article">
 <meta property="og:title" content="交互shell实现">
 <meta property="og:url" content="https://hudaxia.top/2022/11/17/%E7%BB%84%E4%BB%B6-%E4%BA%A4%E4%BA%92shell%E5%AE%9E%E7%8E%B0/index.html">
 <meta property="og:site_name" content="HuDaXia">
-<meta property="og:description" content="胡大侠的个人记录">
+<meta property="og:description" content="基于链表的嵌入式交互shell实现需求分析 嵌入式产品中一般都会有一个通过串口或者USB等通讯方式实现的与开发人员或者测试人员交互的模块，每个产品可能的实现的方式不一样，本模块的目标是实现一个方便移植的通用性SHELL模块。 功能性需求： 实现可以在项目的任何地方都可以注册命令 实现用户输入命令或者带参命令可以调用相关回调函数以及对参数的解析 实现对用户输入的十进制、十六进制数字进行解析取值 实现">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-17T11:45:21.000Z">
-<meta property="article:modified_time" content="2022-11-17T09:26:28.935Z">
+<meta property="article:modified_time" content="2022-11-23T01:38:50.522Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="嵌入式组件">
 <meta name="twitter:card" content="summary_large_image">
@@ -253,7 +253,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          686 字
         
       </span>
     
@@ -264,7 +264,7 @@
         
         
         
-          1 分钟
+          6 分钟
         
       </span>
     
@@ -322,7 +322,7 @@
         aria-expanded="true"
       >
         嵌入式
-        <span class="list-group-count">(15)</span>
+        <span class="list-group-count">(16)</span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
@@ -462,6 +462,15 @@
     
       
       
+        <a href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0/" title="消息队列实现"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">消息队列实现</span>
+        </a>
+      
+    
+      
+      
         <a href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%AE%9E%E7%8E%B0/" title="动态内存管理实现"
            class="list-group-item list-group-item-action
            ">
@@ -493,7 +502,36 @@
             
               <div class="markdown-body">
                 
-                
+                <h1 id="基于链表的嵌入式交互shell实现"><a href="#基于链表的嵌入式交互shell实现" class="headerlink" title="基于链表的嵌入式交互shell实现"></a>基于链表的嵌入式交互shell实现</h1><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><ul>
+<li>嵌入式产品中一般都会有一个通过串口或者USB等通讯方式实现的与开发人员或者测试人员交互的模块，每个产品可能的实现的方式不一样，本模块的目标是实现一个方便移植的通用性SHELL模块。</li>
+<li>功能性需求：<ol>
+<li>实现可以在项目的任何地方都可以注册命令</li>
+<li>实现用户输入命令或者带参命令可以调用相关回调函数以及对参数的解析</li>
+<li>实现对用户输入的十进制、十六进制数字进行解析取值</li>
+<li>实现基本鉴权功能</li>
+</ol>
+</li>
+<li>非功能性需求：<ol>
+<li>可以方便移植</li>
+<li>无需太多学习成本即可上手使用</li>
+<li>源代码实现简洁易读，如果不满足极端场景下使用可以交给用户选择配置</li>
+</ol>
+</li>
+</ul>
+<h2 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h2><h3 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h3><ol>
+<li>可移植性高</li>
+<li>可读性高</li>
+<li>可使用性高</li>
+</ol>
+<h3 id="设计原理"><a href="#设计原理" class="headerlink" title="设计原理"></a>设计原理</h3><ul>
+<li>结合需求里面的“可以在项目的任意地方注册shell命令”，命令采用双向链表实现。<blockquote>
+<p>链表的具体实现细节参考文章<a href="https://hudaxia.top/2022/10/12/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8/"><strong>链表</strong></a></p>
+</blockquote>
+</li>
+<li>单个shell节点需要做出抽象，shell需要挂在链表上则需要包含节点元素；shell需包含命令字符串和需要执行的函数指针。</li>
+<li>命令包含参数，待传参数个数不确定的情况下，则命令执行的回调函数的形参应该是(const uint8_t argc,const char *argv[]),与main函数形参类型一致。<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">typedef</span> <span class="hljs-title function_">uint8_t</span><span class="hljs-params">(*Shell_function)</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">uint8_t</span> argc,<span class="hljs-type">const</span> <span class="hljs-type">char</span> *argv[])</span>;<br><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> _<span class="hljs-title">SHELLNODE</span></span><br><span class="hljs-class">&#123;</span><br>    Node node;                 <span class="hljs-comment">//挂在链表上的节点</span><br>    <span class="hljs-type">const</span> <span class="hljs-type">char</span> *name;          <span class="hljs-comment">//命令字符串</span><br>    Shell_function handleFunc; <span class="hljs-comment">//命令回调函数</span><br>&#125; ShellNode;<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="编码实现"><a href="#编码实现" class="headerlink" title="编码实现"></a>编码实现</h2>
                 
               </div>
             
@@ -557,7 +595,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2022年11月17日</div>
+          <div>2022年11月23日</div>
         </div>
       
       
