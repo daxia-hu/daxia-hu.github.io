@@ -33,7 +33,7 @@
     <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-IPC/"/>
     <url>/2022/11/17/%E7%BB%84%E4%BB%B6-IPC/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="IPC组件"><a href="#IPC组件" class="headerlink" title="IPC组件"></a>IPC组件</h1><h2 id="模块简介"><a href="#模块简介" class="headerlink" title="模块简介"></a>模块简介</h2><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h2 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h2><h2 id="落地实践"><a href="#落地实践" class="headerlink" title="落地实践"></a>落地实践</h2>]]></content>
     
     
     <categories>
@@ -223,6 +223,81 @@
     <tags>
       
       <tag>Cortex</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>mqtt协议</title>
+    <link href="/2022/11/12/MQTT/"/>
+    <url>/2022/11/12/MQTT/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>网络协议</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>protobuf协议</title>
+    <link href="/2022/11/12/protobuf/"/>
+    <url>/2022/11/12/protobuf/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>传输控制协议</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>modbus协议</title>
+    <link href="/2022/11/12/MODBUS/"/>
+    <url>/2022/11/12/MODBUS/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>传输控制协议</tag>
       
     </tags>
     
@@ -515,7 +590,7 @@
     
     <categories>
       
-      <category>嵌入式协议</category>
+      <category>协议</category>
       
     </categories>
     
@@ -817,7 +892,7 @@
     
     <categories>
       
-      <category>嵌入式</category>
+      <category>协议</category>
       
     </categories>
     
@@ -842,7 +917,7 @@
     
     <categories>
       
-      <category>嵌入式</category>
+      <category>协议</category>
       
     </categories>
     
@@ -867,7 +942,7 @@
     
     <categories>
       
-      <category>嵌入式</category>
+      <category>协议</category>
       
     </categories>
     
