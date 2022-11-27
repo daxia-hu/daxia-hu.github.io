@@ -8,7 +8,7 @@
     <link href="/2022/11/27/%E7%BB%84%E4%BB%B6-%E7%8A%B6%E6%80%81%E6%9C%BA%E5%AE%9E%E7%8E%B0/"/>
     <url>/2022/11/27/%E7%BB%84%E4%BB%B6-%E7%8A%B6%E6%80%81%E6%9C%BA%E5%AE%9E%E7%8E%B0/</url>
     
-    <content type="html"><![CDATA[<h1 id="状态机实现"><a href="#状态机实现" class="headerlink" title="状态机实现"></a>状态机实现</h1><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><p><img src="/img/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8.png" alt="简单状态机举例"></p><ul><li>包含状态间的切换处理</li><li>包含状态事件处理函数</li><li>包含复合状态实现</li></ul><h2 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h2><h3 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h3><h3 id="设计原理"><a href="#设计原理" class="headerlink" title="设计原理"></a>设计原理</h3><ul><li>每个状态中包含一个链表头，链表头中包含有效节点的个数，如果有效个数大于1，则是复合状态，复合状态中的子状态以链表的形式挂在链表上</li></ul><h2 id="实践落地"><a href="#实践落地" class="headerlink" title="实践落地"></a>实践落地</h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="状态机实现"><a href="#状态机实现" class="headerlink" title="状态机实现"></a>状态机实现</h1><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><p><img src="/img/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8.png" alt="简单状态机举例"></p><ul><li>包含状态间的切换处理</li><li>包含状态事件处理函数</li><li>包含复合状态实现</li></ul><h2 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h2><h3 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h3><h3 id="设计原理"><a href="#设计原理" class="headerlink" title="设计原理"></a>设计原理</h3><ul><li>每个状态中包含一个链表头，链表头中包含有效节点的个数，如果有效个数大于1，则是复合状态，复合状态中的子状态以链表的形式挂在链表上<br><img src="/img/%E7%8A%B6%E6%80%81%E6%9C%BA%E8%AE%BE%E8%AE%A1.png" alt="简单状态机举例"></li></ul><h2 id="实践落地"><a href="#实践落地" class="headerlink" title="实践落地"></a>实践落地</h2>]]></content>
     
     
     <categories>
