@@ -54,31 +54,6 @@
   
   
   <entry>
-    <title>IPC实现</title>
-    <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-IPC/"/>
-    <url>/2022/11/17/%E7%BB%84%E4%BB%B6-IPC/</url>
-    
-    <content type="html"><![CDATA[<h1 id="IPC组件"><a href="#IPC组件" class="headerlink" title="IPC组件"></a>IPC组件</h1><h2 id="模块简介"><a href="#模块简介" class="headerlink" title="模块简介"></a>模块简介</h2><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h2 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h2><h2 id="落地实践"><a href="#落地实践" class="headerlink" title="落地实践"></a>落地实践</h2>]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>嵌入式组件</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>交互shell实现</title>
     <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E4%BA%A4%E4%BA%92shell%E5%AE%9E%E7%8E%B0/"/>
     <url>/2022/11/17/%E7%BB%84%E4%BB%B6-%E4%BA%A4%E4%BA%92shell%E5%AE%9E%E7%8E%B0/</url>
@@ -161,6 +136,31 @@
     <url>/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0/</url>
     
     <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式组件</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>IPC实现</title>
+    <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="IPC组件"><a href="#IPC组件" class="headerlink" title="IPC组件"></a>IPC组件</h1><h2 id="模块简介"><a href="#模块简介" class="headerlink" title="模块简介"></a>模块简介</h2><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h2 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h2><h2 id="落地实践"><a href="#落地实践" class="headerlink" title="落地实践"></a>落地实践</h2><p><a href="https://github.com/daxia-hu/cuteIpc">实践仓库-github</a></p>]]></content>
     
     
     <categories>
