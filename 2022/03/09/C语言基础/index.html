@@ -1,0 +1,998 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="胡大侠">
+  <meta name="keywords" content="学习">
+  
+    <meta name="description" content="一、C语言简介简介 C语言是一门面向过程的计算机编程语言，与C++、C#、Java等面向对象编程语言有所不同。C语言的设计目标是提供一种能以简易的方式编译、处理低级存储器、仅产生少量的机器码以及不需要任何运行环境支持便能运行的编程语言。C语言描述问题比汇编语言迅速、工作量小、可读性好、易于调试、修改和移植，而代码质量与汇编语言相当。C语言一般只比汇编语言代码生成的目标程序效率低10%-20%。因此">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C语言基础">
+<meta property="og:url" content="https://hudaxia.top/2022/03/09/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="HuDaXia">
+<meta property="og:description" content="一、C语言简介简介 C语言是一门面向过程的计算机编程语言，与C++、C#、Java等面向对象编程语言有所不同。C语言的设计目标是提供一种能以简易的方式编译、处理低级存储器、仅产生少量的机器码以及不需要任何运行环境支持便能运行的编程语言。C语言描述问题比汇编语言迅速、工作量小、可读性好、易于调试、修改和移植，而代码质量与汇编语言相当。C语言一般只比汇编语言代码生成的目标程序效率低10%-20%。因此">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-03-09T11:01:52.000Z">
+<meta property="article:modified_time" content="2022-12-27T08:37:34.537Z">
+<meta property="article:author" content="胡大侠">
+<meta property="article:tag" content="计算机语言">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>C语言基础 - HuDaXia</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"hudaxia.top","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":100,"cursorChar":"|","loop":true,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"always","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#13a","options":{"showSpinner":true,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 60vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>HuDaXia</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/books/">
+                <i class="iconfont icon-home-fill"></i>
+                读书
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="C语言基础"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        胡大侠
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-03-09 19:01" pubdate>
+          2022年3月9日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.5k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          38 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
+  
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="计算机语言"
+        id="heading-b9576a222e035420cbc3cb93a6073e6e" role="tab" data-toggle="collapse" href="#collapse-b9576a222e035420cbc3cb93a6073e6e"
+        aria-expanded="true"
+      >
+        计算机语言
+        <span class="list-group-count">(7)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-b9576a222e035420cbc3cb93a6073e6e"
+           role="tabpanel" aria-labelledby="heading-b9576a222e035420cbc3cb93a6073e6e">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2022/03/09/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" title="C语言基础"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">C语言基础</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/06/12/PYTHON%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" title="PYTHON基础"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">PYTHON基础</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/07/12/SDL%E5%BA%93%E5%AD%A6%E4%B9%A0/" title="SDL库"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">SDL库</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/10/10/JAVA%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" title="JAVA基础"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">JAVA基础</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/10/20/QT%E5%BA%93%E5%AD%A6%E4%B9%A0-CPP/" title="QT(CPP)"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">QT(CPP)</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/11/21/printf%E5%87%BD%E6%95%B0/" title="printf函数解析"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">printf函数解析</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2022/12/12/C%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/" title="C项目编码规范"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">C项目编码规范</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+  </aside>
+
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">C语言基础</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="一、C语言简介"><a href="#一、C语言简介" class="headerlink" title="一、C语言简介"></a>一、C语言简介</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote>
+<p>C语言是一门面向过程的计算机编程语言，与C++、C#、Java等面向对象编程语言有所不同。C语言的设计目标是提供一种能以简易的方式编译、处理低级存储器、仅产生少量的机器码以及不需要任何运行环境支持便能运行的编程语言。C语言描述问题比汇编语言迅速、工作量小、可读性好、易于调试、修改和移植，而代码质量与汇编语言相当。C语言一般只比汇编语言代码生成的目标程序效率低10%-20%。因此，C语言可以编写系统软件。 </p>
+</blockquote>
+<blockquote>
+<p>当前阶段，在编程领域中，C语言的运用非常之多，它兼顾了高级语言和汇编语言的优点，相较于其它编程语言具有较大优势。计算机系统设计以及应用程序编写是C语言应用的两大领域。同时，C语言的普适较强，在许多计算机操作系统中都能够得到适用，且效率显著。</p>
+</blockquote>
+<blockquote>
+<p>C语言拥有经过了漫长发展历史的完整的理论体系，在编程语言中具有举足轻重的地位。</p>
+</blockquote>
+<h3 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h3><blockquote>
+<p>C语言诞生于美国的贝尔实验室，由丹尼斯·里奇（Dennis MacAlistair Ritchie）以肯尼斯·蓝·汤普森（Kenneth Lane Thompson）设计的B语言为基础发展而来，在它的主体设计完成后，汤普森和里奇用它完全重写了UNIX，且随着UNIX的发展，c语言也得到了不断的完善。为了利于C语言的全面推广，许多专家学者和硬件厂商联合组成了C语言标准委员会，并在之后的1989年，诞生了第一个完备的C标准，简称“C89”，也就是“ANSI C”，截至2020年，最新的C语言标准为2018年6月发布的“C18”。</p>
+</blockquote>
+<blockquote>
+<p>C语言之所以命名为C，是因为C语言源自Ken Thompson发明的B语言，而B语言则源自BCPL语言。</p>
+</blockquote>
+<blockquote>
+<p>1967年，剑桥大学的Martin Richards对CPL语言进行了简化，于是产生了BCPL（Basic Combined Programming Language）语言。</p>
+</blockquote>
+<blockquote>
+<p>20世纪60年代，美国AT&amp;T公司贝尔实验室（AT&amp;T Bell Laboratories）的研究员肯·汤普森（Kenneth Lane Thompson）闲来无事，手痒难耐，想玩一个他自己编的，模拟在太阳系航行的电子游戏——Space Travel。他背着老板，找到了台空闲的小型计算机——PDP-7。但这台电脑没有操作系统，而游戏必须使用操作系统的一些功能，于是他着手为PDP-7开发操作系统。后来，这个操作系统被命名为——UNICS（Uniplexed Information and Computing Service）。</p>
+</blockquote>
+<blockquote>
+<p>1969年，美国贝尔实验室的Ken Thompson，以BCPL语言为基础，设计出很简单且很接近硬件的B语言（取BCPL的首字母），并且用B语言写了初版UNIX操作系统（叫UNICS）。</p>
+</blockquote>
+<blockquote>
+<p>1971年，同样酷爱Space Travel的丹尼斯·里奇为了能早点儿玩上游戏，加入了汤普森的开发项目，合作开发UNIX。他的主要工作是改造B语言，使其更成熟。</p>
+</blockquote>
+<blockquote>
+<p>1972年，美国贝尔实验室的丹尼斯·里奇在B语言的基础上最终设计出了一种新的语言，他取了BCPL的第二个字母作为这种语言的名字，这就是C语言。</p>
+</blockquote>
+<blockquote>
+<p>1973年初，C语言的主体完成。汤普森和里奇迫不及待地开始用它完全重写了UNIX。此时，编程的乐趣使他们已经完全忘记了那个“Space Travel”，一门心思地投入到了UNIX和C语言的开发中。随着UNIX的发展，C语言自身也在不断地完善。直到2020年，各种版本的UNIX内核和周边工具仍然使用C语言作为最主要的开发语言，其中还有不少继承汤普逊和里奇之手的代码。</p>
+</blockquote>
+<blockquote>
+<p>在开发中，他们还考虑把UNIX移植到其他类型的计算机上使用。C语言强大的移植性（Portability）在此显现。机器语言和汇编语言都不具有移植性，为x86开发的程序，不可能在Alpha、SPARC和ARM等机器上运行。而C语言程序则可以使用在任意架构的处理器上，只要那种架构的处理器具有对应的C语言编译器和库，然后将C源代码编译、连接成目标二进制文件之后即可在哪种架构的处理器运行。</p>
+</blockquote>
+<blockquote>
+<p>1977年，丹尼斯·里奇发表了不依赖于具体机器系统的C语言编译文本《可移植的C语言编译程序》。</p>
+</blockquote>
+<blockquote>
+<p>C语言继续发展，在1982年，很多有识之士和美国国家标准协会（ANSI）为了使C语言健康地发展下去，决定成立C标准委员会，建立C语言的标准。委员会由硬件厂商、编译器及其他软件工具生产商、软件设计师、顾问、学术界人士、C语言作者和应用程序员组成。1989年，ANSI发布了第一个完整的C语言标准——ANSI X3.159-1989，简称“C89”，不过人们也习惯称其为“ANSI C”。C89在1990年被国际标准化组织（International Standard Organization，ISO）一字不改地采纳，ISO官方给予的名称为：ISO&#x2F;IEC 9899，所以ISO&#x2F;IEC9899:1990也通常被简称为“C90”。1999年，在做了一些必要的修正和完善后，ISO发布了新的C语言标准，命名为ISO&#x2F;IEC 9899:1999，简称“C99”。在2011年12月8日，ISO又正式发布了新的标准，称为ISO&#x2F;IEC9899:2011，简称为“C11”。</p>
+</blockquote>
+<ul>
+<li>C语言不同的标准之间有语法区别，请一定要确认所处的标准，不然会出现很多莫名的语法错误，如按照C99标准写的代码使用C89标准编译器编译会出现变量不在函数开头声明、文件最后一行没有空行等错误…</li>
+</ul>
+<h2 id="二、当前现状"><a href="#二、当前现状" class="headerlink" title="二、当前现状"></a>二、当前现状</h2><p>当前由于物联网行业的发展,C语言因为在物联网设备的易用性等特点,使得C语言拥有比较大的市场,在python、java等语言快速发展的今天，C语言依旧保持很大的市场份额。C语言除了基本语法，一定要结合所运行的底层硬件进行学习，才能在物联网飞速发展、嵌入式开发人员快速增长的今天保持更强的竞争性。</p>
+<h3 id="C语言简单示例"><a href="#C语言简单示例" class="headerlink" title="C语言简单示例"></a>C语言简单示例</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;hello c!&quot;</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="三、C语言基础"><a href="#三、C语言基础" class="headerlink" title="三、C语言基础"></a>三、C语言基础</h2><h3 id="进制的概念"><a href="#进制的概念" class="headerlink" title="进制的概念"></a>进制的概念</h3><ul>
+<li>几进制简单的说就是逢几进一，如十进制就是逢十进一，八进制就是逢八进一，二进制就是逢二进一。</li>
+<li>数字开头用“0”开头则为八进制表示法如“0221”，表示八进制数字值为2* 8 * 8 + 2 * 8 + 1，结果为138；</li>
+<li>数字开头用“0x”表示则为十六进制表示法，因为阿拉伯数字0<del>9不足以表示0</del>15的值，所以引入a<del>f，表示10</del>15的数，如“0x112”，表示的16进制数值为 1 * 16 * 16 + 1 * 16 + 2，结果为274；</li>
+<li>数字开头用“0b”表示则为二进制表示法，如“0b1101”，表示的二进制数值为 1 * 2 * 2 * 2 + 1 * 2 * 2 + 0 * 2 + 1，结果为13；</li>
+<li>不管数字用什么进制表示，实际表示的数值大小不变，进制只是一种表示方法。</li>
+</ul>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>C语言在变量声明和定义时需要明确变量的类型，可以使用sizeof运算符对不同计算机平台上的数据类型的字节大小进行计算。</p>
+<h4 id="有符号和无符号类型"><a href="#有符号和无符号类型" class="headerlink" title="有符号和无符号类型"></a>有符号和无符号类型</h4><ul>
+<li>有符号和无符号指的是数字的正负值<ol>
+<li>有符号类型</li>
+<li>无符号类型</li>
+</ol>
+</li>
+</ul>
+<h4 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h4><ul>
+<li>整型是用来表示整数数字的类型<ol>
+<li>int<br> 整型，int类型大小一般是一个机器字长，一般大小为4个字节；</li>
+<li>short<br> 短整型，与short int是同一个类型，大小不能比整型大，一般大小为两个字节；</li>
+<li>long<br> 长整型，与 long int是同一个类型，大小不能比整型小，一般占用大小为4个字节；</li>
+<li>long long<br> 长长整型，与long long int是同一个类型，大小不能比长整型小，一般占用大小为8个字节；</li>
+</ol>
+</li>
+<li>计算整型占用内存大小<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&quot;stdio.h&quot;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;int :%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">int</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;short :%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">short</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;short int:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">short</span> <span class="hljs-type">int</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long :%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long int:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span> <span class="hljs-type">int</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long long:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span> <span class="hljs-type">long</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long long int:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-type">int</span>));<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br>我的<span class="hljs-number">64</span>位x86windowsPC输出结果：<br><span class="hljs-type">int</span> :<span class="hljs-number">4</span><br><span class="hljs-type">short</span> :<span class="hljs-number">2</span><br><span class="hljs-type">short</span> <span class="hljs-type">int</span>:<span class="hljs-number">2</span><br><span class="hljs-type">long</span> :<span class="hljs-number">4</span><br><span class="hljs-type">long</span> <span class="hljs-type">int</span>:<span class="hljs-number">4</span><br><span class="hljs-type">long</span> <span class="hljs-type">long</span>:<span class="hljs-number">8</span><br><span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-type">int</span>:<span class="hljs-number">8</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h4><pre><code class="hljs">1. char
+</code></pre>
+<h4 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h4><ul>
+<li>浮点型用来表示包含小数点的数字<ol>
+<li>float</li>
+<li>double</li>
+</ol>
+</li>
+</ul>
+<h4 id="枚举类型"><a href="#枚举类型" class="headerlink" title="枚举类型"></a>枚举类型</h4><h4 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h4><h4 id="结构体类型"><a href="#结构体类型" class="headerlink" title="结构体类型"></a>结构体类型</h4><h4 id="联合体类型-共用体类型"><a href="#联合体类型-共用体类型" class="headerlink" title="联合体类型(共用体类型)"></a>联合体类型(共用体类型)</h4><pre><code class="hljs">联合体是一种特殊的数据类型，联合体内部有多个成员，但是同一时刻只有一个成员在占用空间，联合体占用的大小为成员中的最大大小。
+</code></pre>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">union</span></span><br><span class="hljs-class">&#123;</span><br>    <span class="hljs-class"><span class="hljs-keyword">struct</span></span><br><span class="hljs-class">    &#123;</span><br>        <span class="hljs-type">uint8_t</span> one:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> two:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> three:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> four:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> five:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> six:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> seven:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> eight:<span class="hljs-number">1</span>;<br>    &#125;Bytes;<br>    <span class="hljs-type">uint8_t</span> data1;<br>    <span class="hljs-type">uint8_t</span> data2;<br>&#125;test;<br></code></pre></td></tr></table></figure>
+<pre><code class="hljs">上面的联合体中包含三个成员，总占用的大小是一个字节，当给其中一个成员赋值时，其他两个成员的值也会跟着改变。Bytes中的one对应data1和data2的二进制[0]位。如果联合的大小超过一个字节，则字节顺序需要看平台内核是大端还是小端。
+</code></pre>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">union</span></span><br><span class="hljs-class">&#123;</span><br>    <span class="hljs-type">short</span> <span class="hljs-type">int</span> m;<br>    <span class="hljs-type">char</span> n;<br>&#125;un;<br>un.m = <span class="hljs-number">1</span>;<br><span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,un.n);<br></code></pre></td></tr></table></figure>
+<p>上述代码可以用来判断机器的大小端，如果n等于1，则机器是小端，如果n等于0，则机器是大端。</p>
+<blockquote>
+<ul>
+<li>大端：低位数据在高地址，0x12345678的实际存储方式为0x12345678</li>
+<li>小端：高位数据在高地址，0x12345678的实际存储方式为0x78563412</li>
+</ul>
+</blockquote>
+<h4 id="空类型"><a href="#空类型" class="headerlink" title="空类型"></a>空类型</h4><h4 id="指针类型"><a href="#指针类型" class="headerlink" title="指针类型"></a>指针类型</h4><h4 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h4><h3 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h3><h4 id="算术操作符"><a href="#算术操作符" class="headerlink" title="算术操作符"></a>算术操作符</h4><h4 id="位操作符"><a href="#位操作符" class="headerlink" title="位操作符"></a>位操作符</h4><ul>
+<li>原码</li>
+<li>反码</li>
+<li>补码</li>
+</ul>
+<h4 id="复合赋值符"><a href="#复合赋值符" class="headerlink" title="复合赋值符"></a>复合赋值符</h4><h4 id="单目赋值符"><a href="#单目赋值符" class="headerlink" title="单目赋值符"></a>单目赋值符</h4><h4 id="关系赋值符"><a href="#关系赋值符" class="headerlink" title="关系赋值符"></a>关系赋值符</h4><h4 id="逻辑赋值符"><a href="#逻辑赋值符" class="headerlink" title="逻辑赋值符"></a>逻辑赋值符</h4><h4 id="条件赋值符"><a href="#条件赋值符" class="headerlink" title="条件赋值符"></a>条件赋值符</h4><h4 id="逗号表达式"><a href="#逗号表达式" class="headerlink" title="逗号表达式"></a>逗号表达式</h4><h4 id="下标引用、函数调用和结构成员"><a href="#下标引用、函数调用和结构成员" class="headerlink" title="下标引用、函数调用和结构成员"></a>下标引用、函数调用和结构成员</h4><h3 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h3><h3 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h3><h3 id="宏"><a href="#宏" class="headerlink" title="宏"></a>宏</h3><h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h3 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h3><h3 id="常见语法结构"><a href="#常见语法结构" class="headerlink" title="常见语法结构"></a>常见语法结构</h3><h4 id="条件判断"><a href="#条件判断" class="headerlink" title="条件判断"></a>条件判断</h4><h4 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h4><h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><h2 id="C语言应用"><a href="#C语言应用" class="headerlink" title="C语言应用"></a>C语言应用</h2><h3 id="动态内存管理"><a href="#动态内存管理" class="headerlink" title="动态内存管理"></a>动态内存管理</h3><h3 id="…"><a href="#…" class="headerlink" title="…"></a>…</h3><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/c%E8%AF%AD%E8%A8%80/105958">(C语言)百度百科</a></li>
+<li><a href="https://hudaxia.top/books/">c专家编程</a></li>
+<li><a href="https://hudaxia.top/books/">c primer plus</a></li>
+<li><a href="https://hudaxia.top/books/">c和指针</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.nowcoder.com/tutorial/10002/8f7c3e0e7efd441d8f7c9c8d43c2a0f4">牛客 c语言教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/363380373">C语言标准——C89、C99、C11、C17、C2x …</a></li>
+</ul>
+<h2 id="代码仓库"><a href="#代码仓库" class="headerlink" title="代码仓库"></a>代码仓库</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/daxia-hu/c.git">c语言仓库</a></li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/" class="category-chain-item">计算机语言</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/">#计算机语言</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>C语言基础</div>
+      <div>https://hudaxia.top/2022/03/09/C语言基础/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>胡大侠</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年3月9日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2022年12月27日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/03/15/stm32%E5%AF%84%E5%AD%98%E5%99%A8%E5%BC%80%E5%8F%91/" title="stm32寄存器编程">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">stm32寄存器编程</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/01/12/RTOS/" title="RTOS">
+                        <span class="hidden-mobile">RTOS</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"zWp7bxFbnQQxWZWkwLMc4EYf-gzGzoHsz","appKey":"IU72Kze9wABWu9DLgGbaLH9k","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <i class="iconfont icon-love"></i> <i class="iconfont icon-love"></i> <i class="iconfont icon-love"></i> <i class="iconfont icon-love"></i> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+    <!-- 备案信息 ICP for China -->
+    <div class="beian">
+  <span>
+    <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+      京ICP证256763号
+    </a>
+  </span>
+  
+    
+      <span>
+        <a
+          href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=222876"
+          rel="nofollow noopener"
+          class="beian-police"
+          target="_blank"
+        >
+          
+            <span style="visibility: hidden; width: 0">|</span>
+            <img src="/img/police_beian.png" srcset="/img/loading.gif" lazyload alt="police-icon"/>
+          
+          <span>京公网安备1177788号</span>
+        </a>
+      </span>
+    
+  
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":true,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+  <!--动态线条背景-->
+  <script type="text/javascript" color="220,220,220" opacity='0.7' zIndex="-2" count="200"
+    src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+  </script>
+  <!-- 雪花特效 -->
+  <script type="text/javascript" src="\js\snow.js"></script>
+  <!-- 爆炸红心效果 -->
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="/js/firework.js"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":300,"height":400},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+

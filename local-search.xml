@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>I2C通讯协议</title>
+    <link href="/2022/12/14/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-IIC/"/>
+    <url>/2022/12/14/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-IIC/</url>
+    
+    <content type="html"><![CDATA[<h1 id="I2C协议"><a href="#I2C协议" class="headerlink" title="I2C协议"></a>I2C协议</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>通讯协议</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>C项目编码规范</title>
     <link href="/2022/12/12/C%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     <url>/2022/12/12/C%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
@@ -223,6 +248,31 @@
     <tags>
       
       <tag>嵌入式组件</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>树</title>
+    <link href="/2022/11/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%91/"/>
+    <url>/2022/11/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%91/</url>
+    
+    <content type="html"><![CDATA[<h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>数据结构与算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>数据结构</tag>
       
     </tags>
     
@@ -506,6 +556,31 @@
   
   
   <entry>
+    <title>滤波算法</title>
+    <link href="/2022/10/23/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%BB%A4%E6%B3%A2%E7%AE%97%E6%B3%95/"/>
+    <url>/2022/10/23/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%BB%A4%E6%B3%A2%E7%AE%97%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>数据结构与算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>算法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>QT(CPP)</title>
     <link href="/2022/10/20/QT%E5%BA%93%E5%AD%A6%E4%B9%A0-CPP/"/>
     <url>/2022/10/20/QT%E5%BA%93%E5%AD%A6%E4%B9%A0-CPP/</url>
@@ -523,6 +598,81 @@
     <tags>
       
       <tag>计算机语言</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>stm32汇编编程</title>
+    <link href="/2022/10/16/stm32%E6%B1%87%E7%BC%96%E5%BC%80%E5%8F%91/"/>
+    <url>/2022/10/16/stm32%E6%B1%87%E7%BC%96%E5%BC%80%E5%8F%91/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>stm32</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>加密算法</title>
+    <link href="/2022/10/15/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/"/>
+    <url>/2022/10/15/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>数据结构与算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>算法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>费曼学习法</title>
+    <link href="/2022/10/15/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/"/>
+    <url>/2022/10/15/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>学习方法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>学习方法</tag>
       
     </tags>
     
@@ -556,434 +706,9 @@
   
   
   <entry>
-    <title>嵌入式OTA设计</title>
-    <link href="/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8FOTA%E8%AE%BE%E8%AE%A1/"/>
-    <url>/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8FOTA%E8%AE%BE%E8%AE%A1/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>嵌入式模块设计</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>嵌入式存储模块设计</title>
-    <link href="/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%98%E5%82%A8%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/"/>
-    <url>/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%98%E5%82%A8%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式通用型模块设计</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>嵌入式模块设计</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>嵌入式GUI设计</title>
-    <link href="/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8FGUI%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/"/>
-    <url>/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8FGUI%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式通用型模块设计</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>嵌入式模块设计</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>嵌入式PSM设计</title>
-    <link href="/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%BD%8E%E5%8A%9F%E8%80%97%E8%AE%BE%E8%AE%A1/"/>
-    <url>/2022/10/12/%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%BD%8E%E5%8A%9F%E8%80%97%E8%AE%BE%E8%AE%A1/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式通用型模块设计</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>嵌入式模块设计</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>PYTHON基础</title>
-    <link href="/2022/10/12/PYTHON%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/"/>
-    <url>/2022/10/12/PYTHON%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>计算机语言</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>计算机语言</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>RTOS</title>
-    <link href="/2022/10/12/RTOS/"/>
-    <url>/2022/10/12/RTOS/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>OS</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>SDL库</title>
-    <link href="/2022/10/12/SDL%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
-    <url>/2022/10/12/SDL%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>计算机语言</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>计算机语言</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>stm32寄存器编程</title>
-    <link href="/2022/10/12/stm32%E5%AF%84%E5%AD%98%E5%99%A8%E5%BC%80%E5%8F%91/"/>
-    <url>/2022/10/12/stm32%E5%AF%84%E5%AD%98%E5%99%A8%E5%BC%80%E5%8F%91/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>stm32</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>stm32汇编编程</title>
-    <link href="/2022/10/12/stm32%E6%B1%87%E7%BC%96%E5%BC%80%E5%8F%91/"/>
-    <url>/2022/10/12/stm32%E6%B1%87%E7%BC%96%E5%BC%80%E5%8F%91/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>stm32</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>CAN通讯协议</title>
-    <link href="/2022/10/12/CAN%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
-    <url>/2022/10/12/CAN%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>协议</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>通讯协议</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>USB通讯协议</title>
-    <link href="/2022/10/12/USB%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
-    <url>/2022/10/12/USB%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>通讯协议</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>加密算法</title>
-    <link href="/2022/10/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/"/>
-    <url>/2022/10/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>数据结构与算法</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>算法</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>排序算法</title>
-    <link href="/2022/10/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
-    <url>/2022/10/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>数据结构与算法</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>算法</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>哈希算法</title>
-    <link href="/2022/10/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95/"/>
-    <url>/2022/10/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>数据结构与算法</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>算法</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>控制算法</title>
-    <link href="/2022/10/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95/"/>
-    <url>/2022/10/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>数据结构与算法</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>算法</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>校验算法</title>
-    <link href="/2022/10/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95/"/>
-    <url>/2022/10/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>数据结构与算法</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>算法</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>滤波算法</title>
-    <link href="/2022/10/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%BB%A4%E6%B3%A2%E7%AE%97%E6%B3%95/"/>
-    <url>/2022/10/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%BB%A4%E6%B3%A2%E7%AE%97%E6%B3%95/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>数据结构与算法</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>算法</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>常用设计模式</title>
-    <link href="/2022/10/12/%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    <url>/2022/10/12/%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
+    <link href="/2022/10/13/%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <url>/2022/10/13/%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
     
     <content type="html"><![CDATA[]]></content>
     
@@ -1008,259 +733,9 @@
   
   
   <entry>
-    <title>树</title>
-    <link href="/2022/10/12/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%91/"/>
-    <url>/2022/10/12/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%91/</url>
-    
-    <content type="html"><![CDATA[<h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1>]]></content>
-    
-    
-    <categories>
-      
-      <category>数据结构与算法</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>数据结构</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>链表</title>
-    <link href="/2022/10/12/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8/"/>
-    <url>/2022/10/12/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8/</url>
-    
-    <content type="html"><![CDATA[<h1 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h1>]]></content>
-    
-    
-    <categories>
-      
-      <category>数据结构与算法</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>数据结构</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>队列</title>
-    <link href="/2022/10/12/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%98%9F%E5%88%97/"/>
-    <url>/2022/10/12/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%98%9F%E5%88%97/</url>
-    
-    <content type="html"><![CDATA[<h1 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h1>]]></content>
-    
-    
-    <categories>
-      
-      <category>数据结构与算法</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>数据结构</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>I2C通讯协议</title>
-    <link href="/2022/10/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-IIC/"/>
-    <url>/2022/10/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-IIC/</url>
-    
-    <content type="html"><![CDATA[<h1 id="I2C协议"><a href="#I2C协议" class="headerlink" title="I2C协议"></a>I2C协议</h1>]]></content>
-    
-    
-    <categories>
-      
-      <category>协议</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>通讯协议</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>SPI通讯协议</title>
-    <link href="/2022/10/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-SPI/"/>
-    <url>/2022/10/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-SPI/</url>
-    
-    <content type="html"><![CDATA[<h1 id="SPI协议"><a href="#SPI协议" class="headerlink" title="SPI协议"></a>SPI协议</h1>]]></content>
-    
-    
-    <categories>
-      
-      <category>协议</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>通讯协议</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>UART通讯协议</title>
-    <link href="/2022/10/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-UART/"/>
-    <url>/2022/10/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-UART/</url>
-    
-    <content type="html"><![CDATA[<h1 id="UART协议"><a href="#UART协议" class="headerlink" title="UART协议"></a>UART协议</h1>]]></content>
-    
-    
-    <categories>
-      
-      <category>协议</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>通讯协议</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>嵌软需学习的基本硬件知识</title>
-    <link href="/2022/10/12/%E5%9F%BA%E6%9C%AC%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86/"/>
-    <url>/2022/10/12/%E5%9F%BA%E6%9C%AC%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86/</url>
-    
-    <content type="html"><![CDATA[<h2 id="三极管的通断判断"><a href="#三极管的通断判断" class="headerlink" title="三极管的通断判断"></a>三极管的通断判断</h2><h2 id="GPIO的内部上下拉选择"><a href="#GPIO的内部上下拉选择" class="headerlink" title="GPIO的内部上下拉选择"></a>GPIO的内部上下拉选择</h2><h2 id="常用运放电路公式"><a href="#常用运放电路公式" class="headerlink" title="常用运放电路公式"></a>常用运放电路公式</h2><h2 id="电容的作用"><a href="#电容的作用" class="headerlink" title="电容的作用"></a>电容的作用</h2><h2 id="电阻的作用"><a href="#电阻的作用" class="headerlink" title="电阻的作用"></a>电阻的作用</h2><h2 id="电感的作用"><a href="#电感的作用" class="headerlink" title="电感的作用"></a>电感的作用</h2>]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>嵌入式软件需要学习的基本硬件知识</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>领域驱动设计</title>
-    <link href="/2022/10/12/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/"/>
-    <url>/2022/10/12/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>开发模式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>开发方法</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>敏捷开发</title>
-    <link href="/2022/10/12/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/"/>
-    <url>/2022/10/12/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>开发方法</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>开发方法</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>面向对象</title>
-    <link href="/2022/10/12/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
-    <url>/2022/10/12/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>架构设计</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>架构设计</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>软件设计原则</title>
-    <link href="/2022/10/12/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/"/>
-    <url>/2022/10/12/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</url>
+    <link href="/2022/10/11/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/"/>
+    <url>/2022/10/11/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</url>
     
     <content type="html"><![CDATA[]]></content>
     
@@ -1275,56 +750,6 @@
     <tags>
       
       <tag>设计原则</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>尼尔森十大可用性原则</title>
-    <link href="/2022/10/12/%E5%B0%BC%E5%B0%94%E6%A3%AE%E5%8D%81%E5%A4%A7%E5%8E%9F%E5%88%99/"/>
-    <url>/2022/10/12/%E5%B0%BC%E5%B0%94%E6%A3%AE%E5%8D%81%E5%A4%A7%E5%8E%9F%E5%88%99/</url>
-    
-    <content type="html"><![CDATA[<h2 id="尼尔森十大可用性原则"><a href="#尼尔森十大可用性原则" class="headerlink" title="尼尔森十大可用性原则"></a>尼尔森十大可用性原则</h2><blockquote><p>尼尔森（Jakob Nielsen）是一位人机交互学博士，于1995年1月1日发表了「十大可用性原则」。1995年以来，他通过自己的Alertbox邮件列表以及<a href="http://useit.com/">网站</a>，向成千上万的Web设计师传授Web易用性方面的知识。<br>尼尔森的十大可用性原则是尼尔森博士分析了两百多个可用性问题而提炼出的十项通用型原则。它是产品设计与用户体验设计的重要参考标准，值得深入研究与运用。<br>这十大可用性设计原则分别是：</p><ul><li>状态可用性原则；</li><li>环境贴切原则；</li><li>撤消重做原则；</li><li>一致性原则；</li><li>防错原则；</li><li>易取原则；</li><li>灵活高效原则；</li><li>易扫原则；</li><li>容错原则；</li><li>人性化帮助原则。</li></ul></blockquote><h3 id="一、状态可见性原则（Visibility-of-system-status）"><a href="#一、状态可见性原则（Visibility-of-system-status）" class="headerlink" title="一、状态可见性原则（Visibility of system status）"></a>一、状态可见性原则（Visibility of system status）</h3><blockquote><p>系统应该让用户知道发生了什么，在适当的时间内做出适当的反馈。亦即，用户在系统上的任何操作，不论是单击、滚动还是按下键盘，页面应即时给出反馈。“即时”是指，页面响应时间小于用户能忍受的等待时间。</p></blockquote><h3 id="二、环境贴切原则（Match-between-system-and-the-real-world）"><a href="#二、环境贴切原则（Match-between-system-and-the-real-world）" class="headerlink" title="二、环境贴切原则（Match between system and the real world）"></a>二、环境贴切原则（Match between system and the real world）</h3><blockquote><p>系统应该用用户的语言，用词，短语和用户熟悉的概念，而不是系统术语。遵循现实世界的惯例，让信息符合自然思考逻辑。亦即，系统的一切表现和表述应尽可能贴近用户熟悉的环境。《IPhone人机交互指南》里提到的隐喻与拟物化是很好的实践。此外，还应尊重现实世界的惯例和约定俗成的表达。</p></blockquote><h3 id="三、撤消重做原则（User-control-and-freedom）"><a href="#三、撤消重做原则（User-control-and-freedom）" class="headerlink" title="三、撤消重做原则（User control and freedom）"></a>三、撤消重做原则（User control and freedom）</h3><blockquote><p>为了避免用户的误用和误击，系统应提供撤销和重做功能。</p></blockquote><h3 id="四、一致性原则（Consistency-and-standards）"><a href="#四、一致性原则（Consistency-and-standards）" class="headerlink" title="四、一致性原则（Consistency and standards）"></a>四、一致性原则（Consistency and standards）</h3><blockquote><p>同一用语、功能、操作保持一致。</p></blockquote><h3 id="五、防错原则（Error-prevention）"><a href="#五、防错原则（Error-prevention）" class="headerlink" title="五、防错原则（Error prevention）"></a>五、防错原则（Error prevention）</h3><blockquote><p>比出现错误信息提示更好的是更用心的设计防止这类问题发生。在用户选择动作发生之前，就要防止用户容易混淆或者错误的选择。通过系统的设计、重组或特别安排，防止用户出错。</p></blockquote><h3 id="六、易取原则：识别比记忆好（Recognition-rather-than-recall）"><a href="#六、易取原则：识别比记忆好（Recognition-rather-than-recall）" class="headerlink" title="六、易取原则：识别比记忆好（Recognition rather than recall）"></a>六、易取原则：识别比记忆好（Recognition rather than recall）</h3><blockquote><p>尽量减少用户对操作目标的记忆负荷，动作和选项应该是可见的。用户不必记忆一个页面到另一个页面的信息。系统的使用说明应该是可见或容易获取的。这也说了交互的一部分，比如填完表单，下一步应该生成表单而不是完成。这样做尽可能减少用户对操作的记忆负担，保持功能选项可见，使用说明可预见。</p></blockquote><h3 id="七、灵活高效原则（Flexibility-and-efficiency-of-use）"><a href="#七、灵活高效原则（Flexibility-and-efficiency-of-use）" class="headerlink" title="七、灵活高效原则（Flexibility and efficiency of use）"></a>七、灵活高效原则（Flexibility and efficiency of use）</h3><blockquote><p>中级用户的数量远高于初级和高级用户数。为大多数用户设计，不要低估，也不要轻视，保持灵活高效。</p></blockquote><h3 id="八、易扫原则：审美和简约的设计（Aesthetic-and-minimalist-design）"><a href="#八、易扫原则：审美和简约的设计（Aesthetic-and-minimalist-design）" class="headerlink" title="八、易扫原则：审美和简约的设计（Aesthetic and minimalist design）"></a>八、易扫原则：审美和简约的设计（Aesthetic and minimalist design）</h3><blockquote><p>用户的浏览动作不是读，不是看，而是扫。易扫，意味着突出重点，弱化和剔除无关信息。对话中不应该包含无关紧要的信息。在段落中每增加一个单位的重要信息，就意味着要减少相应的弱化一些其他信息。</p></blockquote><h3 id="九、容错原则：帮助用户识别，诊断，并从错误中恢复（Help-users-recognize-diagnose-and-recover-from-errors）"><a href="#九、容错原则：帮助用户识别，诊断，并从错误中恢复（Help-users-recognize-diagnose-and-recover-from-errors）" class="headerlink" title="九、容错原则：帮助用户识别，诊断，并从错误中恢复（Help users recognize, diagnose, and recover from errors）"></a>九、容错原则：帮助用户识别，诊断，并从错误中恢复（Help users recognize, diagnose, and recover from errors）</h3><blockquote><p>错误信息应该用语言表达（不要用代码），较准确地反应问题所在，并且提出一个建设性的解决方案。帮助用户从错误中恢复，将损失降到最低。如果无法自动挽回，则提供详尽的说明文字和指导方向，而非代码，比如404。</p></blockquote><h3 id="十、人性化帮助原则（Help-and-documentation）"><a href="#十、人性化帮助原则（Help-and-documentation）" class="headerlink" title="十、人性化帮助原则（Help and documentation）"></a>十、人性化帮助原则（Help and documentation）</h3><blockquote><p>如果系统不使用帮助文档是最好的，但是有必要提供帮助和文档。任何信息应容易去搜索，专注于用户的任务，列出具体的步骤来进行。帮助性提示最好的方式是：１.无需提示；２.一次性提示；３.常驻提示；４.帮助文档。</p></blockquote><h2 id="资料来源"><a href="#资料来源" class="headerlink" title="资料来源:"></a>资料来源:</h2><p>《尼尔森十大可用性设计原则》<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://zhuanlan.zhihu.com/p/143146361">[1]</span></a></sup></p><p>《Nielsen Norman Group logoNielsen Norman Group》<sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://www.nngroup.com/">[2]</span></a></sup></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://zhuanlan.zhihu.com/p/143146361">https://zhuanlan.zhihu.com/p/143146361</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a href="https://www.nngroup.com/">https://www.nngroup.com/</a><a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
-    
-    
-    <categories>
-      
-      <category>产品需求</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>需求分析</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>费曼学习法</title>
-    <link href="/2022/10/12/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/"/>
-    <url>/2022/10/12/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>学习方法</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>学习方法</tag>
       
     </tags>
     
@@ -1385,11 +810,261 @@
   
   
   <entry>
-    <title>C语言基础</title>
-    <link href="/2022/10/09/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/"/>
-    <url>/2022/10/09/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</url>
+    <title>嵌入式PSM设计</title>
+    <link href="/2022/09/16/%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%BD%8E%E5%8A%9F%E8%80%97%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2022/09/16/%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%BD%8E%E5%8A%9F%E8%80%97%E8%AE%BE%E8%AE%A1/</url>
     
-    <content type="html"><![CDATA[<h2 id="一、C语言简介"><a href="#一、C语言简介" class="headerlink" title="一、C语言简介"></a>一、C语言简介</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote><p>C语言是一门面向过程的计算机编程语言，与C++、C#、Java等面向对象编程语言有所不同。C语言的设计目标是提供一种能以简易的方式编译、处理低级存储器、仅产生少量的机器码以及不需要任何运行环境支持便能运行的编程语言。C语言描述问题比汇编语言迅速、工作量小、可读性好、易于调试、修改和移植，而代码质量与汇编语言相当。C语言一般只比汇编语言代码生成的目标程序效率低10%-20%。因此，C语言可以编写系统软件。 </p></blockquote><blockquote><p>当前阶段，在编程领域中，C语言的运用非常之多，它兼顾了高级语言和汇编语言的优点，相较于其它编程语言具有较大优势。计算机系统设计以及应用程序编写是C语言应用的两大领域。同时，C语言的普适较强，在许多计算机操作系统中都能够得到适用，且效率显著。</p></blockquote><blockquote><p>C语言拥有经过了漫长发展历史的完整的理论体系，在编程语言中具有举足轻重的地位。</p></blockquote><h3 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h3><blockquote><p>C语言诞生于美国的贝尔实验室，由丹尼斯·里奇（Dennis MacAlistair Ritchie）以肯尼斯·蓝·汤普森（Kenneth Lane Thompson）设计的B语言为基础发展而来，在它的主体设计完成后，汤普森和里奇用它完全重写了UNIX，且随着UNIX的发展，c语言也得到了不断的完善。为了利于C语言的全面推广，许多专家学者和硬件厂商联合组成了C语言标准委员会，并在之后的1989年，诞生了第一个完备的C标准，简称“C89”，也就是“ANSI C”，截至2020年，最新的C语言标准为2018年6月发布的“C18”。</p></blockquote><blockquote><p>C语言之所以命名为C，是因为C语言源自Ken Thompson发明的B语言，而B语言则源自BCPL语言。</p></blockquote><blockquote><p>1967年，剑桥大学的Martin Richards对CPL语言进行了简化，于是产生了BCPL（Basic Combined Programming Language）语言。</p></blockquote><blockquote><p>20世纪60年代，美国AT&amp;T公司贝尔实验室（AT&amp;T Bell Laboratories）的研究员肯·汤普森（Kenneth Lane Thompson）闲来无事，手痒难耐，想玩一个他自己编的，模拟在太阳系航行的电子游戏——Space Travel。他背着老板，找到了台空闲的小型计算机——PDP-7。但这台电脑没有操作系统，而游戏必须使用操作系统的一些功能，于是他着手为PDP-7开发操作系统。后来，这个操作系统被命名为——UNICS（Uniplexed Information and Computing Service）。</p></blockquote><blockquote><p>1969年，美国贝尔实验室的Ken Thompson，以BCPL语言为基础，设计出很简单且很接近硬件的B语言（取BCPL的首字母），并且用B语言写了初版UNIX操作系统（叫UNICS）。</p></blockquote><blockquote><p>1971年，同样酷爱Space Travel的丹尼斯·里奇为了能早点儿玩上游戏，加入了汤普森的开发项目，合作开发UNIX。他的主要工作是改造B语言，使其更成熟。</p></blockquote><blockquote><p>1972年，美国贝尔实验室的丹尼斯·里奇在B语言的基础上最终设计出了一种新的语言，他取了BCPL的第二个字母作为这种语言的名字，这就是C语言。</p></blockquote><blockquote><p>1973年初，C语言的主体完成。汤普森和里奇迫不及待地开始用它完全重写了UNIX。此时，编程的乐趣使他们已经完全忘记了那个“Space Travel”，一门心思地投入到了UNIX和C语言的开发中。随着UNIX的发展，C语言自身也在不断地完善。直到2020年，各种版本的UNIX内核和周边工具仍然使用C语言作为最主要的开发语言，其中还有不少继承汤普逊和里奇之手的代码。</p></blockquote><blockquote><p>在开发中，他们还考虑把UNIX移植到其他类型的计算机上使用。C语言强大的移植性（Portability）在此显现。机器语言和汇编语言都不具有移植性，为x86开发的程序，不可能在Alpha、SPARC和ARM等机器上运行。而C语言程序则可以使用在任意架构的处理器上，只要那种架构的处理器具有对应的C语言编译器和库，然后将C源代码编译、连接成目标二进制文件之后即可在哪种架构的处理器运行。</p></blockquote><blockquote><p>1977年，丹尼斯·里奇发表了不依赖于具体机器系统的C语言编译文本《可移植的C语言编译程序》。</p></blockquote><blockquote><p>C语言继续发展，在1982年，很多有识之士和美国国家标准协会（ANSI）为了使C语言健康地发展下去，决定成立C标准委员会，建立C语言的标准。委员会由硬件厂商、编译器及其他软件工具生产商、软件设计师、顾问、学术界人士、C语言作者和应用程序员组成。1989年，ANSI发布了第一个完整的C语言标准——ANSI X3.159-1989，简称“C89”，不过人们也习惯称其为“ANSI C”。C89在1990年被国际标准化组织（International Standard Organization，ISO）一字不改地采纳，ISO官方给予的名称为：ISO&#x2F;IEC 9899，所以ISO&#x2F;IEC9899:1990也通常被简称为“C90”。1999年，在做了一些必要的修正和完善后，ISO发布了新的C语言标准，命名为ISO&#x2F;IEC 9899:1999，简称“C99”。在2011年12月8日，ISO又正式发布了新的标准，称为ISO&#x2F;IEC9899:2011，简称为“C11”。</p></blockquote><ul><li>C语言不同的标准之间有语法区别，请一定要确认所处的标准，不然会出现很多莫名的语法错误，如按照C99标准写的代码使用C89标准编译器编译会出现变量不在函数开头声明、文件最后一行没有空行等错误…</li></ul><h2 id="二、当前现状"><a href="#二、当前现状" class="headerlink" title="二、当前现状"></a>二、当前现状</h2><p>当前由于物联网行业的发展,C语言因为在物联网设备的易用性等特点,使得C语言拥有比较大的市场,在python、java等语言快速发展的今天，C语言依旧保持很大的市场份额。C语言除了基本语法，一定要结合所运行的底层硬件进行学习，才能在物联网飞速发展、嵌入式开发人员快速增长的今天保持更强的竞争性。</p><h3 id="C语言简单示例"><a href="#C语言简单示例" class="headerlink" title="C语言简单示例"></a>C语言简单示例</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;hello c!&quot;</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><h2 id="三、C语言基础"><a href="#三、C语言基础" class="headerlink" title="三、C语言基础"></a>三、C语言基础</h2><h3 id="进制的概念"><a href="#进制的概念" class="headerlink" title="进制的概念"></a>进制的概念</h3><ul><li>几进制简单的说就是逢几进一，如十进制就是逢十进一，八进制就是逢八进一，二进制就是逢二进一。</li><li>数字开头用“0”开头则为八进制表示法如“0221”，表示八进制数字值为2* 8 * 8 + 2 * 8 + 1，结果为138；</li><li>数字开头用“0x”表示则为十六进制表示法，因为阿拉伯数字0<del>9不足以表示0</del>15的值，所以引入a<del>f，表示10</del>15的数，如“0x112”，表示的16进制数值为 1 * 16 * 16 + 1 * 16 + 2，结果为274；</li><li>数字开头用“0b”表示则为二进制表示法，如“0b1101”，表示的二进制数值为 1 * 2 * 2 * 2 + 1 * 2 * 2 + 0 * 2 + 1，结果为13；</li><li>不管数字用什么进制表示，实际表示的数值大小不变，进制只是一种表示方法。</li></ul><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>C语言在变量声明和定义时需要明确变量的类型，可以使用sizeof运算符对不同计算机平台上的数据类型的字节大小进行计算。</p><h4 id="有符号和无符号类型"><a href="#有符号和无符号类型" class="headerlink" title="有符号和无符号类型"></a>有符号和无符号类型</h4><ul><li>有符号和无符号指的是数字的正负值<ol><li>有符号类型</li><li>无符号类型</li></ol></li></ul><h4 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h4><ul><li>整型是用来表示整数数字的类型<ol><li>int<br> 整型，int类型大小一般是一个机器字长，一般大小为4个字节；</li><li>short<br> 短整型，与short int是同一个类型，大小不能比整型大，一般大小为两个字节；</li><li>long<br> 长整型，与 long int是同一个类型，大小不能比整型小，一般占用大小为4个字节；</li><li>long long<br> 长长整型，与long long int是同一个类型，大小不能比长整型小，一般占用大小为8个字节；</li></ol></li><li>计算整型占用内存大小<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&quot;stdio.h&quot;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;int :%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">int</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;short :%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">short</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;short int:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">short</span> <span class="hljs-type">int</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long :%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long int:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span> <span class="hljs-type">int</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long long:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span> <span class="hljs-type">long</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long long int:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-type">int</span>));<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br>我的<span class="hljs-number">64</span>位x86windowsPC输出结果：<br><span class="hljs-type">int</span> :<span class="hljs-number">4</span><br><span class="hljs-type">short</span> :<span class="hljs-number">2</span><br><span class="hljs-type">short</span> <span class="hljs-type">int</span>:<span class="hljs-number">2</span><br><span class="hljs-type">long</span> :<span class="hljs-number">4</span><br><span class="hljs-type">long</span> <span class="hljs-type">int</span>:<span class="hljs-number">4</span><br><span class="hljs-type">long</span> <span class="hljs-type">long</span>:<span class="hljs-number">8</span><br><span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-type">int</span>:<span class="hljs-number">8</span><br></code></pre></td></tr></table></figure></li></ul><h4 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h4><pre><code class="hljs">1. char</code></pre><h4 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h4><ul><li>浮点型用来表示包含小数点的数字<ol><li>float</li><li>double</li></ol></li></ul><h4 id="枚举类型"><a href="#枚举类型" class="headerlink" title="枚举类型"></a>枚举类型</h4><h4 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h4><h4 id="结构体类型"><a href="#结构体类型" class="headerlink" title="结构体类型"></a>结构体类型</h4><h4 id="联合体类型-共用体类型"><a href="#联合体类型-共用体类型" class="headerlink" title="联合体类型(共用体类型)"></a>联合体类型(共用体类型)</h4><pre><code class="hljs">联合体是一种特殊的数据类型，联合体内部有多个成员，但是同一时刻只有一个成员在占用空间，联合体占用的大小为成员中的最大大小。</code></pre><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">union</span></span><br><span class="hljs-class">&#123;</span><br>    <span class="hljs-class"><span class="hljs-keyword">struct</span></span><br><span class="hljs-class">    &#123;</span><br>        <span class="hljs-type">uint8_t</span> one:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> two:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> three:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> four:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> five:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> six:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> seven:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> eight:<span class="hljs-number">1</span>;<br>    &#125;Bytes;<br>    <span class="hljs-type">uint8_t</span> data1;<br>    <span class="hljs-type">uint8_t</span> data2;<br>&#125;test;<br></code></pre></td></tr></table></figure><pre><code class="hljs">上面的联合体中包含三个成员，总占用的大小是一个字节，当给其中一个成员赋值时，其他两个成员的值也会跟着改变。Bytes中的one对应data1和data2的二进制[0]位。如果联合的大小超过一个字节，则字节顺序需要看平台内核是大端还是小端。</code></pre><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">union</span></span><br><span class="hljs-class">&#123;</span><br>    <span class="hljs-type">short</span> <span class="hljs-type">int</span> m;<br>    <span class="hljs-type">char</span> n;<br>&#125;un;<br>un.m = <span class="hljs-number">1</span>;<br><span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,un.n);<br></code></pre></td></tr></table></figure><p>上述代码可以用来判断机器的大小端，如果n等于1，则机器是小端，如果n等于0，则机器是大端。</p><blockquote><ul><li>大端：低位数据在高地址，0x12345678的实际存储方式为0x12345678</li><li>小端：高位数据在高地址，0x12345678的实际存储方式为0x78563412</li></ul></blockquote><h4 id="空类型"><a href="#空类型" class="headerlink" title="空类型"></a>空类型</h4><h4 id="指针类型"><a href="#指针类型" class="headerlink" title="指针类型"></a>指针类型</h4><h4 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h4><h3 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h3><h4 id="算术操作符"><a href="#算术操作符" class="headerlink" title="算术操作符"></a>算术操作符</h4><h4 id="位操作符"><a href="#位操作符" class="headerlink" title="位操作符"></a>位操作符</h4><ul><li>原码</li><li>反码</li><li>补码</li></ul><h4 id="复合赋值符"><a href="#复合赋值符" class="headerlink" title="复合赋值符"></a>复合赋值符</h4><h4 id="单目赋值符"><a href="#单目赋值符" class="headerlink" title="单目赋值符"></a>单目赋值符</h4><h4 id="关系赋值符"><a href="#关系赋值符" class="headerlink" title="关系赋值符"></a>关系赋值符</h4><h4 id="逻辑赋值符"><a href="#逻辑赋值符" class="headerlink" title="逻辑赋值符"></a>逻辑赋值符</h4><h4 id="条件赋值符"><a href="#条件赋值符" class="headerlink" title="条件赋值符"></a>条件赋值符</h4><h4 id="逗号表达式"><a href="#逗号表达式" class="headerlink" title="逗号表达式"></a>逗号表达式</h4><h4 id="下标引用、函数调用和结构成员"><a href="#下标引用、函数调用和结构成员" class="headerlink" title="下标引用、函数调用和结构成员"></a>下标引用、函数调用和结构成员</h4><h3 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h3><h3 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h3><h3 id="宏"><a href="#宏" class="headerlink" title="宏"></a>宏</h3><h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h3 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h3><h3 id="常见语法结构"><a href="#常见语法结构" class="headerlink" title="常见语法结构"></a>常见语法结构</h3><h4 id="条件判断"><a href="#条件判断" class="headerlink" title="条件判断"></a>条件判断</h4><h4 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h4><h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><h2 id="C语言应用"><a href="#C语言应用" class="headerlink" title="C语言应用"></a>C语言应用</h2><h3 id="动态内存管理"><a href="#动态内存管理" class="headerlink" title="动态内存管理"></a>动态内存管理</h3><h3 id="…"><a href="#…" class="headerlink" title="…"></a>…</h3><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://baike.baidu.com/item/c%E8%AF%AD%E8%A8%80/105958">(C语言)百度百科</a></li><li><a href="https://hudaxia.top/books/">c专家编程</a></li><li><a href="https://hudaxia.top/books/">c primer plus</a></li><li><a href="https://hudaxia.top/books/">c和指针</a></li><li><a href="https://www.nowcoder.com/tutorial/10002/8f7c3e0e7efd441d8f7c9c8d43c2a0f4">牛客 c语言教程</a></li><li><a href="https://zhuanlan.zhihu.com/p/363380373">C语言标准——C89、C99、C11、C17、C2x …</a></li></ul><h2 id="代码仓库"><a href="#代码仓库" class="headerlink" title="代码仓库"></a>代码仓库</h2><ul><li><a href="https://github.com/daxia-hu/c.git">c语言仓库</a></li></ul>]]></content>
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式通用型模块设计</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式模块设计</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>链表</title>
+    <link href="/2022/09/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8/"/>
+    <url>/2022/09/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8/</url>
+    
+    <content type="html"><![CDATA[<h1 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>数据结构与算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>数据结构</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>嵌软需学习的基本硬件知识</title>
+    <link href="/2022/09/12/%E5%9F%BA%E6%9C%AC%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86/"/>
+    <url>/2022/09/12/%E5%9F%BA%E6%9C%AC%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86/</url>
+    
+    <content type="html"><![CDATA[<h2 id="三极管的通断判断"><a href="#三极管的通断判断" class="headerlink" title="三极管的通断判断"></a>三极管的通断判断</h2><h2 id="GPIO的内部上下拉选择"><a href="#GPIO的内部上下拉选择" class="headerlink" title="GPIO的内部上下拉选择"></a>GPIO的内部上下拉选择</h2><h2 id="常用运放电路公式"><a href="#常用运放电路公式" class="headerlink" title="常用运放电路公式"></a>常用运放电路公式</h2><h2 id="电容的作用"><a href="#电容的作用" class="headerlink" title="电容的作用"></a>电容的作用</h2><h2 id="电阻的作用"><a href="#电阻的作用" class="headerlink" title="电阻的作用"></a>电阻的作用</h2><h2 id="电感的作用"><a href="#电感的作用" class="headerlink" title="电感的作用"></a>电感的作用</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式软件需要学习的基本硬件知识</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>SPI通讯协议</title>
+    <link href="/2022/08/22/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-SPI/"/>
+    <url>/2022/08/22/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-SPI/</url>
+    
+    <content type="html"><![CDATA[<h1 id="SPI协议"><a href="#SPI协议" class="headerlink" title="SPI协议"></a>SPI协议</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>通讯协议</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>UART通讯协议</title>
+    <link href="/2022/08/17/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-UART/"/>
+    <url>/2022/08/17/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-UART/</url>
+    
+    <content type="html"><![CDATA[<h1 id="UART协议"><a href="#UART协议" class="headerlink" title="UART协议"></a>UART协议</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>通讯协议</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>校验算法</title>
+    <link href="/2022/08/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95/"/>
+    <url>/2022/08/12/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>数据结构与算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>算法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>面向对象</title>
+    <link href="/2022/08/12/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    <url>/2022/08/12/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>架构设计</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>架构设计</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>领域驱动设计</title>
+    <link href="/2022/07/19/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2022/07/19/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>开发模式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>开发方法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>嵌入式GUI设计</title>
+    <link href="/2022/07/15/%E5%B5%8C%E5%85%A5%E5%BC%8FGUI%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2022/07/15/%E5%B5%8C%E5%85%A5%E5%BC%8FGUI%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式通用型模块设计</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式模块设计</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>排序算法</title>
+    <link href="/2022/07/15/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
+    <url>/2022/07/15/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>数据结构与算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>算法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>SDL库</title>
+    <link href="/2022/07/12/SDL%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
+    <url>/2022/07/12/SDL%E5%BA%93%E5%AD%A6%E4%B9%A0/</url>
+    
+    <content type="html"><![CDATA[]]></content>
     
     
     <categories>
@@ -1410,9 +1085,184 @@
   
   
   <entry>
+    <title>嵌入式OTA设计</title>
+    <link href="/2022/06/14/%E5%B5%8C%E5%85%A5%E5%BC%8FOTA%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2022/06/14/%E5%B5%8C%E5%85%A5%E5%BC%8FOTA%E8%AE%BE%E8%AE%A1/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式模块设计</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>PYTHON基础</title>
+    <link href="/2022/06/12/PYTHON%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/"/>
+    <url>/2022/06/12/PYTHON%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>计算机语言</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>计算机语言</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>嵌入式存储模块设计</title>
+    <link href="/2022/06/11/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%98%E5%82%A8%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2022/06/11/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%98%E5%82%A8%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式通用型模块设计</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式模块设计</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>队列</title>
+    <link href="/2022/05/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%98%9F%E5%88%97/"/>
+    <url>/2022/05/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%98%9F%E5%88%97/</url>
+    
+    <content type="html"><![CDATA[<h1 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>数据结构与算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>数据结构</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>尼尔森十大可用性原则</title>
+    <link href="/2022/05/15/%E5%B0%BC%E5%B0%94%E6%A3%AE%E5%8D%81%E5%A4%A7%E5%8E%9F%E5%88%99/"/>
+    <url>/2022/05/15/%E5%B0%BC%E5%B0%94%E6%A3%AE%E5%8D%81%E5%A4%A7%E5%8E%9F%E5%88%99/</url>
+    
+    <content type="html"><![CDATA[<h2 id="尼尔森十大可用性原则"><a href="#尼尔森十大可用性原则" class="headerlink" title="尼尔森十大可用性原则"></a>尼尔森十大可用性原则</h2><blockquote><p>尼尔森（Jakob Nielsen）是一位人机交互学博士，于1995年1月1日发表了「十大可用性原则」。1995年以来，他通过自己的Alertbox邮件列表以及<a href="http://useit.com/">网站</a>，向成千上万的Web设计师传授Web易用性方面的知识。<br>尼尔森的十大可用性原则是尼尔森博士分析了两百多个可用性问题而提炼出的十项通用型原则。它是产品设计与用户体验设计的重要参考标准，值得深入研究与运用。<br>这十大可用性设计原则分别是：</p><ul><li>状态可用性原则；</li><li>环境贴切原则；</li><li>撤消重做原则；</li><li>一致性原则；</li><li>防错原则；</li><li>易取原则；</li><li>灵活高效原则；</li><li>易扫原则；</li><li>容错原则；</li><li>人性化帮助原则。</li></ul></blockquote><h3 id="一、状态可见性原则（Visibility-of-system-status）"><a href="#一、状态可见性原则（Visibility-of-system-status）" class="headerlink" title="一、状态可见性原则（Visibility of system status）"></a>一、状态可见性原则（Visibility of system status）</h3><blockquote><p>系统应该让用户知道发生了什么，在适当的时间内做出适当的反馈。亦即，用户在系统上的任何操作，不论是单击、滚动还是按下键盘，页面应即时给出反馈。“即时”是指，页面响应时间小于用户能忍受的等待时间。</p></blockquote><h3 id="二、环境贴切原则（Match-between-system-and-the-real-world）"><a href="#二、环境贴切原则（Match-between-system-and-the-real-world）" class="headerlink" title="二、环境贴切原则（Match between system and the real world）"></a>二、环境贴切原则（Match between system and the real world）</h3><blockquote><p>系统应该用用户的语言，用词，短语和用户熟悉的概念，而不是系统术语。遵循现实世界的惯例，让信息符合自然思考逻辑。亦即，系统的一切表现和表述应尽可能贴近用户熟悉的环境。《IPhone人机交互指南》里提到的隐喻与拟物化是很好的实践。此外，还应尊重现实世界的惯例和约定俗成的表达。</p></blockquote><h3 id="三、撤消重做原则（User-control-and-freedom）"><a href="#三、撤消重做原则（User-control-and-freedom）" class="headerlink" title="三、撤消重做原则（User control and freedom）"></a>三、撤消重做原则（User control and freedom）</h3><blockquote><p>为了避免用户的误用和误击，系统应提供撤销和重做功能。</p></blockquote><h3 id="四、一致性原则（Consistency-and-standards）"><a href="#四、一致性原则（Consistency-and-standards）" class="headerlink" title="四、一致性原则（Consistency and standards）"></a>四、一致性原则（Consistency and standards）</h3><blockquote><p>同一用语、功能、操作保持一致。</p></blockquote><h3 id="五、防错原则（Error-prevention）"><a href="#五、防错原则（Error-prevention）" class="headerlink" title="五、防错原则（Error prevention）"></a>五、防错原则（Error prevention）</h3><blockquote><p>比出现错误信息提示更好的是更用心的设计防止这类问题发生。在用户选择动作发生之前，就要防止用户容易混淆或者错误的选择。通过系统的设计、重组或特别安排，防止用户出错。</p></blockquote><h3 id="六、易取原则：识别比记忆好（Recognition-rather-than-recall）"><a href="#六、易取原则：识别比记忆好（Recognition-rather-than-recall）" class="headerlink" title="六、易取原则：识别比记忆好（Recognition rather than recall）"></a>六、易取原则：识别比记忆好（Recognition rather than recall）</h3><blockquote><p>尽量减少用户对操作目标的记忆负荷，动作和选项应该是可见的。用户不必记忆一个页面到另一个页面的信息。系统的使用说明应该是可见或容易获取的。这也说了交互的一部分，比如填完表单，下一步应该生成表单而不是完成。这样做尽可能减少用户对操作的记忆负担，保持功能选项可见，使用说明可预见。</p></blockquote><h3 id="七、灵活高效原则（Flexibility-and-efficiency-of-use）"><a href="#七、灵活高效原则（Flexibility-and-efficiency-of-use）" class="headerlink" title="七、灵活高效原则（Flexibility and efficiency of use）"></a>七、灵活高效原则（Flexibility and efficiency of use）</h3><blockquote><p>中级用户的数量远高于初级和高级用户数。为大多数用户设计，不要低估，也不要轻视，保持灵活高效。</p></blockquote><h3 id="八、易扫原则：审美和简约的设计（Aesthetic-and-minimalist-design）"><a href="#八、易扫原则：审美和简约的设计（Aesthetic-and-minimalist-design）" class="headerlink" title="八、易扫原则：审美和简约的设计（Aesthetic and minimalist design）"></a>八、易扫原则：审美和简约的设计（Aesthetic and minimalist design）</h3><blockquote><p>用户的浏览动作不是读，不是看，而是扫。易扫，意味着突出重点，弱化和剔除无关信息。对话中不应该包含无关紧要的信息。在段落中每增加一个单位的重要信息，就意味着要减少相应的弱化一些其他信息。</p></blockquote><h3 id="九、容错原则：帮助用户识别，诊断，并从错误中恢复（Help-users-recognize-diagnose-and-recover-from-errors）"><a href="#九、容错原则：帮助用户识别，诊断，并从错误中恢复（Help-users-recognize-diagnose-and-recover-from-errors）" class="headerlink" title="九、容错原则：帮助用户识别，诊断，并从错误中恢复（Help users recognize, diagnose, and recover from errors）"></a>九、容错原则：帮助用户识别，诊断，并从错误中恢复（Help users recognize, diagnose, and recover from errors）</h3><blockquote><p>错误信息应该用语言表达（不要用代码），较准确地反应问题所在，并且提出一个建设性的解决方案。帮助用户从错误中恢复，将损失降到最低。如果无法自动挽回，则提供详尽的说明文字和指导方向，而非代码，比如404。</p></blockquote><h3 id="十、人性化帮助原则（Help-and-documentation）"><a href="#十、人性化帮助原则（Help-and-documentation）" class="headerlink" title="十、人性化帮助原则（Help and documentation）"></a>十、人性化帮助原则（Help and documentation）</h3><blockquote><p>如果系统不使用帮助文档是最好的，但是有必要提供帮助和文档。任何信息应容易去搜索，专注于用户的任务，列出具体的步骤来进行。帮助性提示最好的方式是：１.无需提示；２.一次性提示；３.常驻提示；４.帮助文档。</p></blockquote><h2 id="资料来源"><a href="#资料来源" class="headerlink" title="资料来源:"></a>资料来源:</h2><p>《尼尔森十大可用性设计原则》<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://zhuanlan.zhihu.com/p/143146361">[1]</span></a></sup></p><p>《Nielsen Norman Group logoNielsen Norman Group》<sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://www.nngroup.com/">[2]</span></a></sup></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://zhuanlan.zhihu.com/p/143146361">https://zhuanlan.zhihu.com/p/143146361</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a href="https://www.nngroup.com/">https://www.nngroup.com/</a><a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
+    
+    
+    <categories>
+      
+      <category>产品需求</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>需求分析</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>CAN通讯协议</title>
+    <link href="/2022/05/12/CAN%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
+    <url>/2022/05/12/CAN%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>通讯协议</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>USB通讯协议</title>
+    <link href="/2022/04/12/USB%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
+    <url>/2022/04/12/USB%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>通讯协议</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>浅谈嵌入式软件设计</title>
-    <link href="/2022/10/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/"/>
-    <url>/2022/10/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/</url>
+    <link href="/2022/04/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2022/04/08/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/</url>
     
     <content type="html"><![CDATA[<h1 id="嵌入式软件架构设计"><a href="#嵌入式软件架构设计" class="headerlink" title="嵌入式软件架构设计"></a>嵌入式软件架构设计</h1><blockquote><p>设计的本质是为了提高生产力，具体实施需要以变化应对变化。</p></blockquote><blockquote><p>文章中多是我的个人理解，谨慎食用。</p></blockquote><p>尽信书,不如无书</p><div align="right">-《孟子·尽心下》</div><h2 id="一、基本介绍"><a href="#一、基本介绍" class="headerlink" title="一、基本介绍"></a>一、基本介绍</h2><blockquote><p>架构这个词源于英文里的“Architecture“，源头是土木工程里的“建筑”和“结构”，而架构里的”架“同时又包含了”架子“（scaffolding）的含义，意指能快速搭建起来的固定结构。而今天的应用架构，意指软件系统中固定不变的代码结构、设计模式、规范和组件间的通信方式。在应用开发中架构之所以是最重要的第一步，因为一个好的架构能让系统安全、稳定、快速迭代。在一个团队内通过规定一个固定的架构设计，可以让团队内能力参差不齐的同学们都能有一个统一的开发规范，降低沟通成本，提升效率和代码质量。</p></blockquote><h3 id="嵌入式软件架构设计-按照黄金圈法则”WWH”分别给出解释"><a href="#嵌入式软件架构设计-按照黄金圈法则”WWH”分别给出解释" class="headerlink" title="嵌入式软件架构设计,按照黄金圈法则”WWH”分别给出解释"></a>嵌入式软件架构设计,按照黄金圈法则”WWH”分别给出解释</h3><ul><li><p>What:嵌入式软件架构设计是什么?</p><ol><li>嵌入式软件架构设计是针对嵌入式设备端软件做的架构设计,架构设计包含项目整体设计及项目模块的详细设计。</li><li>整体设计包含项目整体的设计思路,设计原则,横向设计,竖向设计还有项目软件实施过程中的规范设计。</li><li>模块的详细设计包含模块设计思路,设计原则,模块内部业务实现原理、关键业务的实现流程。</li><li>软件架构设计就像是建造大楼时需要在前期根据大楼的外观、材料、层数等已知因素同时基于建造效率、大楼稳定性、安全性等性能考虑针对建造过程进行实施建模。</li></ol></li><li><p>Why:为什么要做嵌入式软件架构设计</p><ol><li>建筑工人在建造大厦的时候如果没有设计师的设计图纸和设计文档，每个建筑工人按照自己对大楼的理解去建造，那最终建造的大楼将无法正常交付，整个建造实施过程建造效率也会非常低。</li><li>软件做架构设计的原因是一样的，嵌入式软件与其他软件产品不同的在于在建造软件这座“大楼”的时候其他软件项目有很多非常成熟的框架可以套用，嵌入式软件产品因为产品规模的多样性和依赖平台的多样性往往没有相对固定的框架可以套用。</li><li>软件设计一方面是为了软件开发过程中能有据可依，提高软件工程师的开发效率；另一方面是为了软件开发能做的“优雅”一点。</li><li>嵌入式软件产品会经常出现每个产品每一种设计，或者同一个产品多个人多种设计的问题。设计只要能完整的交付软件产品，从公司软件产品的“乙方”角度，这个产品就是成功的。软件前期设计阶段一定要根据产品的需求、平台的特性、项目的开发时间全面谨慎评估，避免出现“为了设计而设计”的情况出现。</li><li>软件设计的目的是为了软件交付时除了实现功能需求、性能需求以外的质量需求。质量需求包含不限于以下的设计目标。<ul><li>设计目标<ul><li>可维护性<ul><li>可读性</li><li>可扩展性</li><li>可测试性</li></ul></li><li>稳定性<ul><li>鲁棒性</li></ul></li></ul></li></ul></li></ol></li><li><p>how:怎么做嵌入式软件架构设计</p><ol><li>评估:<blockquote><p>首先需要首先需要针对产品的需求进行评估，需求包含功能性需求和非功能性需求。</p><ul><li>功能性需求包含用户功能或者产品宣传需求，依据都是公司内部产品部门输出的产品定义。</li><li>非功能性需求包含[功能性、可靠性、易用性、高效性、维护性、可移植性]。<ul><li>功能性:当软件在指定条件下使用时，软件产品提供满足明确和隐含要求的功能的能力<ol><li>适合性：软件产品为指定的任务和用户目标提供一组合适的功能的能力</li><li>准确性：软件产品提供具有所需精度的正确或相符的结果或效果的能力</li><li>互操作性：软件产品与一个或更多的规定系统进行交互的能力</li><li>安全保密性：软件产品保护信息和数据的能力</li></ol></li><li>可靠性:在指定条件使用时，软件产品维护规定的性能级别的能力<ol><li>成熟性：软件产品为避免由软件中故障而导致失效的能力</li><li>容错性：在软件出现故障或者违反其指定接口的情况下，软件产品维持规定的性能级别的能力</li><li>易恢复性：在失效发生的情况下，软件产品重建规定的性能级别并恢复受直接影响的数据的能力</li></ol></li><li>易用性:在指定条件下使用时，软件产品被理解、学习、使用和吸引用户的能力<ol><li>易理解性：使用用户能理解软件是否合适及如何能将软件用于特定的任务的能力</li><li>易学性：使用用户能学习其应用的能力</li><li>易操作性：使用户能操作和控制它的能力</li><li>吸引性：软件产品吸引用户的能力</li></ol></li><li>高效性:在规定条件下，相对于所用资源的数量，软件产品可提供适当性能的能力<ol><li>时间特性：软件执行其功能时，提供适当的响应和处理时间以及吞吐率的能力</li><li>资源利用性：软件执行其功能时，使用合适数量和类别的资源的能力</li></ol></li><li>维护性:软件产品可被修改的能力。包括纠正、改进或对环境、需求和功能规格说明变化的适应<ol><li>易分析性：诊断软件中的缺陷或失效原因或识别待修改部分的能力</li><li>易改变性：使指定的修改可以被实现的能力</li><li>稳定性：避免由于软件修改而造成意外结果的能力</li><li>易测试性：使已修改软件能被确认的能力</li></ol></li><li>可移植性:软件产品从一种环境迁移到另外一种环境的能力<ol><li>适应性：无需采用额外的活动或手段就可适应不同指定环境的能力</li><li>易安装性：软件产品在指定环境中被安装的能力</li><li>共存性：在公共环境中同与其分享公共资源的其他独立软件共存的能力</li><li>易替换性：在同样的环境下，替代另一个相同用途的指定软件产品的能力</li></ol></li></ul></li></ul></blockquote></li><li>建模:<blockquote><p>从需求出发，可以通过常用建模方法借助各种工具针对软件开发进行理论建模和实施预演，常用建模方法有</p><ul><li>结构化建模方法:通过结构化建模步骤强调开发结构的合理性与正确性，注重系统中组成要素的互相联系和互相作用，通过建立相关关系的模型为软件开发过程提供准则，结构化建模步骤为，结构化分析，结构化设计和结构程序设计。<ol><li>结构化分析：通过数据信息的流向对系统进行分解和抽象，通过一些分析技术和手段对系统进行建模。常用的分析方法有DFD（数据流图）、数据字典、结构化自然语言、判定表和判定树等</li><li>结构化设计：结构化设计包含总体设计、接口设计和数据设计，主要针对系统</li><li>结构化程序设计：通过</li></ol></li><li>信息工程建模方法:</li><li>面向对象建模:<ol><li>通过通用建模语言UML对系统进行动态建模和静态建模,静态建模是对系统的结构进行分析最终对系统进行组件划分和结构分层。动态建模是通过梳理组件间的交互关系对系统内部的交互进行可视化展示。UML中经常</li></ol></li></ul></blockquote></li></ol></li></ul><h2 id="二、嵌入式软件架构设计前的准备"><a href="#二、嵌入式软件架构设计前的准备" class="headerlink" title="二、嵌入式软件架构设计前的准备"></a>二、嵌入式软件架构设计前的准备</h2><p>嵌入式软件项目因为产品的多样性以及所依赖的硬件平台的特性很少有现成的架构框架套用，所以在产品的设计之初首先需要对平台特点和产品特点进行详细的分析。</p><h3 id="一般嵌入式产品分为几类"><a href="#一般嵌入式产品分为几类" class="headerlink" title="一般嵌入式产品分为几类:"></a>一般嵌入式产品分为几类:</h3><h4 id="根据研发维护周期区分"><a href="#根据研发维护周期区分" class="headerlink" title="根据研发维护周期区分"></a>根据研发维护周期区分</h4><ol><li>产品类<blockquote><p>消费电子类产品或者大型设备的网关产品等,这种产品项目的特点就是产品生命周期长,在产品的整个生命周期内需要一直维护,也就意味着这种产品的软件的持续开发时间几乎与产品的生命周期一致。</p></blockquote></li><li>项目类<blockquote><p>外包项目等基本上软件最终交付后很少需要维护迭代的产品,此类产品需要重点关注稳定性与功能需求实现。</p></blockquote></li></ol><h3 id="根据产品功能规模区分"><a href="#根据产品功能规模区分" class="headerlink" title="根据产品功能规模区分"></a>根据产品功能规模区分</h3><ol><li>产品的功能非常简单，使用的可编程器件资源非常有限。比如简单的台灯、电子密码锁项目<blockquote><p>此类产品的软件规模偏小,在设计中只需要将需求梳理清楚,基本代码按照需求就能写出来,而且因为此类项目的资源非常有限,强行设计复杂的结构反而会占用太多资源,所以需要避免”为了设计而设计”。</p></blockquote></li><li>产品的功能相对复杂，项目基于OS实现</li><li>linux大型项目可能还涉及到DSP、FPGA等器件</li></ol><h2 id="三、嵌入式软件架构设计流程"><a href="#三、嵌入式软件架构设计流程" class="headerlink" title="三、嵌入式软件架构设计流程"></a>三、嵌入式软件架构设计流程</h2><h2 id="四、如何进行需求分析"><a href="#四、如何进行需求分析" class="headerlink" title="四、如何进行需求分析?"></a>四、如何进行需求分析?</h2><h2 id="五、怎么进行总体设计"><a href="#五、怎么进行总体设计" class="headerlink" title="五、怎么进行总体设计?"></a>五、怎么进行总体设计?</h2><h2 id="六、怎么进行模块划分"><a href="#六、怎么进行模块划分" class="headerlink" title="六、怎么进行模块划分?"></a>六、怎么进行模块划分?</h2><h2 id="七、架构设计实践"><a href="#七、架构设计实践" class="headerlink" title="七、架构设计实践"></a>七、架构设计实践</h2><blockquote><p>我将会按照上面的设计流程针对以下产品进行分析、设计、编码、测试保证软件质量最终达到上市标准。</p></blockquote><ul><li>简单项目<ul><li>《基于蜂鸣器和点阵屏的简单音乐播放器项目》<blockquote><p>…</p></blockquote></li></ul></li><li>中等项目<ul><li>《蓝牙音响项目》<blockquote><p>…</p></blockquote></li><li>《wifi平台家庭网关项目》<blockquote><p>…</p></blockquote></li></ul></li><li>大型项目<ul><li>《智能手表项目》<blockquote><p>…</p></blockquote></li><li>《基于4G-linux的远程监控小车》<blockquote><p>…</p></blockquote></li></ul></li></ul><h2 id="资料来源"><a href="#资料来源" class="headerlink" title="资料来源:"></a>资料来源:</h2><p>《软件建模与设计：UML、用例、模式和软件体系结构(Hassan Gomaa)》<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://item.jd.com/11523128.html">[1]</span></a></sup></p><p>《质量特性及子特性：功能性、可靠性、易用性、效率、维护性、可移植性》<sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://www.cnitpm.com/pm/6274.html">[2]</span></a></sup></p><p>《殷浩详解DDD系列 第二讲 - 应用架构》<sup id="fnref:3" class="footnote-ref"><a href="#fn:3" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://developer.aliyun.com/article/715802#:~:text=%E6%9E%B6%E6%9E%84%E8%BF%99%E4%B8%AA%E8%AF%8D%E6%BA%90%E4%BA%8E%E8%8B%B1,%E8%B5%B7%E6%9D%A5%E7%9A%84%E5%9B%BA%E5%AE%9A%E7%BB%93%E6%9E%84%E3%80%82">[3]</span></a></sup></p><p>《PSiCC2-CN》<sup id="fnref:4" class="footnote-ref"><a href="#fn:4" rel="footnote"><span class="hint--top hint--rounded" aria-label="https://www.state-machine.com/doc/PSiCC2-CN.pdf">[4]</span></a></sup></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://item.jd.com/11523128.html">https://item.jd.com/11523128.html</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a href="https://www.cnitpm.com/pm/6274.html">https://www.cnitpm.com/pm/6274.html</a><a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:3" class="footnote-text"><span><a href="https://developer.aliyun.com/article/715802#:~:text=%E6%9E%B6%E6%9E%84%E8%BF%99%E4%B8%AA%E8%AF%8D%E6%BA%90%E4%BA%8E%E8%8B%B1,%E8%B5%B7%E6%9D%A5%E7%9A%84%E5%9B%BA%E5%AE%9A%E7%BB%93%E6%9E%84%E3%80%82">https://developer.aliyun.com/article/715802#:~:text=%E6%9E%B6%E6%9E%84%E8%BF%99%E4%B8%AA%E8%AF%8D%E6%BA%90%E4%BA%8E%E8%8B%B1,%E8%B5%B7%E6%9D%A5%E7%9A%84%E5%9B%BA%E5%AE%9A%E7%BB%93%E6%9E%84%E3%80%82</a><a href="#fnref:3" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:4" class="footnote-text"><span><a href="https://www.state-machine.com/doc/PSiCC2-CN.pdf">https://www.state-machine.com/doc/PSiCC2-CN.pdf</a><a href="#fnref:4" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
     
@@ -1436,6 +1286,156 @@
   
   
   
+  <entry>
+    <title>控制算法</title>
+    <link href="/2022/03/28/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95/"/>
+    <url>/2022/03/28/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>数据结构与算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>算法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>stm32寄存器编程</title>
+    <link href="/2022/03/15/stm32%E5%AF%84%E5%AD%98%E5%99%A8%E5%BC%80%E5%8F%91/"/>
+    <url>/2022/03/15/stm32%E5%AF%84%E5%AD%98%E5%99%A8%E5%BC%80%E5%8F%91/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>stm32</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>C语言基础</title>
+    <link href="/2022/03/09/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/"/>
+    <url>/2022/03/09/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[<h2 id="一、C语言简介"><a href="#一、C语言简介" class="headerlink" title="一、C语言简介"></a>一、C语言简介</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote><p>C语言是一门面向过程的计算机编程语言，与C++、C#、Java等面向对象编程语言有所不同。C语言的设计目标是提供一种能以简易的方式编译、处理低级存储器、仅产生少量的机器码以及不需要任何运行环境支持便能运行的编程语言。C语言描述问题比汇编语言迅速、工作量小、可读性好、易于调试、修改和移植，而代码质量与汇编语言相当。C语言一般只比汇编语言代码生成的目标程序效率低10%-20%。因此，C语言可以编写系统软件。 </p></blockquote><blockquote><p>当前阶段，在编程领域中，C语言的运用非常之多，它兼顾了高级语言和汇编语言的优点，相较于其它编程语言具有较大优势。计算机系统设计以及应用程序编写是C语言应用的两大领域。同时，C语言的普适较强，在许多计算机操作系统中都能够得到适用，且效率显著。</p></blockquote><blockquote><p>C语言拥有经过了漫长发展历史的完整的理论体系，在编程语言中具有举足轻重的地位。</p></blockquote><h3 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h3><blockquote><p>C语言诞生于美国的贝尔实验室，由丹尼斯·里奇（Dennis MacAlistair Ritchie）以肯尼斯·蓝·汤普森（Kenneth Lane Thompson）设计的B语言为基础发展而来，在它的主体设计完成后，汤普森和里奇用它完全重写了UNIX，且随着UNIX的发展，c语言也得到了不断的完善。为了利于C语言的全面推广，许多专家学者和硬件厂商联合组成了C语言标准委员会，并在之后的1989年，诞生了第一个完备的C标准，简称“C89”，也就是“ANSI C”，截至2020年，最新的C语言标准为2018年6月发布的“C18”。</p></blockquote><blockquote><p>C语言之所以命名为C，是因为C语言源自Ken Thompson发明的B语言，而B语言则源自BCPL语言。</p></blockquote><blockquote><p>1967年，剑桥大学的Martin Richards对CPL语言进行了简化，于是产生了BCPL（Basic Combined Programming Language）语言。</p></blockquote><blockquote><p>20世纪60年代，美国AT&amp;T公司贝尔实验室（AT&amp;T Bell Laboratories）的研究员肯·汤普森（Kenneth Lane Thompson）闲来无事，手痒难耐，想玩一个他自己编的，模拟在太阳系航行的电子游戏——Space Travel。他背着老板，找到了台空闲的小型计算机——PDP-7。但这台电脑没有操作系统，而游戏必须使用操作系统的一些功能，于是他着手为PDP-7开发操作系统。后来，这个操作系统被命名为——UNICS（Uniplexed Information and Computing Service）。</p></blockquote><blockquote><p>1969年，美国贝尔实验室的Ken Thompson，以BCPL语言为基础，设计出很简单且很接近硬件的B语言（取BCPL的首字母），并且用B语言写了初版UNIX操作系统（叫UNICS）。</p></blockquote><blockquote><p>1971年，同样酷爱Space Travel的丹尼斯·里奇为了能早点儿玩上游戏，加入了汤普森的开发项目，合作开发UNIX。他的主要工作是改造B语言，使其更成熟。</p></blockquote><blockquote><p>1972年，美国贝尔实验室的丹尼斯·里奇在B语言的基础上最终设计出了一种新的语言，他取了BCPL的第二个字母作为这种语言的名字，这就是C语言。</p></blockquote><blockquote><p>1973年初，C语言的主体完成。汤普森和里奇迫不及待地开始用它完全重写了UNIX。此时，编程的乐趣使他们已经完全忘记了那个“Space Travel”，一门心思地投入到了UNIX和C语言的开发中。随着UNIX的发展，C语言自身也在不断地完善。直到2020年，各种版本的UNIX内核和周边工具仍然使用C语言作为最主要的开发语言，其中还有不少继承汤普逊和里奇之手的代码。</p></blockquote><blockquote><p>在开发中，他们还考虑把UNIX移植到其他类型的计算机上使用。C语言强大的移植性（Portability）在此显现。机器语言和汇编语言都不具有移植性，为x86开发的程序，不可能在Alpha、SPARC和ARM等机器上运行。而C语言程序则可以使用在任意架构的处理器上，只要那种架构的处理器具有对应的C语言编译器和库，然后将C源代码编译、连接成目标二进制文件之后即可在哪种架构的处理器运行。</p></blockquote><blockquote><p>1977年，丹尼斯·里奇发表了不依赖于具体机器系统的C语言编译文本《可移植的C语言编译程序》。</p></blockquote><blockquote><p>C语言继续发展，在1982年，很多有识之士和美国国家标准协会（ANSI）为了使C语言健康地发展下去，决定成立C标准委员会，建立C语言的标准。委员会由硬件厂商、编译器及其他软件工具生产商、软件设计师、顾问、学术界人士、C语言作者和应用程序员组成。1989年，ANSI发布了第一个完整的C语言标准——ANSI X3.159-1989，简称“C89”，不过人们也习惯称其为“ANSI C”。C89在1990年被国际标准化组织（International Standard Organization，ISO）一字不改地采纳，ISO官方给予的名称为：ISO&#x2F;IEC 9899，所以ISO&#x2F;IEC9899:1990也通常被简称为“C90”。1999年，在做了一些必要的修正和完善后，ISO发布了新的C语言标准，命名为ISO&#x2F;IEC 9899:1999，简称“C99”。在2011年12月8日，ISO又正式发布了新的标准，称为ISO&#x2F;IEC9899:2011，简称为“C11”。</p></blockquote><ul><li>C语言不同的标准之间有语法区别，请一定要确认所处的标准，不然会出现很多莫名的语法错误，如按照C99标准写的代码使用C89标准编译器编译会出现变量不在函数开头声明、文件最后一行没有空行等错误…</li></ul><h2 id="二、当前现状"><a href="#二、当前现状" class="headerlink" title="二、当前现状"></a>二、当前现状</h2><p>当前由于物联网行业的发展,C语言因为在物联网设备的易用性等特点,使得C语言拥有比较大的市场,在python、java等语言快速发展的今天，C语言依旧保持很大的市场份额。C语言除了基本语法，一定要结合所运行的底层硬件进行学习，才能在物联网飞速发展、嵌入式开发人员快速增长的今天保持更强的竞争性。</p><h3 id="C语言简单示例"><a href="#C语言简单示例" class="headerlink" title="C语言简单示例"></a>C语言简单示例</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;hello c!&quot;</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><h2 id="三、C语言基础"><a href="#三、C语言基础" class="headerlink" title="三、C语言基础"></a>三、C语言基础</h2><h3 id="进制的概念"><a href="#进制的概念" class="headerlink" title="进制的概念"></a>进制的概念</h3><ul><li>几进制简单的说就是逢几进一，如十进制就是逢十进一，八进制就是逢八进一，二进制就是逢二进一。</li><li>数字开头用“0”开头则为八进制表示法如“0221”，表示八进制数字值为2* 8 * 8 + 2 * 8 + 1，结果为138；</li><li>数字开头用“0x”表示则为十六进制表示法，因为阿拉伯数字0<del>9不足以表示0</del>15的值，所以引入a<del>f，表示10</del>15的数，如“0x112”，表示的16进制数值为 1 * 16 * 16 + 1 * 16 + 2，结果为274；</li><li>数字开头用“0b”表示则为二进制表示法，如“0b1101”，表示的二进制数值为 1 * 2 * 2 * 2 + 1 * 2 * 2 + 0 * 2 + 1，结果为13；</li><li>不管数字用什么进制表示，实际表示的数值大小不变，进制只是一种表示方法。</li></ul><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>C语言在变量声明和定义时需要明确变量的类型，可以使用sizeof运算符对不同计算机平台上的数据类型的字节大小进行计算。</p><h4 id="有符号和无符号类型"><a href="#有符号和无符号类型" class="headerlink" title="有符号和无符号类型"></a>有符号和无符号类型</h4><ul><li>有符号和无符号指的是数字的正负值<ol><li>有符号类型</li><li>无符号类型</li></ol></li></ul><h4 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h4><ul><li>整型是用来表示整数数字的类型<ol><li>int<br> 整型，int类型大小一般是一个机器字长，一般大小为4个字节；</li><li>short<br> 短整型，与short int是同一个类型，大小不能比整型大，一般大小为两个字节；</li><li>long<br> 长整型，与 long int是同一个类型，大小不能比整型小，一般占用大小为4个字节；</li><li>long long<br> 长长整型，与long long int是同一个类型，大小不能比长整型小，一般占用大小为8个字节；</li></ol></li><li>计算整型占用内存大小<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&quot;stdio.h&quot;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;int :%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">int</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;short :%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">short</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;short int:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">short</span> <span class="hljs-type">int</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long :%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long int:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span> <span class="hljs-type">int</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long long:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span> <span class="hljs-type">long</span>));<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;long long int:%d\r\n&quot;</span>,<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-type">int</span>));<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br>我的<span class="hljs-number">64</span>位x86windowsPC输出结果：<br><span class="hljs-type">int</span> :<span class="hljs-number">4</span><br><span class="hljs-type">short</span> :<span class="hljs-number">2</span><br><span class="hljs-type">short</span> <span class="hljs-type">int</span>:<span class="hljs-number">2</span><br><span class="hljs-type">long</span> :<span class="hljs-number">4</span><br><span class="hljs-type">long</span> <span class="hljs-type">int</span>:<span class="hljs-number">4</span><br><span class="hljs-type">long</span> <span class="hljs-type">long</span>:<span class="hljs-number">8</span><br><span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-type">int</span>:<span class="hljs-number">8</span><br></code></pre></td></tr></table></figure></li></ul><h4 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h4><pre><code class="hljs">1. char</code></pre><h4 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h4><ul><li>浮点型用来表示包含小数点的数字<ol><li>float</li><li>double</li></ol></li></ul><h4 id="枚举类型"><a href="#枚举类型" class="headerlink" title="枚举类型"></a>枚举类型</h4><h4 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h4><h4 id="结构体类型"><a href="#结构体类型" class="headerlink" title="结构体类型"></a>结构体类型</h4><h4 id="联合体类型-共用体类型"><a href="#联合体类型-共用体类型" class="headerlink" title="联合体类型(共用体类型)"></a>联合体类型(共用体类型)</h4><pre><code class="hljs">联合体是一种特殊的数据类型，联合体内部有多个成员，但是同一时刻只有一个成员在占用空间，联合体占用的大小为成员中的最大大小。</code></pre><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">union</span></span><br><span class="hljs-class">&#123;</span><br>    <span class="hljs-class"><span class="hljs-keyword">struct</span></span><br><span class="hljs-class">    &#123;</span><br>        <span class="hljs-type">uint8_t</span> one:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> two:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> three:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> four:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> five:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> six:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> seven:<span class="hljs-number">1</span>;<br>        <span class="hljs-type">uint8_t</span> eight:<span class="hljs-number">1</span>;<br>    &#125;Bytes;<br>    <span class="hljs-type">uint8_t</span> data1;<br>    <span class="hljs-type">uint8_t</span> data2;<br>&#125;test;<br></code></pre></td></tr></table></figure><pre><code class="hljs">上面的联合体中包含三个成员，总占用的大小是一个字节，当给其中一个成员赋值时，其他两个成员的值也会跟着改变。Bytes中的one对应data1和data2的二进制[0]位。如果联合的大小超过一个字节，则字节顺序需要看平台内核是大端还是小端。</code></pre><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">union</span></span><br><span class="hljs-class">&#123;</span><br>    <span class="hljs-type">short</span> <span class="hljs-type">int</span> m;<br>    <span class="hljs-type">char</span> n;<br>&#125;un;<br>un.m = <span class="hljs-number">1</span>;<br><span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,un.n);<br></code></pre></td></tr></table></figure><p>上述代码可以用来判断机器的大小端，如果n等于1，则机器是小端，如果n等于0，则机器是大端。</p><blockquote><ul><li>大端：低位数据在高地址，0x12345678的实际存储方式为0x12345678</li><li>小端：高位数据在高地址，0x12345678的实际存储方式为0x78563412</li></ul></blockquote><h4 id="空类型"><a href="#空类型" class="headerlink" title="空类型"></a>空类型</h4><h4 id="指针类型"><a href="#指针类型" class="headerlink" title="指针类型"></a>指针类型</h4><h4 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h4><h3 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h3><h4 id="算术操作符"><a href="#算术操作符" class="headerlink" title="算术操作符"></a>算术操作符</h4><h4 id="位操作符"><a href="#位操作符" class="headerlink" title="位操作符"></a>位操作符</h4><ul><li>原码</li><li>反码</li><li>补码</li></ul><h4 id="复合赋值符"><a href="#复合赋值符" class="headerlink" title="复合赋值符"></a>复合赋值符</h4><h4 id="单目赋值符"><a href="#单目赋值符" class="headerlink" title="单目赋值符"></a>单目赋值符</h4><h4 id="关系赋值符"><a href="#关系赋值符" class="headerlink" title="关系赋值符"></a>关系赋值符</h4><h4 id="逻辑赋值符"><a href="#逻辑赋值符" class="headerlink" title="逻辑赋值符"></a>逻辑赋值符</h4><h4 id="条件赋值符"><a href="#条件赋值符" class="headerlink" title="条件赋值符"></a>条件赋值符</h4><h4 id="逗号表达式"><a href="#逗号表达式" class="headerlink" title="逗号表达式"></a>逗号表达式</h4><h4 id="下标引用、函数调用和结构成员"><a href="#下标引用、函数调用和结构成员" class="headerlink" title="下标引用、函数调用和结构成员"></a>下标引用、函数调用和结构成员</h4><h3 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h3><h3 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h3><h3 id="宏"><a href="#宏" class="headerlink" title="宏"></a>宏</h3><h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h3 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h3><h3 id="常见语法结构"><a href="#常见语法结构" class="headerlink" title="常见语法结构"></a>常见语法结构</h3><h4 id="条件判断"><a href="#条件判断" class="headerlink" title="条件判断"></a>条件判断</h4><h4 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h4><h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><h2 id="C语言应用"><a href="#C语言应用" class="headerlink" title="C语言应用"></a>C语言应用</h2><h3 id="动态内存管理"><a href="#动态内存管理" class="headerlink" title="动态内存管理"></a>动态内存管理</h3><h3 id="…"><a href="#…" class="headerlink" title="…"></a>…</h3><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://baike.baidu.com/item/c%E8%AF%AD%E8%A8%80/105958">(C语言)百度百科</a></li><li><a href="https://hudaxia.top/books/">c专家编程</a></li><li><a href="https://hudaxia.top/books/">c primer plus</a></li><li><a href="https://hudaxia.top/books/">c和指针</a></li><li><a href="https://www.nowcoder.com/tutorial/10002/8f7c3e0e7efd441d8f7c9c8d43c2a0f4">牛客 c语言教程</a></li><li><a href="https://zhuanlan.zhihu.com/p/363380373">C语言标准——C89、C99、C11、C17、C2x …</a></li></ul><h2 id="代码仓库"><a href="#代码仓库" class="headerlink" title="代码仓库"></a>代码仓库</h2><ul><li><a href="https://github.com/daxia-hu/c.git">c语言仓库</a></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>计算机语言</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>计算机语言</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>RTOS</title>
+    <link href="/2022/01/12/RTOS/"/>
+    <url>/2022/01/12/RTOS/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>OS</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>敏捷开发</title>
+    <link href="/2022/01/09/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/"/>
+    <url>/2022/01/09/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>开发方法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>开发方法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>哈希算法</title>
+    <link href="/2022/01/01/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95/"/>
+    <url>/2022/01/01/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95-%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>数据结构与算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>算法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
   
   
   
@@ -1444,7 +1444,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<h2 id="图书资源"><a href="#图书资源" class="headerlink" title="图书资源"></a>图书资源</h2><h4 id="C"><a href="#C" class="headerlink" title="C"></a>C</h4><ul><li><a href="https://pan.baidu.com/s/1DdZJm8mRc7304AEbkQ3Fbg">C.Primer.Plus第五版中文版+源码</a> 提取码：nd2z </li><li><a href="https://pan.baidu.com/s/1drKfiFbjtBZSINowmJytng">C标准库</a> 提取码：wctp </li><li><a href="https://pan.baidu.com/s/1JtGnqNATv1TmWa-EU7etGQ">C专家编程</a> 提取码：zxmy</li><li><a href="https://pan.baidu.com/s/15EXOgnGtbfpsYvLq_ta4yQ">C和指针</a> 提取码：d67j</li><li><a href="https://pan.baidu.com/s/1t2HF3uPIX3JcS0_S0GYcCg">CPrimerPlus(6thEdition)</a> 提取码：wzgy</li><li><a href="https://pan.baidu.com/s/1lxAu5nGvekkXaT2Ob9-Big">C陷阱和缺陷</a> 提取码：tnga</li></ul><h4 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h4><ul><li><a href="https://pan.baidu.com/s/1DDAsBfJZMKMODrQ6xTjxEQ">C++沉思录(Ruminations on C++)中文第2版</a> 提取码：g9os</li></ul><h4 id="QT"><a href="#QT" class="headerlink" title="QT"></a>QT</h4><h4 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h4><ul><li><a href="https://pan.baidu.com/s/163SMtuJQGZIsMP2DxxuqWA">Java核心技术卷1基础知识原书第10版</a> 提取码：3iph</li><li><a href="https://pan.baidu.com/s/17yQ3vCrYTksZ9TU9zXmB9w">java开发手册2020</a> 提取码：fv7u</li></ul><h4 id="PYTHON"><a href="#PYTHON" class="headerlink" title="PYTHON"></a>PYTHON</h4><h4 id="善用工具"><a href="#善用工具" class="headerlink" title="善用工具"></a>善用工具</h4><h4 id="设计"><a href="#设计" class="headerlink" title="设计"></a>设计</h4><ul><li><a href="%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps://pan.baidu.com/s/1wJMJaRWZgSCcYKtmW5ttiA">代码整洁之道 中文版</a> 提取码：8uad </li><li><a href="https://pan.baidu.com/s/1GvKdxPd1Z-yx26moVvRE4g">重构_改善既有代码的设计-高清版</a> 提取码：muc1</li><li><a href="https://pan.baidu.com/s/1hWA_N2bZFIFX0kbhTMzoCg">设计模式_可复用面向对象软件的基础</a> 提取码：lqb2</li><li><a href="https://pan.baidu.com/s/1mjA6sm2hi_0lRZI0NPa09w">大话设计模式(带目录完整版)</a> 提取码：tckf</li><li><a href="https://pan.baidu.com/s/1GQ7UvdBT1uwoRkkqgtXJlg">Making Embedded Systems(2012)</a> 提取码：qbqz</li><li><a href="https://pan.baidu.com/s/18BcuRFXDnH7182L4XZLxCw">An Embedded Software Primer (1ed - Simon)</a> 提取码：265y</li><li><a href="https://pan.baidu.com/s/1Ib7v29HUYD4vahRArsmQYQ">Head First 设计模式(中文版)</a> 提取码：ek9c</li></ul><h4 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h4><h4 id="开发模式"><a href="#开发模式" class="headerlink" title="开发模式"></a>开发模式</h4><h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><ul><li><a href="https://pan.baidu.com/s/139Ii5NnN1P0PAL2fvUBTgQ">程序员的自我修养</a> 提取码：zlqf</li><li><a href="https://pan.baidu.com/s/1omkGyEbyAUoir1ojkdyYIw">人月神话</a> 提取码：xf4c</li><li><a href="https://pan.baidu.com/s/1MulttspChabGJVzMuVqrlA">人件</a> 提取码：jg8k</li><li><a href="https://pan.baidu.com/s/1eAEFSpaYXtQIzlCF8NZ0ag">黑客与画家</a> 提取码：xp7i</li><li><a href="https://pan.baidu.com/s/1ij8FEmRG3A1DavyieSvZRg">浪潮之巅</a> 提取码：3qrg</li><li><a href="https://pan.baidu.com/s/1aaDd0JcWUWrISa58tV-lrA">代码大全（第二版)</a> 提取码：yz3v</li><li><a href="https://pan.baidu.com/s/1aaGejvCOtT43tki6UsId9A">代码大全</a> 提取码：cyea</li><li><a href="https://pan.baidu.com/s/1kK29AhRN-QfFhNqx_UoxWA">编程珠玑高清</a> 提取码：eyco</li></ul><h2 id="读书笔记"><a href="#读书笔记" class="headerlink" title="读书笔记"></a>读书笔记</h2><ul><li><a href="%E8%B0%81%E5%8A%A8%E4%BA%86%E6%88%91%E7%9A%84%E5%A5%B6%E9%85%AA.html">《谁动了我的奶酪》</a></li><li><a href="%E5%9C%A8%E7%BB%9D%E6%9C%9B%E4%B8%AD%E5%AF%BB%E6%89%BE%E5%B8%8C%E6%9C%9B.html">《在绝望中寻找希望》</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="图书资源"><a href="#图书资源" class="headerlink" title="图书资源"></a>图书资源</h2><h4 id="C"><a href="#C" class="headerlink" title="C"></a>C</h4><ul><li><a href="https://pan.baidu.com/s/1DdZJm8mRc7304AEbkQ3Fbg">C.Primer.Plus第五版中文版+源码</a> 提取码：nd2z </li><li><a href="https://pan.baidu.com/s/1drKfiFbjtBZSINowmJytng">C标准库</a> 提取码：wctp </li><li><a href="https://pan.baidu.com/s/1JtGnqNATv1TmWa-EU7etGQ">C专家编程</a> 提取码：zxmy</li><li><a href="https://pan.baidu.com/s/15EXOgnGtbfpsYvLq_ta4yQ">C和指针</a> 提取码：d67j</li><li><a href="https://pan.baidu.com/s/1t2HF3uPIX3JcS0_S0GYcCg">CPrimerPlus(6thEdition)</a> 提取码：wzgy</li><li><a href="https://pan.baidu.com/s/1lxAu5nGvekkXaT2Ob9-Big">C陷阱和缺陷</a> 提取码：tnga</li></ul><h4 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h4><ul><li><a href="https://pan.baidu.com/s/1DDAsBfJZMKMODrQ6xTjxEQ">C++沉思录(Ruminations on C++)中文第2版</a> 提取码：g9os</li></ul><h4 id="QT"><a href="#QT" class="headerlink" title="QT"></a>QT</h4><h4 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h4><ul><li><a href="https://pan.baidu.com/s/163SMtuJQGZIsMP2DxxuqWA">Java核心技术卷1基础知识原书第10版</a> 提取码：3iph</li><li><a href="https://pan.baidu.com/s/17yQ3vCrYTksZ9TU9zXmB9w">java开发手册2020</a> 提取码：fv7u</li></ul><h4 id="PYTHON"><a href="#PYTHON" class="headerlink" title="PYTHON"></a>PYTHON</h4><h4 id="善用工具"><a href="#善用工具" class="headerlink" title="善用工具"></a>善用工具</h4><h4 id="设计"><a href="#设计" class="headerlink" title="设计"></a>设计</h4><ul><li><a href="%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps://pan.baidu.com/s/1wJMJaRWZgSCcYKtmW5ttiA">代码整洁之道 中文版</a> 提取码：8uad </li><li><a href="https://pan.baidu.com/s/1GvKdxPd1Z-yx26moVvRE4g">重构_改善既有代码的设计-高清版</a> 提取码：muc1</li><li><a href="https://pan.baidu.com/s/1hWA_N2bZFIFX0kbhTMzoCg">设计模式_可复用面向对象软件的基础</a> 提取码：lqb2</li><li><a href="https://pan.baidu.com/s/1mjA6sm2hi_0lRZI0NPa09w">大话设计模式(带目录完整版)</a> 提取码：tckf</li><li><a href="https://pan.baidu.com/s/1GQ7UvdBT1uwoRkkqgtXJlg">Making Embedded Systems(2012)</a> 提取码：qbqz</li><li><a href="https://pan.baidu.com/s/18BcuRFXDnH7182L4XZLxCw">An Embedded Software Primer (1ed - Simon)</a> 提取码：265y</li><li><a href="https://pan.baidu.com/s/1Ib7v29HUYD4vahRArsmQYQ">Head First 设计模式(中文版)</a> 提取码：ek9c</li></ul><h4 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h4><h4 id="开发模式"><a href="#开发模式" class="headerlink" title="开发模式"></a>开发模式</h4><h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><ul><li><a href="https://pan.baidu.com/s/139Ii5NnN1P0PAL2fvUBTgQ">程序员的自我修养</a> 提取码：zlqf</li><li><a href="https://pan.baidu.com/s/1omkGyEbyAUoir1ojkdyYIw">人月神话</a> 提取码：xf4c</li><li><a href="https://pan.baidu.com/s/1MulttspChabGJVzMuVqrlA">人件</a> 提取码：jg8k</li><li><a href="https://pan.baidu.com/s/1eAEFSpaYXtQIzlCF8NZ0ag">黑客与画家</a> 提取码：xp7i</li><li><a href="https://pan.baidu.com/s/1ij8FEmRG3A1DavyieSvZRg">浪潮之巅</a> 提取码：3qrg</li><li><a href="https://pan.baidu.com/s/1aaDd0JcWUWrISa58tV-lrA">代码大全（第二版)</a> 提取码：yz3v</li><li><a href="https://pan.baidu.com/s/1aaGejvCOtT43tki6UsId9A">代码大全</a> 提取码：cyea</li><li><a href="https://pan.baidu.com/s/1kK29AhRN-QfFhNqx_UoxWA">编程珠玑高清</a> 提取码：eyco</li></ul><h2 id="读书笔记"><a href="#读书笔记" class="headerlink" title="读书笔记"></a>读书笔记</h2><!-- - [《谁动了我的奶酪》](谁动了我的奶酪.html) --><!-- - [《在绝望中寻找希望》](在绝望中寻找希望.html) -->]]></content>
     
   </entry>
   
