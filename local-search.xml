@@ -235,7 +235,7 @@
     <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/"/>
     <url>/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/</url>
     
-    <content type="html"><![CDATA[<h1 id="IPC组件"><a href="#IPC组件" class="headerlink" title="IPC组件"></a>IPC组件</h1><h2 id="模块简介"><a href="#模块简介" class="headerlink" title="模块简介"></a>模块简介</h2><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h2 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h2><h2 id="落地实践"><a href="#落地实践" class="headerlink" title="落地实践"></a>落地实践</h2><p><a href="https://github.com/daxia-hu/cuteIpc">实践仓库-github</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="IPC组件"><a href="#IPC组件" class="headerlink" title="IPC组件"></a>IPC组件</h1><h2 id="一、模块简介"><a href="#一、模块简介" class="headerlink" title="一、模块简介"></a>一、模块简介</h2><p>IPC（Interprocess communication）模块是指模块间通信模块，主要实现的功能是消息的订阅、消息的发送接收处理业务。模块的功能比较简单，实现也相对简单。</p><h2 id="二、需求分析"><a href="#二、需求分析" class="headerlink" title="二、需求分析"></a>二、需求分析</h2><ul><li>模块间的消息传递一对多消息和一对一消息，所有的消息都是先经过IPC模块再进行分发，按照模块的消息订阅情况判断消息是否需要分发给每个模块。</li><li>消息从发送模块到接收模块要求比较高的执行效率。</li></ul><h2 id="三、架构设计"><a href="#三、架构设计" class="headerlink" title="三、架构设计"></a>三、架构设计</h2><p><img src="/img/IPC%E4%B8%80%E5%AF%B9%E4%B8%80.png" alt="一对一消息"><br><img src="/img/IPC%E4%B8%80%E5%AF%B9%E5%A4%9A.png" alt="一对多消息"></p><ul><li>IPC模块与其他模块的交互就是消息的接收和消息的转发，消息的接收可以是一个统一的接口给其他模块调用，消息的分发需要保存一张消息接收的表，表头包含模块的订阅判断函数指针。</li></ul><h2 id="落地实践"><a href="#落地实践" class="headerlink" title="落地实践"></a>落地实践</h2><p><a href="https://github.com/daxia-hu/cuteIpc">实践仓库-github</a></p>]]></content>
     
     
     <categories>
