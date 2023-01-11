@@ -356,31 +356,6 @@
   
   
   <entry>
-    <title>mqtt协议</title>
-    <link href="/2022/11/12/MQTT/"/>
-    <url>/2022/11/12/MQTT/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>协议</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>网络协议</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>protobuf协议</title>
     <link href="/2022/11/12/protobuf/"/>
     <url>/2022/11/12/protobuf/</url>
@@ -406,9 +381,59 @@
   
   
   <entry>
+    <title>coap协议</title>
+    <link href="/2022/11/12/%E5%8D%8F%E8%AE%AE-COAP/"/>
+    <url>/2022/11/12/%E5%8D%8F%E8%AE%AE-COAP/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>COAP</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>http协议</title>
+    <link href="/2022/11/12/%E5%8D%8F%E8%AE%AE-HTTP/"/>
+    <url>/2022/11/12/%E5%8D%8F%E8%AE%AE-HTTP/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>HTTP</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>modbus协议</title>
-    <link href="/2022/11/12/MODBUS/"/>
-    <url>/2022/11/12/MODBUS/</url>
+    <link href="/2022/11/12/%E5%8D%8F%E8%AE%AE-MODBUS/"/>
+    <url>/2022/11/12/%E5%8D%8F%E8%AE%AE-MODBUS/</url>
     
     <content type="html"><![CDATA[]]></content>
     
@@ -423,6 +448,31 @@
     <tags>
       
       <tag>传输控制协议</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>mqtt协议</title>
+    <link href="/2022/11/12/%E5%8D%8F%E8%AE%AE-MQTT/"/>
+    <url>/2022/11/12/%E5%8D%8F%E8%AE%AE-MQTT/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>协议</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>网络协议</tag>
       
     </tags>
     
@@ -682,8 +732,8 @@
   
   <entry>
     <title>极限编程</title>
-    <link href="/2022/10/14/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/"/>
-    <url>/2022/10/14/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</url>
+    <link href="/2022/10/14/%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F-%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/"/>
+    <url>/2022/10/14/%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F-%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</url>
     
     <content type="html"><![CDATA[]]></content>
     
@@ -1036,8 +1086,8 @@
   
   <entry>
     <title>嵌入式GUI设计</title>
-    <link href="/2022/07/15/%E5%B5%8C%E5%85%A5%E5%BC%8FGUI%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/"/>
-    <url>/2022/07/15/%E5%B5%8C%E5%85%A5%E5%BC%8FGUI%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/</url>
+    <link href="/2022/07/15/%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%A8%A1%E5%9D%97-GUI%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2022/07/15/%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%A8%A1%E5%9D%97-GUI%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/</url>
     
     <content type="html"><![CDATA[]]></content>
     
@@ -1111,8 +1161,8 @@
   
   <entry>
     <title>嵌入式OTA设计</title>
-    <link href="/2022/06/14/%E5%B5%8C%E5%85%A5%E5%BC%8FOTA%E8%AE%BE%E8%AE%A1/"/>
-    <url>/2022/06/14/%E5%B5%8C%E5%85%A5%E5%BC%8FOTA%E8%AE%BE%E8%AE%A1/</url>
+    <link href="/2022/06/14/%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%A8%A1%E5%9D%97-OTA%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2022/06/14/%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%A8%A1%E5%9D%97-OTA%E8%AE%BE%E8%AE%A1/</url>
     
     <content type="html"><![CDATA[]]></content>
     
@@ -1161,8 +1211,8 @@
   
   <entry>
     <title>嵌入式存储模块设计</title>
-    <link href="/2022/06/11/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%98%E5%82%A8%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/"/>
-    <url>/2022/06/11/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%98%E5%82%A8%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/</url>
+    <link href="/2022/06/11/%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%A8%A1%E5%9D%97-%E5%AD%98%E5%82%A8%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2022/06/11/%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%A8%A1%E5%9D%97-%E5%AD%98%E5%82%A8%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1/</url>
     
     <content type="html"><![CDATA[]]></content>
     
@@ -1236,8 +1286,8 @@
   
   <entry>
     <title>CAN通讯协议</title>
-    <link href="/2022/05/12/CAN%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
-    <url>/2022/05/12/CAN%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
+    <link href="/2022/05/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-CAN%E5%8D%8F%E8%AE%AE/"/>
+    <url>/2022/05/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-CAN%E5%8D%8F%E8%AE%AE/</url>
     
     <content type="html"><![CDATA[]]></content>
     
@@ -1261,8 +1311,8 @@
   
   <entry>
     <title>USB通讯协议</title>
-    <link href="/2022/04/12/USB%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
-    <url>/2022/04/12/USB%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
+    <link href="/2022/04/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-USB%E5%8D%8F%E8%AE%AE/"/>
+    <url>/2022/04/12/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE-USB%E5%8D%8F%E8%AE%AE/</url>
     
     <content type="html"><![CDATA[]]></content>
     
@@ -1413,8 +1463,8 @@
   
   <entry>
     <title>敏捷开发</title>
-    <link href="/2022/01/09/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/"/>
-    <url>/2022/01/09/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/</url>
+    <link href="/2022/01/09/%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F-%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/"/>
+    <url>/2022/01/09/%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F-%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/</url>
     
     <content type="html"><![CDATA[]]></content>
     
