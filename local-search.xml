@@ -210,7 +210,7 @@
     <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0/"/>
     <url>/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="消息队列组件"><a href="#消息队列组件" class="headerlink" title="消息队列组件"></a>消息队列组件</h1><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><p>消息队列组件目标是实现消息队列结构，结合IPC组件实现模块间的异步通信。消息队列实现</p><h2 id="模块设计"><a href="#模块设计" class="headerlink" title="模块设计"></a>模块设计</h2><h3 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h3><ul><li>功能目标<ul><li>正确性</li></ul></li><li>性能目标<ul><li>易用性</li><li>可拓展性</li><li>稳定性</li></ul></li></ul><h3 id="设计原理"><a href="#设计原理" class="headerlink" title="设计原理"></a>设计原理</h3><ul><li>创建消息队列对象</li><li>消息推送</li><li>消息取出</li></ul><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><p><a href="https://github.com/daxia-hu/cuteQueue">github仓库</a></p>]]></content>
     
     
     <categories>
