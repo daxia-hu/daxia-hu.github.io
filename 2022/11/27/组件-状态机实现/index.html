@@ -16,24 +16,24 @@
   <meta name="author" content="胡大侠">
   <meta name="keywords" content="学习">
   
-    <meta name="description" content="状态机实现 一、模块简介状态机组件是模块内部需要进行状态管理时可以使用的一个组件模块，其中业务包含状态机的状态管理，状态机的转换活动、内部活动处理、事件处理等等。状态机的概念：  （ State Machine ）状态机是描述事物有限离散状态互相关系的自动化“机器”，是描述事物的抽象数字模型。什么是状态： 事物任何时刻都有一个状态，同一个状态是指在一段时间内事物具有一定的特征共性。状态机的四个概念">
+    <meta name="description" content="状态机实现 一、模块简介状态机组件是模块内部需要进行状态管理时可以使用的一个组件模块，其中业务包含状态机的状态管理，状态机的转换活动、内部活动处理、事件处理等等。状态机的概念：  （ State Machine ）状态机是描述事物有限离散状态互相关系的自动化“机器”，是描述事物的抽象数字模型。什么是状态： 事物任何时刻都有一个状态，同一个状态是指在一段时间内事物具有一定的特征共性。      状态">
 <meta property="og:type" content="article">
 <meta property="og:title" content="嵌入式状态机组件">
 <meta property="og:url" content="https://hudaxia.top/2022/11/27/%E7%BB%84%E4%BB%B6-%E7%8A%B6%E6%80%81%E6%9C%BA%E5%AE%9E%E7%8E%B0/index.html">
 <meta property="og:site_name" content="HuDaXia">
-<meta property="og:description" content="状态机实现 一、模块简介状态机组件是模块内部需要进行状态管理时可以使用的一个组件模块，其中业务包含状态机的状态管理，状态机的转换活动、内部活动处理、事件处理等等。状态机的概念：  （ State Machine ）状态机是描述事物有限离散状态互相关系的自动化“机器”，是描述事物的抽象数字模型。什么是状态： 事物任何时刻都有一个状态，同一个状态是指在一段时间内事物具有一定的特征共性。状态机的四个概念">
+<meta property="og:description" content="状态机实现 一、模块简介状态机组件是模块内部需要进行状态管理时可以使用的一个组件模块，其中业务包含状态机的状态管理，状态机的转换活动、内部活动处理、事件处理等等。状态机的概念：  （ State Machine ）状态机是描述事物有限离散状态互相关系的自动化“机器”，是描述事物的抽象数字模型。什么是状态： 事物任何时刻都有一个状态，同一个状态是指在一段时间内事物具有一定的特征共性。      状态">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1673680554992-ff5592ce-d2d6-4235-80ca-1ccc6671f0ee.png#averageHue=%23fbfbfb&clientId=ud2959f0f-b178-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=298&id=u47529660&margin=%5Bobject%20Object%5D&name=image.png&originHeight=298&originWidth=335&originalType=binary&ratio=1&rotation=0&showTitle=false&size=14311&status=done&style=none&taskId=u60fd44e5-c9bb-4a26-9003-c990a0c605f&title=&width=335">
+<meta property="og:image" content="https://hudaxia.top/img/%E7%8A%B6%E6%80%81%E6%9C%BA%E4%B8%BE%E4%BE%8B.png">
 <meta property="og:image" content="https://hudaxia.top/img/%E7%8A%B6%E6%80%81%E6%9C%BA%E8%AE%BE%E8%AE%A1.png">
 <meta property="og:image" content="https://hudaxia.top/img/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8.png">
 <meta property="og:image" content="https://hudaxia.top/img/%E6%B4%97%E8%A1%A3%E6%9C%BA%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E5%85%B3%E7%B3%BB%E5%9B%BE.png">
 <meta property="og:image" content="https://hudaxia.top/img/%E6%B4%97%E8%A1%A3%E6%9C%BA%E7%8A%B6%E6%80%81%E5%B1%82%E7%BA%A7%E5%85%B3%E7%B3%BB%E5%9B%BE.png">
 <meta property="article:published_time" content="2022-11-27T11:45:21.000Z">
-<meta property="article:modified_time" content="2023-01-15T08:01:27.156Z">
+<meta property="article:modified_time" content="2023-01-15T08:08:35.019Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="嵌入式组件">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1673680554992-ff5592ce-d2d6-4235-80ca-1ccc6671f0ee.png#averageHue=%23fbfbfb&clientId=ud2959f0f-b178-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=298&id=u47529660&margin=%5Bobject%20Object%5D&name=image.png&originHeight=298&originWidth=335&originalType=binary&ratio=1&rotation=0&showTitle=false&size=14311&status=done&style=none&taskId=u60fd44e5-c9bb-4a26-9003-c990a0c605f&title=&width=335">
+<meta name="twitter:image" content="https://hudaxia.top/img/%E7%8A%B6%E6%80%81%E6%9C%BA%E4%B8%BE%E4%BE%8B.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -544,7 +544,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2 分钟前
+                    本文最后更新于：几秒前
                   
                 
               </p>
@@ -555,7 +555,13 @@
                 <h1 id="状态机实现"><a href="#状态机实现" class="headerlink" title="状态机实现"></a>状态机实现</h1><p><a name="UCU9h"></a></p>
 <h2 id="一、模块简介"><a href="#一、模块简介" class="headerlink" title="一、模块简介"></a>一、模块简介</h2><p>状态机组件是模块内部需要进行状态管理时可以使用的一个组件模块，其中业务包含状态机的状态管理，状态机的转换活动、内部活动处理、事件处理等等。<br />状态机的概念：</p>
 <blockquote>
-<p>（ State Machine ）状态机是描述事物有限离散状态互相关系的自动化“机器”，是描述事物的抽象数字模型。<br>什么是状态： 事物任何时刻都有一个状态，同一个状态是指在一段时间内事物具有一定的特征共性。<br><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1673680554992-ff5592ce-d2d6-4235-80ca-1ccc6671f0ee.png#averageHue=%23fbfbfb&clientId=ud2959f0f-b178-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=298&id=u47529660&margin=%5Bobject%20Object%5D&name=image.png&originHeight=298&originWidth=335&originalType=binary&ratio=1&rotation=0&showTitle=false&size=14311&status=done&style=none&taskId=u60fd44e5-c9bb-4a26-9003-c990a0c605f&title=&width=335" srcset="/img/loading.gif" lazyload alt="image.png"><br>状态机的四个概念：</p>
+<p>（ State Machine ）状态机是描述事物有限离散状态互相关系的自动化“机器”，是描述事物的抽象数字模型。<br>什么是状态： 事物任何时刻都有一个状态，同一个状态是指在一段时间内事物具有一定的特征共性。</p>
+</blockquote>
+<blockquote>
+<p><img src="/img/%E7%8A%B6%E6%80%81%E6%9C%BA%E4%B8%BE%E4%BE%8B.png" srcset="/img/loading.gif" lazyload alt="状态机举例"></p>
+</blockquote>
+<blockquote>
+<p>状态机的四个概念：</p>
 <ol>
 <li>状态：一个状态机至少要包含一个以上的状态，比如上图中一扇门包含打开、关闭两个状态。</li>
 <li>内部活动：在进入状态、退出状态、状态保持时状态机需要执行的动作</li>
