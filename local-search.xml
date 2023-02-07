@@ -29,6 +29,31 @@
   
   
   <entry>
+    <title>嵌入式IPC组件</title>
+    <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="IPC组件"><a href="#IPC组件" class="headerlink" title="IPC组件"></a>IPC组件</h1><h2 id="一、模块简介"><a href="#一、模块简介" class="headerlink" title="一、模块简介"></a>一、模块简介</h2><p>IPC（Interprocess communication）模块是指模块间通信模块，主要实现的功能是消息的订阅、消息的发送接收处理业务。模块的功能比较简单，实现也相对简单。</p><h2 id="二、需求分析"><a href="#二、需求分析" class="headerlink" title="二、需求分析"></a>二、需求分析</h2><ul><li>模块间的消息传递一对多消息和一对一消息，所有的消息都是先经过IPC模块再进行分发，按照模块的消息订阅情况判断消息是否需要分发给每个模块。</li><li>消息从发送模块到接收模块要求比较高的执行效率。</li></ul><h2 id="三、架构设计"><a href="#三、架构设计" class="headerlink" title="三、架构设计"></a>三、架构设计</h2><p><img src="/img/IPC%E4%B8%80%E5%AF%B9%E4%B8%80.png" alt="一对一消息"><br><img src="/img/IPC%E4%B8%80%E5%AF%B9%E5%A4%9A.png" alt="一对多消息"></p><ul><li>IPC模块与其他模块的交互就是消息的接收和消息的转发，消息的接收可以是一个统一的接口给其他模块调用，消息的分发需要保存一张消息接收的表，表头包含模块的订阅判断函数指针。</li></ul><h2 id="落地实践"><a href="#落地实践" class="headerlink" title="落地实践"></a>落地实践</h2><p><a href="https://github.com/daxia-hu/cuteIpc">实践仓库-github</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式组件</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>嵌入式shell组件</title>
     <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E4%BA%A4%E4%BA%92shell%E5%AE%9E%E7%8E%B0/"/>
     <url>/2022/11/17/%E7%BB%84%E4%BB%B6-%E4%BA%A4%E4%BA%92shell%E5%AE%9E%E7%8E%B0/</url>
@@ -84,31 +109,6 @@
     <url>/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0/</url>
     
     <content type="html"><![CDATA[<h1 id="消息队列组件"><a href="#消息队列组件" class="headerlink" title="消息队列组件"></a>消息队列组件</h1><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><p>消息队列组件目标是实现消息队列结构，结合IPC组件实现模块间的异步通信。消息队列实现</p><h2 id="模块设计"><a href="#模块设计" class="headerlink" title="模块设计"></a>模块设计</h2><h3 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h3><ul><li>功能目标<ul><li>正确性</li></ul></li><li>性能目标<ul><li>易用性</li><li>可拓展性</li><li>稳定性</li></ul></li></ul><h3 id="设计原理"><a href="#设计原理" class="headerlink" title="设计原理"></a>设计原理</h3><p>消息队列采用fifo的队列数据结构，fifo指的是“first in，first out”，先进先出，消费的顺序与生产的顺序一致。<br><img src="/img/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97.png" alt="消息队列"><br>设计中需要注意的几点：</p><ol><li>消息体可以是任意结构，所以消息的存取都采用指针的方式只传递地址</li><li>写失败的唯一原因是，消息的实际大小个数已经等于最大个数，此时消息队列内已无多余的空间用于存储新的消息体</li><li>读失败的唯一原因是，实际的消息数量为0</li><li>消息内部创建的时候不提供消息的存储空间，需要在创建时将静态内存或者动态内存好的内存当作参数传递给消息队列类型对象</li></ol><p>对外接口</p><ul><li>创建消息队列对象<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs reasonml"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * @brief 创建消息队列</span><br><span class="hljs-comment"> * @param queue 消息队列对象</span><br><span class="hljs-comment"> * @param msgNum 消息数量</span><br><span class="hljs-comment"> * @param data 数据指针</span><br><span class="hljs-comment"> */</span><br>void <span class="hljs-constructor">Queue_creat(Queue <span class="hljs-operator">*</span><span class="hljs-params">queue</span>, <span class="hljs-params">uint8_t</span> <span class="hljs-params">msgNum</span>, <span class="hljs-params">uint8_t</span> <span class="hljs-params">msgSize</span>, <span class="hljs-params">void</span> <span class="hljs-operator">*</span><span class="hljs-params">data</span>)</span>;<br></code></pre></td></tr></table></figure></li><li>消息推送<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs aspectj"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@brief</span> 推送消息到消息队列中</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> queue 消息队列对象</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> msg 待推送的消息</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> 推送成功或者失败</span><br><span class="hljs-comment"> */</span><br><span class="hljs-function">uint8_t <span class="hljs-title">Queue_push</span><span class="hljs-params">(Queue *queue, <span class="hljs-keyword">void</span> *msg)</span></span>;<br></code></pre></td></tr></table></figure></li><li>消息取出<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs aspectj"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@brief</span> 从消息队列中取出消息</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> queue 消息队列对象</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> msg 待取出的消息</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> 取出成功或者失败</span><br><span class="hljs-comment"> */</span><br><span class="hljs-function">uint8_t <span class="hljs-title">Queue_pull</span><span class="hljs-params">(Queue *queue, <span class="hljs-keyword">void</span> *msg)</span></span>;<br></code></pre></td></tr></table></figure><img src="/img/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E6%B6%88%E6%81%AF%E6%94%B6%E5%8F%91%E6%B5%81%E7%A8%8B.png" alt="消息队列收发流程"></li></ul><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><p><a href="https://github.com/daxia-hu/cuteQueue">github仓库</a></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>嵌入式组件</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>嵌入式IPC组件</title>
-    <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/"/>
-    <url>/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/</url>
-    
-    <content type="html"><![CDATA[<h1 id="IPC组件"><a href="#IPC组件" class="headerlink" title="IPC组件"></a>IPC组件</h1><h2 id="一、模块简介"><a href="#一、模块简介" class="headerlink" title="一、模块简介"></a>一、模块简介</h2><p>IPC（Interprocess communication）模块是指模块间通信模块，主要实现的功能是消息的订阅、消息的发送接收处理业务。模块的功能比较简单，实现也相对简单。</p><h2 id="二、需求分析"><a href="#二、需求分析" class="headerlink" title="二、需求分析"></a>二、需求分析</h2><ul><li>模块间的消息传递一对多消息和一对一消息，所有的消息都是先经过IPC模块再进行分发，按照模块的消息订阅情况判断消息是否需要分发给每个模块。</li><li>消息从发送模块到接收模块要求比较高的执行效率。</li></ul><h2 id="三、架构设计"><a href="#三、架构设计" class="headerlink" title="三、架构设计"></a>三、架构设计</h2><p><img src="/img/IPC%E4%B8%80%E5%AF%B9%E4%B8%80.png" alt="一对一消息"><br><img src="/img/IPC%E4%B8%80%E5%AF%B9%E5%A4%9A.png" alt="一对多消息"></p><ul><li>IPC模块与其他模块的交互就是消息的接收和消息的转发，消息的接收可以是一个统一的接口给其他模块调用，消息的分发需要保存一张消息接收的表，表头包含模块的订阅判断函数指针。</li></ul><h2 id="落地实践"><a href="#落地实践" class="headerlink" title="落地实践"></a>落地实践</h2><p><a href="https://github.com/daxia-hu/cuteIpc">实践仓库-github</a></p>]]></content>
     
     
     <categories>
@@ -259,6 +259,17 @@
   
   
   <entry>
+    <title>Hello World</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>读书</title>
     <link href="/"/>
     <url>/</url>
@@ -275,17 +286,6 @@
     <url>/</url>
     
     <content type="html"><![CDATA[<h1 id="关于教育"><a href="#关于教育" class="headerlink" title="关于教育"></a>关于教育</h1><h1 id="关于学习"><a href="#关于学习" class="headerlink" title="关于学习"></a>关于学习</h1><h1 id="关于韧性"><a href="#关于韧性" class="headerlink" title="关于韧性"></a>关于韧性</h1><h1 id="关于朋友"><a href="#关于朋友" class="headerlink" title="关于朋友"></a>关于朋友</h1><h1 id="关于心态"><a href="#关于心态" class="headerlink" title="关于心态"></a>关于心态</h1>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
   </entry>
   

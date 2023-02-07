@@ -255,15 +255,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/" target="_self">
-          嵌入式IPC组件
+        <a href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0/" target="_self">
+          嵌入式消息队列组件
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0/" target="_self">
         <div>
-          IPC组件一、模块简介IPC（Interprocess communication）模块是指模块间通信模块，主要实现的功能是消息的订阅、消息的发送接收处理业务。模块的功能比较简单，实现也相对简单。 二、需求分析 模块间的消息传递一对多消息和一对一消息，所有的消息都是先经过IPC模块再进行分发，按照模块的消息订阅情况判断消息是否需要分发给每个模块。 消息从发送模块到接收模块要求比较高的执行效率。
+          消息队列组件需求分析消息队列组件目标是实现消息队列结构，结合IPC组件实现模块间的异步通信。消息队列实现 模块设计设计目标 功能目标 正确性   性能目标 易用性 可拓展性 稳定性    设计原理消息队列采用fifo的队列数据结构，fifo指的是“first in，first out”，先进先出，消费的顺序与生产的顺序一致。设计中需要注意的几点：  消息体可以是任意结构，所以消息的存取都采用指针的
         </div>
       </a>
 
