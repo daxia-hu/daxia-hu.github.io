@@ -16,15 +16,15 @@
   <meta name="author" content="胡大侠">
   <meta name="keywords" content="学习">
   
-    <meta name="description" content="嵌入式动态内存管理组件组件描述动态内存管理指的是在程序需要内存时申请，在使用完成后释放，保证以比较少的内存实现更多的软件需求。与之相对的是静态内存，典型的静态内存就是全局变量：在程序启动时到整个生命空间内都占用空间。动态内存的特点就是实现内存的“按需使用”，在嵌入式开发环境中，节省ram实现更多更灵活的内存使用需求。c库中的malloc、free接口就是动态内存申请、释放的实现。在《深入理解计算机">
+    <meta name="description" content="嵌入式动态内存管理组件一、组件描述动态内存管理指的是在程序需要内存时申请，在使用完成后释放，保证以比较少的内存实现更多的软件需求。与之相对的是静态内存，典型的静态内存就是全局变量：在程序启动时到整个生命空间内都占用空间。动态内存的特点就是实现内存的“按需使用”，在嵌入式开发环境中，节省ram实现更多更灵活的内存使用需求。 c库中的malloc、free接口就是动态内存申请、释放的实现。在《深入理解">
 <meta property="og:type" content="article">
 <meta property="og:title" content="嵌入式动态内存管理组件">
 <meta property="og:url" content="https://hudaxia.top/2022/11/17/%E7%BB%84%E4%BB%B6-%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%AE%9E%E7%8E%B0/index.html">
 <meta property="og:site_name" content="HuDaXia">
-<meta property="og:description" content="嵌入式动态内存管理组件组件描述动态内存管理指的是在程序需要内存时申请，在使用完成后释放，保证以比较少的内存实现更多的软件需求。与之相对的是静态内存，典型的静态内存就是全局变量：在程序启动时到整个生命空间内都占用空间。动态内存的特点就是实现内存的“按需使用”，在嵌入式开发环境中，节省ram实现更多更灵活的内存使用需求。c库中的malloc、free接口就是动态内存申请、释放的实现。在《深入理解计算机">
+<meta property="og:description" content="嵌入式动态内存管理组件一、组件描述动态内存管理指的是在程序需要内存时申请，在使用完成后释放，保证以比较少的内存实现更多的软件需求。与之相对的是静态内存，典型的静态内存就是全局变量：在程序启动时到整个生命空间内都占用空间。动态内存的特点就是实现内存的“按需使用”，在嵌入式开发环境中，节省ram实现更多更灵活的内存使用需求。 c库中的malloc、free接口就是动态内存申请、释放的实现。在《深入理解">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-17T11:45:28.000Z">
-<meta property="article:modified_time" content="2023-02-10T09:58:22.493Z">
+<meta property="article:modified_time" content="2023-02-10T10:27:42.589Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="嵌入式组件">
 <meta name="twitter:card" content="summary_large_image">
@@ -253,7 +253,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          244 字
+          550 字
         
       </span>
     
@@ -264,7 +264,7 @@
         
         
         
-          3 分钟
+          5 分钟
         
       </span>
     
@@ -323,8 +323,11 @@
             
               <div class="markdown-body">
                 
-                <h1 id="嵌入式动态内存管理组件"><a href="#嵌入式动态内存管理组件" class="headerlink" title="嵌入式动态内存管理组件"></a>嵌入式动态内存管理组件</h1><h2 id="组件描述"><a href="#组件描述" class="headerlink" title="组件描述"></a>组件描述</h2><p>动态内存管理指的是在程序需要内存时申请，在使用完成后释放，保证以比较少的内存实现更多的软件需求。与之相对的是静态内存，典型的静态内存就是全局变量：在程序启动时到整个生命空间内都占用空间。动态内存的特点就是实现内存的“按需使用”，在嵌入式开发环境中，节省ram实现更多更灵活的内存使用需求。<br>c库中的malloc、free接口就是动态内存申请、释放的实现。在《深入理解计算机系统》书中针对c库中malloc的实现算法有一章的篇幅进行说明。</p>
-<h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h2 id="设计实现"><a href="#设计实现" class="headerlink" title="设计实现"></a>设计实现</h2><h2 id="落地实践"><a href="#落地实践" class="headerlink" title="落地实践"></a>落地实践</h2>
+                <h1 id="嵌入式动态内存管理组件"><a href="#嵌入式动态内存管理组件" class="headerlink" title="嵌入式动态内存管理组件"></a>嵌入式动态内存管理组件</h1><h2 id="一、组件描述"><a href="#一、组件描述" class="headerlink" title="一、组件描述"></a>一、组件描述</h2><p>动态内存管理指的是在程序需要内存时申请，在使用完成后释放，保证以比较少的内存实现更多的软件需求。与之相对的是静态内存，典型的静态内存就是全局变量：在程序启动时到整个生命空间内都占用空间。动态内存的特点就是实现内存的“按需使用”，在嵌入式开发环境中，节省ram实现更多更灵活的内存使用需求。</p>
+<p>c库中的malloc、free接口就是动态内存申请、释放的实现。在《深入理解计算机系统》书中针对c库中malloc的实现算法有一章的篇幅进行说明。</p>
+<h2 id="二、需求分析"><a href="#二、需求分析" class="headerlink" title="二、需求分析"></a>二、需求分析</h2><p>动态内存的管理对外应该只需要提供两个接口：申请、释放。申请需要指定需要申请的内存大小，申请时存在剩余内存不足导致申请失败的场景所以需要在返回值中指定失败时的返回地址为NULL；内存的释放只需要将内存地址作为参数进行释放。遵守依赖倒置原则，接口的实现依赖于抽象的需求。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * @brief 内存申请</span><br><span class="hljs-comment"> * @param size 需要申请的内存大小</span><br><span class="hljs-comment"> * @return 申请的内存地址，NULL表示为申请失败</span><br><span class="hljs-comment"> */</span><br><span class="hljs-type">void</span> *<span class="hljs-title function_">malloc</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size)</span>;<br><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * @brief 内存的释放</span><br><span class="hljs-comment"> * @param p 待释放的内存首地址</span><br><span class="hljs-comment"> */</span><br><span class="hljs-type">void</span> <span class="hljs-title function_">free</span><span class="hljs-params">(<span class="hljs-type">void</span> *p)</span>;<br></code></pre></td></tr></table></figure>
+<h2 id="三、设计实现"><a href="#三、设计实现" class="headerlink" title="三、设计实现"></a>三、设计实现</h2><h3 id="3-1-设计目标"><a href="#3-1-设计目标" class="headerlink" title="3.1 设计目标"></a>3.1 设计目标</h3><h3 id="3-2-设计原理"><a href="#3-2-设计原理" class="headerlink" title="3.2 设计原理"></a>3.2 设计原理</h3><h2 id="四、落地实践"><a href="#四、落地实践" class="headerlink" title="四、落地实践"></a>四、落地实践</h2>
                 
               </div>
             
