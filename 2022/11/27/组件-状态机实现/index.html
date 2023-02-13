@@ -29,7 +29,7 @@
 <meta property="og:image" content="https://hudaxia.top/img/%E6%B4%97%E8%A1%A3%E6%9C%BA%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E5%85%B3%E7%B3%BB%E5%9B%BE.png">
 <meta property="og:image" content="https://hudaxia.top/img/%E6%B4%97%E8%A1%A3%E6%9C%BA%E7%8A%B6%E6%80%81%E5%B1%82%E7%BA%A7%E5%85%B3%E7%B3%BB%E5%9B%BE.png">
 <meta property="article:published_time" content="2022-11-27T11:45:21.000Z">
-<meta property="article:modified_time" content="2023-01-15T08:22:32.779Z">
+<meta property="article:modified_time" content="2023-02-13T06:26:23.095Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="嵌入式组件">
 <meta name="twitter:card" content="summary_large_image">
@@ -259,7 +259,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.5k 字
+          3.7k 字
         
       </span>
     
@@ -270,7 +270,7 @@
         
         
         
-          30 分钟
+          31 分钟
         
       </span>
     
@@ -328,7 +328,7 @@
         aria-expanded="true"
       >
         嵌入式
-        <span class="list-group-count">(7)</span>
+        <span class="list-group-count">(8)</span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
@@ -396,6 +396,15 @@
     
       
       
+        <a href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%AE%9E%E7%8E%B0/" title="嵌入式动态内存管理组件"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">嵌入式动态内存管理组件</span>
+        </a>
+      
+    
+      
+      
         <a href="/2022/11/27/%E7%BB%84%E4%BB%B6-%E7%8A%B6%E6%80%81%E6%9C%BA%E5%AE%9E%E7%8E%B0/" title="嵌入式状态机组件"
            class="list-group-item list-group-item-action
            active">
@@ -427,7 +436,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：1 个月前
+                    本文最后更新于：1 小时前
                   
                 
               </p>
@@ -498,7 +507,12 @@
 <li>“复合状态类型继承简单状态类型，状态机类型继承复合状态类型”</li>
 </ul>
 </li>
-<li>深历史状态与浅历史状态的区别在于深历史状态在退出时记录了状态的“子状态&#x2F;参数信息”，所以每个状态在设计的过程中需要考虑状态的特点再决定什么类型。深历史状态和浅历史状态的<strong>进入活动</strong>需要通过传参进行区分。<br><a name="ADVzY"></a></li>
+<li>深历史状态与浅历史状态的区别在于深历史状态在退出时记录了状态的“子状态&#x2F;参数信息”，所以每个状态在设计的过程中需要考虑状态的特点再决定什么类型。深历史状态和浅历史状态的<strong>进入活动</strong>需要通过传参进行区分。</li>
+<li>简单状态的历史状态、复合状态的活动状态和历史状态、状态机的活动状态采用同一个成员表示</li>
+<li>状态转换关系需要在软件设计阶段提前设定好，状态机的所有状态转换都应该是可预知的</li>
+<li>状态机的起点是一个顶层状态，顶层状态是一个复合状态</li>
+<li>复合状态属于伪状态，复合状态的内部活动实际是内部活动状态的内部活动</li>
+<li>复合状态具有单独的事件处理方法，这个也是简单状态划分为复合状态的依据：具有相同事件的事件处理方法的一类简单状态可划分为一个复合状态的子状态<br><a name="ADVzY"></a></li>
 </ol>
 <h2 id="三、最佳实践"><a href="#三、最佳实践" class="headerlink" title="三、最佳实践"></a>三、最佳实践</h2><p><img src="/img/%E6%B4%97%E8%A1%A3%E6%9C%BA%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E5%85%B3%E7%B3%BB%E5%9B%BE.png" srcset="/img/loading.gif" lazyload alt="洗衣机状态转换关系图"></p>
 <p><img src="/img/%E6%B4%97%E8%A1%A3%E6%9C%BA%E7%8A%B6%E6%80%81%E5%B1%82%E7%BA%A7%E5%85%B3%E7%B3%BB%E5%9B%BE.png" srcset="/img/loading.gif" lazyload alt="洗衣机状态层次关系图"></p>
@@ -568,7 +582,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年1月15日</div>
+          <div>2023年2月13日</div>
         </div>
       
       
