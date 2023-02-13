@@ -104,33 +104,6 @@
   
   
   <entry>
-    <title>嵌入式任务调度组件</title>
-    <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/"/>
-    <url>/2022/11/17/%E7%BB%84%E4%BB%B6-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/</url>
-    
-    <content type="html"><![CDATA[<h1 id="嵌入式任务调度组件"><a href="#嵌入式任务调度组件" class="headerlink" title="嵌入式任务调度组件"></a>嵌入式任务调度组件</h1><h2 id="一、需求分析"><a href="#一、需求分析" class="headerlink" title="一、需求分析"></a>一、需求分析</h2><h2 id="二、软件设计"><a href="#二、软件设计" class="headerlink" title="二、软件设计"></a>二、软件设计</h2><h2 id="三、落地实践"><a href="#三、落地实践" class="headerlink" title="三、落地实践"></a>三、落地实践</h2>]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>OS</tag>
-      
-      <tag>嵌入式组件</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>嵌入式按键检测组件</title>
     <link href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%8C%89%E9%94%AE%E6%A3%80%E6%B5%8B%E5%AE%9E%E7%8E%B0/"/>
     <url>/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%8C%89%E9%94%AE%E6%A3%80%E6%B5%8B%E5%AE%9E%E7%8E%B0/</url>
@@ -248,6 +221,33 @@
     <tags>
       
       <tag>设计原则</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>嵌入式任务调度组件</title>
+    <link href="/2022/06/17/%E7%BB%84%E4%BB%B6-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2022/06/17/%E7%BB%84%E4%BB%B6-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="嵌入式任务调度组件"><a href="#嵌入式任务调度组件" class="headerlink" title="嵌入式任务调度组件"></a>嵌入式任务调度组件</h1><h2 id="一、需求分析"><a href="#一、需求分析" class="headerlink" title="一、需求分析"></a>一、需求分析</h2><h2 id="二、软件设计"><a href="#二、软件设计" class="headerlink" title="二、软件设计"></a>二、软件设计</h2><h2 id="三、落地实践"><a href="#三、落地实践" class="headerlink" title="三、落地实践"></a>三、落地实践</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>OS</tag>
+      
+      <tag>嵌入式组件</tag>
       
     </tags>
     
