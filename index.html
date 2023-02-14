@@ -316,6 +316,69 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
+        <a href="/2023/01/17/%E7%BB%84%E4%BB%B6-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/" target="_self">
+          嵌入式任务调度组件
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/01/17/%E7%BB%84%E4%BB%B6-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/" target="_self">
+        <div>
+          嵌入式任务调度组件一、组件概述组件适用于小型嵌入式平台，非抢占式线程需求场景下的任务创建、启动、挂起、恢复功能。 二、需求分析三、软件设计四、落地实践
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-01-17 19:45" pubdate>
+              2023-01-17
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/" class="category-chain-item">嵌入式</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/OS/">#OS</a>
+            
+              <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%BB%84%E4%BB%B6/">#嵌入式组件</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
         <a href="/2022/11/27/%E7%BB%84%E4%BB%B6-%E7%8A%B6%E6%80%81%E6%9C%BA%E5%AE%9E%E7%8E%B0/" target="_self">
           嵌入式状态机组件
         </a>
@@ -447,67 +510,6 @@
       <a class="index-excerpt index-excerpt__noimg" href="/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/" target="_self">
         <div>
           IPC组件一、模块简介IPC（Interprocess communication）模块是指模块间通信模块，主要实现的功能是消息的订阅、消息的发送接收处理业务。模块的功能比较简单，实现也相对简单。 二、需求分析 模块间的消息传递一对多消息和一对一消息，所有的消息都是先经过IPC模块再进行分发，按照模块的消息订阅情况判断消息是否需要分发给每个模块。 消息从发送模块到接收模块要求比较高的执行效率。
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-11-17 19:45" pubdate>
-              2022-11-17
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/" class="category-chain-item">嵌入式</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%BB%84%E4%BB%B6/">#嵌入式组件</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%8C%89%E9%94%AE%E6%A3%80%E6%B5%8B%E5%AE%9E%E7%8E%B0/" target="_self">
-          嵌入式按键检测组件
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%8C%89%E9%94%AE%E6%A3%80%E6%B5%8B%E5%AE%9E%E7%8E%B0/" target="_self">
-        <div>
-          按键检测模块模块简介按键检测模块用于嵌入式系统上实现按键的扫描，实现按键按下、释放、短按、长按等事件的检测 需求分析按键检测需要可以识别多个按键的多种事件触发。  功能性需求 可以实现多个按键检测 实现按键扫描事件检测和事件回调触发   非功能性需求 方便移植 方便添加按键 代码实现简洁易读    架构设计设计目标 可读性 可移植性 可拓展性  设计原理 基本状态设计采用两种方案设计   链表方案
         </div>
       </a>
 

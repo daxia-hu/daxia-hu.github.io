@@ -24,7 +24,7 @@
 <meta property="og:description" content="嵌入式交互shell实现模块简介需求分析 嵌入式产品中一般都会有一个通过串口或者USB等通讯方式实现的与开发人员或者测试人员交互的模块，每个产品可能的实现的方式不一样，本模块的目标是实现一个方便移植的通用性SHELL模块。 功能性需求： 实现可以在项目的任何地方都可以注册命令 实现用户输入命令或者带参命令可以调用相关回调函数以及对参数的解析 实现对用户输入的十进制、十六进制数字进行解析取值 实现基">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-10-02T11:45:21.000Z">
-<meta property="article:modified_time" content="2023-02-14T03:23:57.398Z">
+<meta property="article:modified_time" content="2023-02-14T03:43:05.580Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="嵌入式组件">
 <meta name="twitter:card" content="summary_large_image">
@@ -253,7 +253,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          884 字
+          890 字
         
       </span>
     
@@ -336,15 +336,6 @@
     
       
       
-        <a href="/2022/06/17/%E7%BB%84%E4%BB%B6-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/" title="嵌入式任务调度组件"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">嵌入式任务调度组件</span>
-        </a>
-      
-    
-      
-      
         <a href="/2022/10/02/%E7%BB%84%E4%BB%B6-%E4%BA%A4%E4%BA%92shell%E5%AE%9E%E7%8E%B0/" title="嵌入式shell组件"
            class="list-group-item list-group-item-action
            active">
@@ -406,6 +397,15 @@
         </a>
       
     
+      
+      
+        <a href="/2023/01/17/%E7%BB%84%E4%BB%B6-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/" title="嵌入式任务调度组件"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">嵌入式任务调度组件</span>
+        </a>
+      
+    
   </div>
 
         
@@ -430,7 +430,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2 分钟前
+                    本文最后更新于：26 分钟前
                   
                 
               </p>
@@ -470,6 +470,7 @@
 <li>命令格式为 “cmd param1 param2 param3 param4 …”，cmd是命令，后面的param为参数。遍历查找字符串时只对比cmd，后面的参数在命令的事件处理内部处理。</li>
 <li>接收到串口数据包首先要对串口数据包进行分解，分解为命令带参的格式，然后再将分出来的命令进行比对查找。</li>
 <li>单条命令以”\r”或者”\n”结尾标识</li>
+<li>命令解析流程</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">typedef</span> <span class="hljs-title function_">uint8_t</span><span class="hljs-params">(*Shell_function)</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">uint8_t</span> argc,<span class="hljs-type">const</span> <span class="hljs-type">char</span> *argv[])</span>;<br><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> _<span class="hljs-title">SHELLNODE</span></span><br><span class="hljs-class">&#123;</span><br>    Node node;                 <span class="hljs-comment">//挂在链表上的节点</span><br>    <span class="hljs-type">const</span> <span class="hljs-type">char</span> *name;          <span class="hljs-comment">//命令字符串</span><br>    Shell_function handleFunc; <span class="hljs-comment">//命令回调函数</span><br>&#125; ShellNode;<br></code></pre></td></tr></table></figure>
 <h2 id="落地实践"><a href="#落地实践" class="headerlink" title="落地实践"></a>落地实践</h2>
