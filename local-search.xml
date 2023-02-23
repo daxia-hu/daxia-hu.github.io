@@ -256,6 +256,31 @@
   
   
   <entry>
+    <title>蓝牙技术基础</title>
+    <link href="/2022/06/12/%E8%93%9D%E7%89%99-%E4%BD%8E%E5%8A%9F%E8%80%97%E8%93%9D%E7%89%99%E5%9F%BA%E7%A1%80/"/>
+    <url>/2022/06/12/%E8%93%9D%E7%89%99-%E4%BD%8E%E5%8A%9F%E8%80%97%E8%93%9D%E7%89%99%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[<h1 id="低功耗蓝牙技术基础"><a href="#低功耗蓝牙技术基础" class="headerlink" title="低功耗蓝牙技术基础"></a>低功耗蓝牙技术基础</h1><blockquote><p>ble全称bluetooth low energy一般翻译为低功耗蓝牙或者蓝牙低功耗。特点是低成本、低延时、低功耗，因为目前的智能手机基本上对BLE100%的支持率，所以BLE在消费电子、物联网市场具有非常大的应用市场。</p></blockquote><blockquote><p>蓝牙的协议规范都由sig制定，sig是蓝牙技术联盟协会，由一众行业技术领先的厂商组成，官方网站<a href="https://www.bluetooth.com/">link</a>, 网站的specifications专栏中包含蓝牙技术的所有profile，这也是蓝牙开发人员务必要阅读了解的。</p></blockquote><blockquote><p>本文只是针对BLE的常用应用配置进行简述说明。</p></blockquote><h2 id="角色配置"><a href="#角色配置" class="headerlink" title="角色配置"></a>角色配置</h2><p>蓝牙具有主机&#x2F;从机，客户端&#x2F;服务端，观察者&#x2F;广播者的角色概念。</p><p><img src="/img/BLE%E6%9E%B6%E6%9E%84%E5%88%86%E5%B1%82.png" alt="BLE架构分层"></p><ol><li>主机&#x2F;从机的概念是根据连接行为</li><li>客户端&#x2F;服务端与主机&#x2F;从机是两个独立的概念，是针对ATT的行为权限进行区分的概念。</li><li>观察者&#x2F;广播者是根据非连接场景下数据通信双方的行为区分的概念。<ul><li>主机：在连接这个行为中负责发现从机和发起连接从机的业务。</li><li>从机：在连接行为中负责广播自己被主机发现和被主机连接的业务。</li><li>客户端：对服务端的服务进行访问，可以对服务端进行读写行为。</li><li>服务端：给客户端提供服务，对客户端进行指示&#x2F;通知行为。</li><li>观察者：扫描广播者的广播信息。</li><li>广播者：将带有设备标识的特定信息通过广播包的信息广播出去。</li></ul></li></ol><h2 id="广播"><a href="#广播" class="headerlink" title="广播"></a>广播</h2><p>蓝牙的频率范围是2.400-2.4835 GHz，按照每个信道2MHz可以分为40个射频信道。<br><img src="/img/%E8%93%9D%E7%89%99%E4%BF%A1%E9%81%93.png" alt="蓝牙信道"><br>从机或者广播者设备通过广播的形式可以被环境中的主机或者扫描者发现。广播需要配置广播包的内容和广播包的广播间隔。</p><ul><li>广播包<ul><li>广播包由包头和内容组成，包头的格式固定由以下内容组成：<ul><li>1、PDU Type：标识广播类型</li><li>2、RFU：预留</li><li>3、ChSel：如果本机支持跳频（Hopping）算法 #2，这设置成为 1</li><li>4、TxAdd：代表设备的地址是随机地址还是公共地址</li><li>5、RxAdd：代表期望对端的地址是随机地址还是公共地址</li><li>6、Length：代表了后面的 Payload 的长度，蓝牙5.0以后的版本支持最大255个字节，蓝牙5.0以前的版本最大支持31个字节<blockquote><p>广播包中的数据包采用ltv格式：length、type、value的形式<br><img src="/img/BLE%E5%B9%BF%E6%92%AD%E5%8C%85%E7%B1%BB%E5%9E%8B.png" alt="BLE广播包类型"></p></blockquote></li></ul></li></ul></li></ul><h2 id="扫描"><a href="#扫描" class="headerlink" title="扫描"></a>扫描</h2><p>扫描指的是对从机或者广播者的广播包进行扫描</p><h2 id="GATT"><a href="#GATT" class="headerlink" title="GATT"></a>GATT</h2><h2 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h2><h2 id="数据传输"><a href="#数据传输" class="headerlink" title="数据传输"></a>数据传输</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>蓝牙</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>BLE</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>尼尔森十大可用性原则</title>
     <link href="/2022/05/15/%E5%B0%BC%E5%B0%94%E6%A3%AE%E5%8D%81%E5%A4%A7%E5%8E%9F%E5%88%99/"/>
     <url>/2022/05/15/%E5%B0%BC%E5%B0%94%E6%A3%AE%E5%8D%81%E5%A4%A7%E5%8E%9F%E5%88%99/</url>
