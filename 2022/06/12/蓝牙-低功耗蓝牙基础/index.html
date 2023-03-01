@@ -28,8 +28,9 @@
 <meta property="og:image" content="https://hudaxia.top/img/BLE%E5%B9%BF%E6%92%AD%E7%B1%BB%E5%9E%8B.png">
 <meta property="og:image" content="https://hudaxia.top/img/%E5%B9%BF%E6%92%AD%E7%B1%BB%E5%9E%8B%E7%89%B9%E6%80%A7.png">
 <meta property="og:image" content="https://hudaxia.top/img/BLE%E5%B9%BF%E6%92%AD%E5%8C%85%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png">
+<meta property="og:image" content="https://hudaxia.top/img/%E5%B9%BF%E6%92%AD%E4%BA%8B%E4%BB%B6%E6%97%B6%E5%BA%8F%E5%9B%BE.png">
 <meta property="article:published_time" content="2022-06-12T09:36:34.000Z">
-<meta property="article:modified_time" content="2023-03-01T06:27:05.965Z">
+<meta property="article:modified_time" content="2023-03-01T06:53:31.235Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="BLE">
 <meta name="twitter:card" content="summary_large_image">
@@ -259,7 +260,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          1.7k 字
         
       </span>
     
@@ -270,7 +271,7 @@
         
         
         
-          12 分钟
+          15 分钟
         
       </span>
     
@@ -404,7 +405,7 @@
 </ul>
 </li>
 </ol>
-<h2 id="二、广播"><a href="#二、广播" class="headerlink" title="二、广播"></a>二、广播</h2><p>蓝牙的频率范围是2.400-2.4835 GHz，按照每个信道2MHz可以分为40个射频信道。信号频率分布如下：<br><img src="/img/%E8%93%9D%E7%89%99%E4%BF%A1%E9%81%93.png" srcset="/img/loading.gif" lazyload alt="蓝牙信道"><br>从机或者广播者设备通过广播的形式可以被环境中的主机或者扫描者发现。广播需要配置广播包的内容和广播包的广播间隔。</p>
+<h2 id="二、广播"><a href="#二、广播" class="headerlink" title="二、广播"></a>二、广播</h2><p>蓝牙的频率范围是2.400-2.4835 GHz，按照每个信道2MHz可以分为40个射频信道。信号频率分布如下：<br><img src="/img/%E8%93%9D%E7%89%99%E4%BF%A1%E9%81%93.png" srcset="/img/loading.gif" lazyload alt="蓝牙信道"><br>设备在广播时会在3个广播信道发送相同的报文，一般广播的间隔配置都是设置最小广播间隔和最大广播间隔，从机或者广播者设备通过广播的形式可以被环境中的主机或者扫描者发现。广播需要配置广播包的内容和广播包的广播间隔。</p>
 <h3 id="2-1-广播包"><a href="#2-1-广播包" class="headerlink" title="2.1 广播包"></a>2.1 广播包</h3><p><img src="/img/BLE%E5%B9%BF%E6%92%AD%E7%B1%BB%E5%9E%8B.png" srcset="/img/loading.gif" lazyload alt="广播类型"></p>
 <ul>
 <li>广播包由包头和内容组成，包头的格式固定由以下内容组成：<ul>
@@ -426,9 +427,7 @@
 </li>
 <li>广播包中的数据包采用ltv格式：length、type、value的形式。type是广播的数据类型:规范文档 <a target="_blank" rel="noopener" href="https://btprodspecificationrefs.blob.core.windows.net/assigned-numbers/Assigned%20Number%20Types/Assigned%20Numbers.pdf">Assigned Numbers Document</a>，包含：<br><img src="/img/BLE%E5%B9%BF%E6%92%AD%E5%8C%85%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png" srcset="/img/loading.gif" lazyload alt="BLE广播包数据类型"></li>
 </ul>
-<h3 id="2-2-广播配置"><a href="#2-2-广播配置" class="headerlink" title="2.2 广播配置"></a>2.2 广播配置</h3><ol>
-<li>广播间隔</li>
-</ol>
+<h3 id="2-2-广播配置"><a href="#2-2-广播配置" class="headerlink" title="2.2 广播配置"></a>2.2 广播配置</h3><p>蓝牙广播时会在37、38、39三个信道进行广播，在同一个环境中如果有多个设备一起广播可能会出现周期性的同时广播而互相干扰，所以蓝牙除了定向广播之外的其他广播类型广播的发送时间均会实现动态调整，实现该动态调整的方式是在每次广播事件后随机加入0<del>10ms的随机延时。这样当出现两个设备单词广播时间相同，那它们在下一次广播的时间大概率不会相同而互相影响。两个相邻广播事件之间的时间间隔为 advInterval + advDelay ，advInterval必须是0.625ms的整数倍，范围是20ms</del>10.24s。advDelay是一个链路层分配的一个伪随机数。范围是0~10ms。<br><img src="/img/%E5%B9%BF%E6%92%AD%E4%BA%8B%E4%BB%B6%E6%97%B6%E5%BA%8F%E5%9B%BE.png" srcset="/img/loading.gif" lazyload alt="广播事件时序图"></p>
 <h2 id="三、扫描"><a href="#三、扫描" class="headerlink" title="三、扫描"></a>三、扫描</h2><p>扫描指的是对从机或者广播者的广播包进行扫描</p>
 <h2 id="四、GATT"><a href="#四、GATT" class="headerlink" title="四、GATT"></a>四、GATT</h2><h2 id="五、连接"><a href="#五、连接" class="headerlink" title="五、连接"></a>五、连接</h2><h2 id="六、数据传输"><a href="#六、数据传输" class="headerlink" title="六、数据传输"></a>六、数据传输</h2>
                 
