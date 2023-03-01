@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://hudaxia.top/img/BLE%E5%B9%BF%E6%92%AD%E7%B1%BB%E5%9E%8B.png">
 <meta property="og:image" content="https://hudaxia.top/img/BLE%E5%B9%BF%E6%92%AD%E5%8C%85%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png">
 <meta property="article:published_time" content="2022-06-12T09:36:34.000Z">
-<meta property="article:modified_time" content="2023-02-23T12:38:38.071Z">
+<meta property="article:modified_time" content="2023-03-01T04:15:32.760Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="BLE">
 <meta name="twitter:card" content="summary_large_image">
@@ -258,7 +258,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1k 字
+          1.4k 字
         
       </span>
     
@@ -269,7 +269,7 @@
         
         
         
-          9 分钟
+          12 分钟
         
       </span>
     
@@ -372,7 +372,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：几秒前
+                    本文最后更新于：1 分钟前
                   
                 
               </p>
@@ -404,9 +404,18 @@
 </li>
 </ol>
 <h2 id="二、广播"><a href="#二、广播" class="headerlink" title="二、广播"></a>二、广播</h2><p>蓝牙的频率范围是2.400-2.4835 GHz，按照每个信道2MHz可以分为40个射频信道。信号频率分布如下：<br><img src="/img/%E8%93%9D%E7%89%99%E4%BF%A1%E9%81%93.png" srcset="/img/loading.gif" lazyload alt="蓝牙信道"><br>从机或者广播者设备通过广播的形式可以被环境中的主机或者扫描者发现。广播需要配置广播包的内容和广播包的广播间隔。</p>
-<h3 id="2-1广播包"><a href="#2-1广播包" class="headerlink" title="2.1广播包"></a>2.1广播包</h3><ul>
+<h3 id="2-1-广播包"><a href="#2-1-广播包" class="headerlink" title="2.1 广播包"></a>2.1 广播包</h3><p><img src="/img/BLE%E5%B9%BF%E6%92%AD%E7%B1%BB%E5%9E%8B.png" srcset="/img/loading.gif" lazyload alt="广播类型"></p>
+<ul>
 <li>广播包由包头和内容组成，包头的格式固定由以下内容组成：<ul>
-<li>PDU Type：标识广播类型</li>
+<li>PDU Type：标识广播包类型<blockquote>
+</blockquote>
+<ol>
+<li>可连接的非定向广播（Connectable Undirected Event Type）:是一种非常常用的广播类型，标识当前广播设备可以接受任何设备的扫描连接请求</li>
+<li>可连接的定向广播（Connectable Directed Event Type）：一种为了尽快建立连接的广播方式，广播包的内容包含广播者的地址和发起者的地址，当发起者收到发给自己的广播包时，应该立即发送连接请求作为广播的回应。</li>
+<li>不可连接的非定向广播（Non-connectable Undirected Event Type）：广播者仅仅是为了广播自己的数据，不响应扫描请求和连接请求。</li>
+<li>可扫描的非定向广播（Scannable Undirected Event Type）：不能用于发起连接，但是允许其他设备扫描广播设备并且做出扫描响应，适用于广播者对数据的发送，但是广播者不响应连接请求。</li>
+</ol>
+</li>
 <li>RFU：预留</li>
 <li>ChSel：如果本机支持跳频（Hopping）算法 #2，这设置成为 1</li>
 <li>TxAdd：代表设备的地址是随机地址还是公共地址</li>
@@ -414,10 +423,11 @@
 <li>Length：代表了后面的 Payload 的长度，蓝牙5.0以后的版本支持最大255个字节，蓝牙5.0以前的版本最大支持31个字节。</li>
 </ul>
 </li>
-<li>广播包中的数据包采用ltv格式：length、type、value的形式。type是广播的数据类型:规范文档 <a target="_blank" rel="noopener" href="https://btprodspecificationrefs.blob.core.windows.net/assigned-numbers/Assigned%20Number%20Types/Assigned%20Numbers.pdf">Assigned Numbers Document</a>，包含：</li>
+<li>广播包中的数据包采用ltv格式：length、type、value的形式。type是广播的数据类型:规范文档 <a target="_blank" rel="noopener" href="https://btprodspecificationrefs.blob.core.windows.net/assigned-numbers/Assigned%20Number%20Types/Assigned%20Numbers.pdf">Assigned Numbers Document</a>，包含：<br><img src="/img/BLE%E5%B9%BF%E6%92%AD%E5%8C%85%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png" srcset="/img/loading.gif" lazyload alt="BLE广播包数据类型"></li>
 </ul>
-<p><img src="/img/BLE%E5%B9%BF%E6%92%AD%E7%B1%BB%E5%9E%8B.png" srcset="/img/loading.gif" lazyload alt="广播类型"></p>
-<p><img src="/img/BLE%E5%B9%BF%E6%92%AD%E5%8C%85%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png" srcset="/img/loading.gif" lazyload alt="BLE广播包数据类型"></p>
+<h3 id="2-2-广播配置"><a href="#2-2-广播配置" class="headerlink" title="2.2 广播配置"></a>2.2 广播配置</h3><ol>
+<li>广播间隔</li>
+</ol>
 <h2 id="三、扫描"><a href="#三、扫描" class="headerlink" title="三、扫描"></a>三、扫描</h2><p>扫描指的是对从机或者广播者的广播包进行扫描</p>
 <h2 id="四、GATT"><a href="#四、GATT" class="headerlink" title="四、GATT"></a>四、GATT</h2><h2 id="五、连接"><a href="#五、连接" class="headerlink" title="五、连接"></a>五、连接</h2><h2 id="六、数据传输"><a href="#六、数据传输" class="headerlink" title="六、数据传输"></a>六、数据传输</h2>
                 
@@ -483,7 +493,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年2月23日</div>
+          <div>2023年3月1日</div>
         </div>
       
       
