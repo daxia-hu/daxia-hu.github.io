@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://hudaxia.top/img/%E4%B8%BB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png">
 <meta property="og:image" content="https://hudaxia.top/img/%E8%A2%AB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png">
 <meta property="article:published_time" content="2022-06-12T09:36:34.000Z">
-<meta property="article:modified_time" content="2023-03-08T02:28:39.726Z">
+<meta property="article:modified_time" content="2023-03-08T02:34:33.287Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="BLE">
 <meta name="twitter:card" content="summary_large_image">
@@ -265,7 +265,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.3k 字
+          2.4k 字
         
       </span>
     
@@ -276,7 +276,7 @@
         
         
         
-          19 分钟
+          20 分钟
         
       </span>
     
@@ -444,8 +444,8 @@
 <h2 id="三、扫描"><a href="#三、扫描" class="headerlink" title="三、扫描"></a>三、扫描</h2><p>蓝牙的扫描是指蓝牙设备的扫描者角色通过扫描环境中广播者的广播数据进行发现、广播数据传递、为连接做准备。需要注意的是扫描状态无法直接进入连接状态，只能在扫描停止后通过就绪状态进入连接状态。<br><img src="/img/ble%E6%89%AB%E6%8F%8F%E7%8A%B6%E6%80%81%E6%9C%BA.jpg" srcset="/img/loading.gif" lazyload alt="ble扫描状态机"></p>
 <ul>
 <li>扫描类型：BLE的扫描方式分为两种主动扫描和被动扫描<ul>
-<li>主动扫描（active scanning）：<br><img src="/img/%E4%B8%BB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png" srcset="/img/loading.gif" lazyload alt="主动扫描时序"></li>
-<li>被动扫描（passive scanning）：<br><img src="/img/%E8%A2%AB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png" srcset="/img/loading.gif" lazyload alt="被动扫描时序"></li>
+<li>主动扫描（active scanning）：扫描者在发现扫描包后主动发起扫描请求，通过广播者的扫描响应作为一次连接前准备的交互。<br><img src="/img/%E4%B8%BB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png" srcset="/img/loading.gif" lazyload alt="主动扫描时序"></li>
+<li>被动扫描（passive scanning）：扫描者只是发现设备，但是不会发起扫描请求。<br><img src="/img/%E8%A2%AB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png" srcset="/img/loading.gif" lazyload alt="被动扫描时序"><br>两种扫描方式对比，主动扫描的方式会让广播者发现扫描者来暴露扫描者的信息，但是被动扫描不会被扫描者发现具有一定的隐蔽性。</li>
 </ul>
 </li>
 <li>扫描配置</li>
