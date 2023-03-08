@@ -31,8 +31,11 @@
 <meta property="og:image" content="https://hudaxia.top/img/5.0adv1.png">
 <meta property="og:image" content="https://hudaxia.top/img/5.0adv2.png">
 <meta property="og:image" content="https://hudaxia.top/img/%E5%B9%BF%E6%92%AD%E4%BA%8B%E4%BB%B6%E6%97%B6%E5%BA%8F.png">
+<meta property="og:image" content="https://hudaxia.top/img/ble%E6%89%AB%E6%8F%8F%E7%8A%B6%E6%80%81%E6%9C%BA.jpg">
+<meta property="og:image" content="https://hudaxia.top/img/%E4%B8%BB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png">
+<meta property="og:image" content="https://hudaxia.top/img/%E8%A2%AB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png">
 <meta property="article:published_time" content="2022-06-12T09:36:34.000Z">
-<meta property="article:modified_time" content="2023-03-08T02:04:14.151Z">
+<meta property="article:modified_time" content="2023-03-08T02:28:39.726Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="BLE">
 <meta name="twitter:card" content="summary_large_image">
@@ -262,7 +265,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.1k 字
+          2.3k 字
         
       </span>
     
@@ -273,7 +276,7 @@
         
         
         
-          18 分钟
+          19 分钟
         
       </span>
     
@@ -438,7 +441,16 @@
 </ul>
 <h3 id="2-2-广播配置"><a href="#2-2-广播配置" class="headerlink" title="2.2 广播配置"></a>2.2 广播配置</h3><p>蓝牙广播时会在37、38、39三个信道进行广播，在同一个环境中如果有多个设备一起广播可能会出现周期性的同时广播而互相干扰，所以蓝牙除了定向广播之外的其他广播类型广播的发送时间均会实现动态调整，实现该动态调整的方式是在每次广播事件后随机加入0-10ms的随机延时。这样当出现两个设备单词广播时间相同，那它们在下一次广播的时间大概率不会相同而互相影响。两个相邻广播事件之间的时间间隔为 advInterval + advDelay ，advInterval必须是0.625ms的整数倍，范围是20ms-10.24s。advDelay是一个链路层分配的一个伪随机数。范围是0-10ms。</p>
 <p>一般广播的间隔配置都是设置最小广播间隔和最大广播间隔，如果需要固定广播间隔只需要将两个值设置为一个值即可。<br><img src="/img/%E5%B9%BF%E6%92%AD%E4%BA%8B%E4%BB%B6%E6%97%B6%E5%BA%8F.png" srcset="/img/loading.gif" lazyload alt="广播事件时序图"></p>
-<h2 id="三、扫描"><a href="#三、扫描" class="headerlink" title="三、扫描"></a>三、扫描</h2><h2 id="四、GATT"><a href="#四、GATT" class="headerlink" title="四、GATT"></a>四、GATT</h2><h2 id="五、连接"><a href="#五、连接" class="headerlink" title="五、连接"></a>五、连接</h2><h2 id="六、数据传输"><a href="#六、数据传输" class="headerlink" title="六、数据传输"></a>六、数据传输</h2><p>蓝牙在数据传输的过程中使用快速跳频算法选择需要使用到的信道。</p>
+<h2 id="三、扫描"><a href="#三、扫描" class="headerlink" title="三、扫描"></a>三、扫描</h2><p>蓝牙的扫描是指蓝牙设备的扫描者角色通过扫描环境中广播者的广播数据进行发现、广播数据传递、为连接做准备。需要注意的是扫描状态无法直接进入连接状态，只能在扫描停止后通过就绪状态进入连接状态。<br><img src="/img/ble%E6%89%AB%E6%8F%8F%E7%8A%B6%E6%80%81%E6%9C%BA.jpg" srcset="/img/loading.gif" lazyload alt="ble扫描状态机"></p>
+<ul>
+<li>扫描类型：BLE的扫描方式分为两种主动扫描和被动扫描<ul>
+<li>主动扫描（active scanning）：<br><img src="/img/%E4%B8%BB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png" srcset="/img/loading.gif" lazyload alt="主动扫描时序"></li>
+<li>被动扫描（passive scanning）：<br><img src="/img/%E8%A2%AB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png" srcset="/img/loading.gif" lazyload alt="被动扫描时序"></li>
+</ul>
+</li>
+<li>扫描配置</li>
+</ul>
+<h2 id="四、GATT"><a href="#四、GATT" class="headerlink" title="四、GATT"></a>四、GATT</h2><h2 id="五、连接"><a href="#五、连接" class="headerlink" title="五、连接"></a>五、连接</h2><h2 id="六、数据传输"><a href="#六、数据传输" class="headerlink" title="六、数据传输"></a>六、数据传输</h2><p>蓝牙在数据传输的过程中使用快速跳频算法选择需要使用到的信道。</p>
 
                 
               </div>
