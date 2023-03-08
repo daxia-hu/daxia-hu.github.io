@@ -34,8 +34,9 @@
 <meta property="og:image" content="https://hudaxia.top/img/ble%E6%89%AB%E6%8F%8F%E7%8A%B6%E6%80%81%E6%9C%BA.jpg">
 <meta property="og:image" content="https://hudaxia.top/img/%E4%B8%BB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png">
 <meta property="og:image" content="https://hudaxia.top/img/%E8%A2%AB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png">
+<meta property="og:image" content="https://hudaxia.top/img/BLE%E6%89%AB%E6%8F%8F%E5%8F%82%E6%95%B0.png">
 <meta property="article:published_time" content="2022-06-12T09:36:34.000Z">
-<meta property="article:modified_time" content="2023-03-08T02:38:39.622Z">
+<meta property="article:modified_time" content="2023-03-08T03:19:26.814Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="BLE">
 <meta name="twitter:card" content="summary_large_image">
@@ -265,7 +266,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.4k 字
+          2.8k 字
         
       </span>
     
@@ -276,7 +277,7 @@
         
         
         
-          20 分钟
+          24 分钟
         
       </span>
     
@@ -448,11 +449,38 @@
 </ul>
 </li>
 </ul>
-<p><img src="/img/%E4%B8%BB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png" srcset="/img/loading.gif" lazyload alt="主动扫描时序"><br>    - 被动扫描（passive scanning）：扫描者只是发现设备，但是不会发起扫描请求。</p>
+<p><img src="/img/%E4%B8%BB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png" srcset="/img/loading.gif" lazyload alt="主动扫描时序"><br>    - 被动扫描（passive scanning）：扫描者只是发现广播者设备，但是不会发起扫描请求。</p>
 <p><img src="/img/%E8%A2%AB%E5%8A%A8%E6%89%AB%E6%8F%8F%E6%97%B6%E5%BA%8F.png" srcset="/img/loading.gif" lazyload alt="被动扫描时序"></p>
-<p>两种扫描方式对比，主动扫描的方式会让广播者发现扫描者来暴露扫描者的信息，但是被动扫描不会被扫描者发现具有一定的隐蔽性。</p>
+<p>两种扫描方式对比，主动扫描的方式会让广播者发现扫描者来暴露扫描者的信息（addr），但是被动扫描不会被扫描者发现具有一定的隐蔽性。</p>
 <ul>
-<li>扫描配置</li>
+<li>扫描参数配置<ul>
+<li>扫描类型：上面的两种扫描类型被动扫描（0）、主动扫描（1）</li>
+<li>扫描窗口（windows）：一次扫描进行的时间宽度</li>
+<li>扫描间隔（interval）：两个连续的扫描窗口之间的时间差，包括扫描休息的时间和扫描窗口的时间<br><img src="/img/BLE%E6%89%AB%E6%8F%8F%E5%8F%82%E6%95%B0.png" srcset="/img/loading.gif" lazyload alt="BLE扫描参数"><ul>
+<li>窗口和间隔可设置的时间范围是2.5ms-10.24s</li>
+<li>扫描窗口的时间不能大于扫描间隔的时间</li>
+<li>如果扫描窗口时间和扫描间隔时间相等，则扫描设备一直扫描，没有休息时间，带来的功耗会比较高</li>
+</ul>
+</li>
+<li>扫描请求中的地址类型：包含随机地址和固定地址（设备mac地址），随机地址不会暴露自己的地址信息，相对来说更加安全。</li>
+<li>扫描的过滤策略<ol>
+<li>除了定向广播中包含不指向当前扫描设备的广播包，其他一律扫描</li>
+<li>广播包地址在扫描设备白名单中或者发给扫描设备的定向广播包</li>
+<li>所有的非定向广播包或者指向扫描设备的定向广播包或者广播地址为可解析私有地址的定向广播包</li>
+<li>广播地址在扫描白名单或者广播地址为可解析私有地址的定向广播包或者指向扫描者地址的定向广播包</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>扫描者设备HOST收到的扫描事件内容：<ul>
+<li>扫描设备数量</li>
+<li>事件类型</li>
+<li>广播设备地址类型</li>
+<li>广播地址值</li>
+<li>广播数据长度</li>
+<li>广播数据内容</li>
+</ul>
+</li>
 </ul>
 <h2 id="四、连接"><a href="#四、连接" class="headerlink" title="四、连接"></a>四、连接</h2><h2 id="五、GAP、ATT和GATT"><a href="#五、GAP、ATT和GATT" class="headerlink" title="五、GAP、ATT和GATT"></a>五、GAP、ATT和GATT</h2><h2 id="六、数据传输"><a href="#六、数据传输" class="headerlink" title="六、数据传输"></a>六、数据传输</h2><p>蓝牙在数据传输的过程中使用快速跳频算法选择需要使用到的信道。</p>
 
