@@ -28,9 +28,11 @@
 <meta property="og:image" content="https://hudaxia.top/img/BLE%E5%B9%BF%E6%92%AD%E7%B1%BB%E5%9E%8B.png">
 <meta property="og:image" content="https://hudaxia.top/img/%E5%B9%BF%E6%92%AD%E7%B1%BB%E5%9E%8B%E7%89%B9%E6%80%A7.png">
 <meta property="og:image" content="https://hudaxia.top/img/BLE%E5%B9%BF%E6%92%AD%E5%8C%85%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png">
+<meta property="og:image" content="https://hudaxia.top/img/5.0adv1.png">
+<meta property="og:image" content="https://hudaxia.top/img/5.0adv2.png">
 <meta property="og:image" content="https://hudaxia.top/img/%E5%B9%BF%E6%92%AD%E4%BA%8B%E4%BB%B6%E6%97%B6%E5%BA%8F.png">
 <meta property="article:published_time" content="2022-06-12T09:36:34.000Z">
-<meta property="article:modified_time" content="2023-03-08T01:56:20.297Z">
+<meta property="article:modified_time" content="2023-03-08T02:04:14.151Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="BLE">
 <meta name="twitter:card" content="summary_large_image">
@@ -427,7 +429,7 @@
 </li>
 <li><p>蓝牙core5.0新增新特性：</p>
 <ul>
-<li>扩展广播（LE Advertising Extensions）：原来的37、38、39为主广播信道，剩余的0-36信道为第二广播信道，当扫描设备在主广播信道接收到ADV_EXT_IND指令时，可以在指定的第二广播信道监听辅助广播数据，数据长度最大可达255字节，如果数据想要更长可以根据主广播包中的AuxPtr指向新的辅助包，通过这种方式理论上可以不断扩展长度。</li>
+<li>扩展广播（LE Advertising Extensions）：原来的37、38、39为主广播信道，剩余的0-36信道为第二广播信道，当扫描设备在主广播信道接收到ADV_EXT_IND指令时，可以在指定的第二广播信道监听辅助广播数据，数据长度最大可达255字节，如果数据想要更长可以根据主广播包中的AuxPtr指向新的辅助包，通过这种方式理论上可以不断扩展长度。<br><img src="/img/5.0adv1.png" srcset="/img/loading.gif" lazyload alt="5.0广播类型1"><br><img src="/img/5.0adv2.png" srcset="/img/loading.gif" lazyload alt="5.0广播类型2"></li>
 <li>long range：提高发射功率、提升接收灵敏度、 新增前向纠错编码，实际通信距离可达500-1000m</li>
 <li>使用新的调频算法：新的跳频同时支持广播和数据通信调频，相比之前的提升性能、更加安全。</li>
 <li>更高频率的广播：5.0以前最小支持的interval为100ms，最高速率为2.48kbps。5.0将最小值限制为20ms，提升速度为原来的5倍12.4kbps。</li>
