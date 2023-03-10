@@ -29,23 +29,23 @@
   
   
   <entry>
-    <title>经典蓝牙技术基础</title>
-    <link href="/2022/08/13/%E8%93%9D%E7%89%99-%E7%BB%8F%E5%85%B8%E8%93%9D%E7%89%99%E5%9F%BA%E7%A1%80/"/>
-    <url>/2022/08/13/%E8%93%9D%E7%89%99-%E7%BB%8F%E5%85%B8%E8%93%9D%E7%89%99%E5%9F%BA%E7%A1%80/</url>
+    <title>FreeRTOS内核</title>
+    <link href="/2022/08/12/FreeRTOS%E5%86%85%E6%A0%B8/"/>
+    <url>/2022/08/12/FreeRTOS%E5%86%85%E6%A0%B8/</url>
     
     <content type="html"><![CDATA[]]></content>
     
     
     <categories>
       
-      <category>蓝牙</category>
+      <category>嵌入式</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>经典蓝牙</tag>
+      <tag>FREERTOS</tag>
       
     </tags>
     
@@ -129,6 +129,31 @@
   
   
   <entry>
+    <title>FreeRTOS应用</title>
+    <link href="/2022/03/12/FreeRTOS%E5%BA%94%E7%94%A8/"/>
+    <url>/2022/03/12/FreeRTOS%E5%BA%94%E7%94%A8/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>嵌入式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>FREERTOS</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>FIFO组件实现</title>
     <link href="/2022/02/06/%E7%BB%84%E4%BB%B6-FIFO%E5%AE%9E%E7%8E%B0/"/>
     <url>/2022/02/06/%E7%BB%84%E4%BB%B6-FIFO%E5%AE%9E%E7%8E%B0/</url>
@@ -198,56 +223,6 @@
       <tag>OS</tag>
       
       <tag>嵌入式组件</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>FREERTOS内核</title>
-    <link href="/2022/01/12/FREERTOS%E5%86%85%E6%A0%B8/"/>
-    <url>/2022/01/12/FREERTOS%E5%86%85%E6%A0%B8/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>FREERTOS</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>FREERTOS应用</title>
-    <link href="/2022/01/12/FREERTOS%E5%BA%94%E7%94%A8/"/>
-    <url>/2022/01/12/FREERTOS%E5%BA%94%E7%94%A8/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>嵌入式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>FREERTOS</tag>
       
     </tags>
     
@@ -381,9 +356,9 @@
   
   
   <entry>
-    <title>FREERTOS源码导读</title>
-    <link href="/2021/08/14/FREERTOS%E6%BA%90%E7%A0%81/"/>
-    <url>/2021/08/14/FREERTOS%E6%BA%90%E7%A0%81/</url>
+    <title>FreeRTOS源码导读</title>
+    <link href="/2021/08/14/FreeRTOS%E6%BA%90%E7%A0%81/"/>
+    <url>/2021/08/14/FreeRTOS%E6%BA%90%E7%A0%81/</url>
     
     <content type="html"><![CDATA[]]></content>
     
