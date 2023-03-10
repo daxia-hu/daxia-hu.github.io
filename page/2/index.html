@@ -217,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="浪费掉白天的人，也不会珍惜每一个夜晚！"></span>
+            <span id="subtitle" data-typed-text="择其善者而从之，其不善者而改之。"></span>
           
         </div>
 
@@ -255,15 +255,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/" target="_self">
-          嵌入式IPC组件
+        <a href="/2022/02/06/%E7%BB%84%E4%BB%B6-FIFO%E5%AE%9E%E7%8E%B0/" target="_self">
+          FIFO组件实现
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/11/17/%E7%BB%84%E4%BB%B6-IPC%E5%AE%9E%E7%8E%B0/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/02/06/%E7%BB%84%E4%BB%B6-FIFO%E5%AE%9E%E7%8E%B0/" target="_self">
         <div>
-          IPC组件一、模块简介IPC（Interprocess communication）模块是指模块间通信模块，主要实现的功能是消息的订阅、消息的发送接收处理业务。模块的功能比较简单，实现也相对简单。 二、需求分析 模块间的消息传递一对多消息和一对一消息，所有的消息都是先经过IPC模块再进行分发，按照模块的消息订阅情况判断消息是否需要分发给每个模块。 消息从发送模块到接收模块要求比较高的执行效率。
+          FIFO组件实现 fifo是指“first in，first out”先进先出数据结构  组件设计1.设计目标 正确性 易用性 可扩展性  2.设计原理fifo对外提供三个接口：fifo对象的初始化、fifo数据的读取、fifo数据的写入。应用需求比较简单，内部的数据管理采用指针的形式。 目前的实现是基于u8数据类型处理，如果需要其他类型数据的可以在fifo对象中新增一个属性为数据的类型。在读写的
         </div>
       </a>
 
@@ -271,8 +271,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-11-17 19:45" pubdate>
-              2022-11-17
+            <time datetime="2022-02-06 19:45" pubdate>
+              2022-02-06
             </time>
           </div>
         
@@ -316,15 +316,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%8C%89%E9%94%AE%E6%A3%80%E6%B5%8B%E5%AE%9E%E7%8E%B0/" target="_self">
-          嵌入式按键检测组件
+        <a href="/2022/01/27/%E7%BB%84%E4%BB%B6-%E7%8A%B6%E6%80%81%E6%9C%BA%E5%AE%9E%E7%8E%B0/" target="_self">
+          嵌入式状态机组件
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%8C%89%E9%94%AE%E6%A3%80%E6%B5%8B%E5%AE%9E%E7%8E%B0/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/01/27/%E7%BB%84%E4%BB%B6-%E7%8A%B6%E6%80%81%E6%9C%BA%E5%AE%9E%E7%8E%B0/" target="_self">
         <div>
-          按键检测模块模块简介按键检测模块用于嵌入式系统上实现按键的扫描，实现按键的触发检测，并对短按、长按等状态进行识别检测。 需求分析按键检测需要可以识别多个按键的多种事件触发，并且需要对事件做出响应处理。  功能性需求 可以实现多个按键检测 实现按键扫描事件检测和事件回调触发   非功能性需求 方便移植 方便添加按键 代码实现简洁易读    架构设计设计目标 可读性 可移植性 可拓展性  设计原理 单
+          状态机实现 一、模块简介状态机组件是模块内部需要进行状态管理时可以使用的一个组件模块，其中业务包含状态机的状态管理，状态机的转换活动、内部活动处理、事件处理等等。状态机的概念：  （ State Machine ）状态机是描述事物有限离散状态互相关系的自动化“机器”，是描述事物的抽象数字模型。什么是状态： 事物任何时刻都有一个状态，同一个状态是指在一段时间内事物具有一定的特征共性。      状态
         </div>
       </a>
 
@@ -332,8 +332,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-11-17 19:45" pubdate>
-              2022-11-17
+            <time datetime="2022-01-27 19:45" pubdate>
+              2022-01-27
             </time>
           </div>
         
@@ -377,15 +377,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0/" target="_self">
-          嵌入式消息队列组件
+        <a href="/2022/01/17/%E7%BB%84%E4%BB%B6-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/" target="_self">
+          嵌入式任务调度组件
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/11/17/%E7%BB%84%E4%BB%B6-%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/01/17/%E7%BB%84%E4%BB%B6-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/" target="_self">
         <div>
-          消息队列组件需求分析消息队列组件目标是实现消息队列结构，结合IPC组件实现模块间的异步通信。消息队列实现 模块设计设计目标 功能目标 正确性   性能目标 易用性 可拓展性 稳定性    设计原理消息队列采用fifo的队列数据结构，fifo指的是“first in，first out”，先进先出，消费的顺序与生产的顺序一致。设计中的关键点：  消息体可以是任意结构，所以消息的存取都采用指针的方式只
+          嵌入式任务调度组件一、组件概述组件适用于小型嵌入式平台，非抢占式线程需求场景下的任务创建、删除、启动、挂起、延时、恢复功能。 二、需求分析三、软件设计四、落地实践
         </div>
       </a>
 
@@ -393,8 +393,71 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-11-17 19:45" pubdate>
-              2022-11-17
+            <time datetime="2022-01-17 19:45" pubdate>
+              2022-01-17
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/" class="category-chain-item">嵌入式</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/OS/">#OS</a>
+            
+              <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%BB%84%E4%BB%B6/">#嵌入式组件</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/11/17/%E7%BB%84%E4%BB%B6-%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%AE%9E%E7%8E%B0/" target="_self">
+          嵌入式动态内存管理组件
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2021/11/17/%E7%BB%84%E4%BB%B6-%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%AE%9E%E7%8E%B0/" target="_self">
+        <div>
+          嵌入式动态内存管理组件一、组件描述动态内存管理指的是在程序需要内存时申请，在使用完成后释放，保证以比较少的内存实现更多的软件需求。与之相对的是静态内存，典型的静态内存就是全局变量：在程序启动时到整个生命空间内都占用空间。动态内存的特点就是实现内存的“按需使用”，在嵌入式开发环境中，节省ram实现更多更灵活的内存使用需求。 c库中的malloc、free接口就是动态内存申请、释放的实现。在《深入理解
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-11-17 19:45" pubdate>
+              2021-11-17
             </time>
           </div>
         
@@ -438,74 +501,13 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/11/12/%E7%BB%84%E4%BB%B6-UI%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/" target="_self">
-          嵌入式UI管理组件
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/11/12/%E7%BB%84%E4%BB%B6-UI%E8%B0%83%E5%BA%A6%E5%AE%9E%E7%8E%B0/" target="_self">
-        <div>
-          通用型UI界面切换管理实现一、模块简介 UI调度组件是在小型嵌入式界面切换产品上实现的界面切换控制管理通用型模块。  二、需求分析 目标实现的是一个通用型嵌入式设备上的UI切换管理组件，应用的场景包括但不限于如下LCD嵌入式产品的UI界面 功能性需求： 能适用于大多数场景下的UI界面切换 使界面方便管理，界面间关系可读性高 包含固定界面与弹窗类界面的切换业务实现 需要包含弹窗类界面进入退出时的历史
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-11-12 19:45" pubdate>
-              2022-11-12
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/" class="category-chain-item">嵌入式</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%BB%84%E4%BB%B6/">#嵌入式组件</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/10/15/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/" target="_self">
+        <a href="/2021/10/15/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/" target="_self">
           费曼学习法
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/10/15/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2021/10/15/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/" target="_self">
         <div>
           假设你是一个程序员初学者，你刚学习完语法中的“循环”结构，现在先把你从未接触过计算机语言的女朋友叫到你面前，试着用通俗的词汇给她讲明白循环的实现的原理，循环的应用场景举例。让她明白循环是干什么的，循环的实现原理是什么，再去给她讲循环的具体实现。当给她讲明白后她能对循环进行应用说明你的循环已经学懂了。这个就是费曼学习法的主要思想：以输出倒逼输入。  什么是费曼学习法费曼学习法，也称费曼技巧，英文原
         </div>
@@ -515,8 +517,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-10-15 17:29" pubdate>
-              2022-10-15
+            <time datetime="2021-10-15 17:29" pubdate>
+              2021-10-15
             </time>
           </div>
         
