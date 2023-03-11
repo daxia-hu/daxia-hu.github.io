@@ -160,7 +160,7 @@
     <link href="/2022/03/12/FreeRTOS%E5%BA%94%E7%94%A8/"/>
     <url>/2022/03/12/FreeRTOS%E5%BA%94%E7%94%A8/</url>
     
-    <content type="html"><![CDATA[<h1 id="FreeRTOS应用"><a href="#FreeRTOS应用" class="headerlink" title="FreeRTOS应用"></a>FreeRTOS应用</h1><h2 id="移植及配置"><a href="#移植及配置" class="headerlink" title="移植及配置"></a>移植及配置</h2><p>FreeRTOS的官方网站是</p><h2 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h2><h2 id="任务通知"><a href="#任务通知" class="headerlink" title="任务通知"></a>任务通知</h2><h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><h2 id="消息队列"><a href="#消息队列" class="headerlink" title="消息队列"></a>消息队列</h2><h2 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h2><h2 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h2><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="FreeRTOS应用"><a href="#FreeRTOS应用" class="headerlink" title="FreeRTOS应用"></a>FreeRTOS应用</h1><h2 id="移植及配置"><a href="#移植及配置" class="headerlink" title="移植及配置"></a>移植及配置</h2><h2 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h2><h2 id="任务通知"><a href="#任务通知" class="headerlink" title="任务通知"></a>任务通知</h2><h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><h2 id="消息队列"><a href="#消息队列" class="headerlink" title="消息队列"></a>消息队列</h2><h2 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h2><h2 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h2><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2>]]></content>
     
     
     <categories>
