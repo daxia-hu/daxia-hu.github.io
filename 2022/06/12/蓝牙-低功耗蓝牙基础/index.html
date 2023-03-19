@@ -41,7 +41,7 @@
 <meta property="og:image" content="https://hudaxia.top/img/%E4%BB%8E%E6%9C%BA%E6%96%AD%E5%BC%80%E8%BF%9E%E6%8E%A5.png">
 <meta property="og:image" content="https://hudaxia.top/img/ble%E9%85%8D%E5%AF%B9%E8%BF%87%E7%A8%8B.png">
 <meta property="article:published_time" content="2022-06-12T09:36:34.000Z">
-<meta property="article:modified_time" content="2023-03-19T03:23:09.455Z">
+<meta property="article:modified_time" content="2023-03-19T03:26:10.324Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="BLE">
 <meta name="twitter:card" content="summary_large_image">
@@ -514,20 +514,25 @@
 <h3 id="4-2-配对"><a href="#4-2-配对" class="headerlink" title="4.2 配对"></a>4.2 配对</h3><p>与传统蓝牙不同的是，ble的配对过程发生在连接过程之后。</p>
 <p>配对分为三个阶段，蓝牙spec规定前面两个阶段是必须的，第三阶段为可选的。<br><img src="/img/ble%E9%85%8D%E5%AF%B9%E8%BF%87%E7%A8%8B.png" srcset="/img/loading.gif" lazyload alt="ble配对过程"></p>
 <ol>
-<li>交换配对信息（能力）<br>设备交换包含的能力，用于在后面的阶段决定使用什么方法进行配对，方法包含：<ul>
+<li>交换配对信息（能力）</li>
+</ol>
+<p>设备交换包含的能力，用于在后面的阶段决定使用什么方法进行配对，</p>
+<ul>
+<li>方法包含：<ul>
 <li>justWorks：直连，直接连接的方式，安全级别低。</li>
 <li>passkeyEntry：输入密钥，使用6位数字进行加密验证，范围是000000-999999。</li>
 <li>outOfBand：带外密钥交换，通过非ble传输的方式交换密钥，比如nfc、红外等。</li>
 </ul>
 </li>
-</ol>
-<p>设备能力包含：</p>
-<pre><code class="hljs">- DisplayOnly 只能是显示000000 - 999999的数字
-- DisplayYesNo 显示Yes/No 的按钮
-- KeyboardOnly 只能是输入000000 - 999999的数字
-- NoinputNoOutput 没有输入也没有显示，只能用Just work工作方式
-- KeyboardDisplay 能输入000000 - 999999的数字和输出
-</code></pre>
+<li>设备能力包含：<ul>
+<li>DisplayOnly 只能是显示000000 - 999999的数字</li>
+<li>DisplayYesNo 显示Yes&#x2F;No 的按钮</li>
+<li>KeyboardOnly 只能是输入000000 - 999999的数字</li>
+<li>NoinputNoOutput 没有输入也没有显示，只能用Just work工作方式</li>
+<li>KeyboardDisplay 能输入000000 - 999999的数字和输出</li>
+</ul>
+</li>
+</ul>
 <ol start="2">
 <li>生成短期&#x2F;长期密钥<br>设备通过生成随机数和一些算法生成LTK和STK</li>
 <li>传输密钥<br>如果是justWork方式会直接跳过这一步配对成功，其他方式会在这个阶段传输密钥为后续的通信进行加密。经典蓝牙的shared link key也是在这个阶段进行传输。</li>
