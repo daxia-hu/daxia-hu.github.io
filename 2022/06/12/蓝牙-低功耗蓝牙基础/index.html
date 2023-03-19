@@ -46,7 +46,7 @@
 <meta property="og:image" content="https://hudaxia.top/img/gatt-profile.png">
 <meta property="og:image" content="https://hudaxia.top/img/gattprofile.png">
 <meta property="article:published_time" content="2022-06-12T09:36:34.000Z">
-<meta property="article:modified_time" content="2023-03-19T08:03:26.789Z">
+<meta property="article:modified_time" content="2023-03-19T08:07:28.153Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="BLE">
 <meta name="twitter:card" content="summary_large_image">
@@ -276,7 +276,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          7.2k 字
+          7k 字
         
       </span>
     
@@ -287,7 +287,7 @@
         
         
         
-          60 分钟
+          59 分钟
         
       </span>
     
@@ -559,9 +559,8 @@
 </ul>
 <h2 id="五、GAP、ATT和GATT"><a href="#五、GAP、ATT和GATT" class="headerlink" title="五、GAP、ATT和GATT"></a>五、GAP、ATT和GATT</h2><p>GAP、ATT、GATT都属于蓝牙规范的内容，为应用层提供支持。</p>
 <h3 id="5-1-ATT"><a href="#5-1-ATT" class="headerlink" title="5.1 ATT"></a>5.1 ATT</h3><blockquote>
-<p>Attribute Protocol; a protocol for discovering, reading, and writing attributes on a peer device<br>The attribute protocol allows a device referred to as the server to expose a set of attributes and their associated values to a peer device referred to as the client. These attributes exposed by the server can be discovered, read, and written by a client, and can be indicated and notified by the server.</p>
+<p>Attribute Protocol; a protocol for discovering, reading, and writing attributes on a peer device<br>The attribute protocol allows a device referred to as the server to expose a set of attributes and their associated values to a peer device referred to as the client. These attributes exposed by the server can be discovered, read, and written by a client, and can be indicated and notified by the server.<br><img src="/img/ATTmod.png" srcset="/img/loading.gif" lazyload alt="attmod"><br>ATT提供了一种client和server之间对属性访问的规范，访问方式包含6种：</p>
 </blockquote>
-<p><img src="/img/ATTmod.png" srcset="/img/loading.gif" lazyload alt="attmod"><br>ATT提供了一种client和server之间对属性访问的规范，访问方式包含6种：</p>
 <ol>
 <li>Commands—PDUs sent to a server by a client that do not invoke a response.</li>
 <li>Requests—PDUs sent to a server by a client that invoke a response.</li>
@@ -580,16 +579,12 @@
 <li>Central Role：主机角色，可以发起连接从机的角色</li>
 </ol>
 <h3 id="5-3-GATT"><a href="#5-3-GATT" class="headerlink" title="5.3 GATT"></a>5.3 GATT</h3><blockquote>
-<p>This specification defines the Generic Attribute Profile that describes a service framework using the Attribute Protocol for discovering services, and for reading and writing characteristic values on a peer device.<br>The Generic Attribute Profile (GATT) defines a service framework using the Attribute Protocol. This framework defines procedures and formats of services and their characteristics. The procedures defined include discovering, reading, writing, notifying and indicating characteristics, as well as configuring the broadcast of characteristics.<br><img src="/img/gatt-profile.png" srcset="/img/loading.gif" lazyload alt="gatt-profile"><br><img src="/img/gattprofile.png" srcset="/img/loading.gif" lazyload alt="gattprofile"></p>
+<p>The Generic Attribute Profile (GATT) defines a service framework using the Attribute Protocol. This framework defines procedures and formats of services and their characteristics. The procedures defined include discovering, reading, writing, notifying and indicating characteristics, as well as configuring the broadcast of characteristics.<br><img src="/img/gatt-profile.png" srcset="/img/loading.gif" lazyload alt="gatt-profile"><br><img src="/img/gattprofile.png" srcset="/img/loading.gif" lazyload alt="gattprofile"></p>
 </blockquote>
 <ol>
-<li>层次结构：<ul>
 <li>一个GATT的profile由一个或者多个services组成</li>
-<li>一个service可以包含特征值characteristic values</li>
-<li>每个特征值必须包含properties、</li>
-</ul>
-</li>
-<li></li>
+<li>一个服务定义可能包含引用服务(Reference Service)、强制Characteristic和可选Characteristic</li>
+<li>每个特征值必须包含Characteristic声明、Characteristic属性、值、值的描述(可选)</li>
 </ol>
 <h2 id="六、数据传输"><a href="#六、数据传输" class="headerlink" title="六、数据传输"></a>六、数据传输</h2><p>这里的数据传输指的是在建立连接的基础上进行通信实现数据的传输。<br>蓝牙在数据传输的过程中使用快速跳频算法选择需要使用到的信道。</p>
 
