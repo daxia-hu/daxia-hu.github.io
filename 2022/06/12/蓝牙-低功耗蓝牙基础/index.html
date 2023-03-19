@@ -45,8 +45,10 @@
 <meta property="og:image" content="https://hudaxia.top/img/gap-profile.png">
 <meta property="og:image" content="https://hudaxia.top/img/gatt-profile.png">
 <meta property="og:image" content="https://hudaxia.top/img/gattprofile.png">
+<meta property="og:image" content="https://hudaxia.top/img/%E5%81%9C%E7%AD%89%E9%87%8D%E4%BC%A0.png">
+<meta property="og:image" content="https://hudaxia.top/img/%E5%81%9C%E7%AD%89%E9%87%8D%E4%BC%A0%E6%96%AD%E5%BC%80.png">
 <meta property="article:published_time" content="2022-06-12T09:36:34.000Z">
-<meta property="article:modified_time" content="2023-03-19T08:07:28.153Z">
+<meta property="article:modified_time" content="2023-03-19T08:23:22.785Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="BLE">
 <meta name="twitter:card" content="summary_large_image">
@@ -276,7 +278,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          7k 字
+          8.1k 字
         
       </span>
     
@@ -287,7 +289,7 @@
         
         
         
-          59 分钟
+          68 分钟
         
       </span>
     
@@ -586,7 +588,27 @@
 <li>一个服务定义可能包含引用服务(Reference Service)、强制Characteristic和可选Characteristic</li>
 <li>每个特征值必须包含Characteristic声明、Characteristic属性、值、值的描述(可选)</li>
 </ol>
-<h2 id="六、数据传输"><a href="#六、数据传输" class="headerlink" title="六、数据传输"></a>六、数据传输</h2><p>这里的数据传输指的是在建立连接的基础上进行通信实现数据的传输。<br>蓝牙在数据传输的过程中使用快速跳频算法选择需要使用到的信道。</p>
+<p>属性包含：</p>
+<ol>
+<li>write：client可以写sever角色Characteristic的值</li>
+<li>read：client可以读sever角色Characteristic的值</li>
+<li>notify：sever可以向client发起通知而不需要回复</li>
+<li>indicate：sever可以向client发起通知而必须要回复</li>
+</ol>
+<h2 id="六、数据传输"><a href="#六、数据传输" class="headerlink" title="六、数据传输"></a>六、数据传输</h2><ol>
+<li>ble的数据传输采用快速跳频算法来选择需要使用的信道，最新的蓝牙协议包含两种调频算法。</li>
+<li>ble采用停等重传的机制进行数据传输：指的是每一次的数据通信必须要接收到ack才能认为当前数据传输完成，否则则会一直重复传输当前数据知道超时。<br><img src="/img/%E5%81%9C%E7%AD%89%E9%87%8D%E4%BC%A0.png" srcset="/img/loading.gif" lazyload alt="停等重传"></li>
+</ol>
+<ul>
+<li>每个 BLE 终端都维护两个 1 bit 参数： transmitSeqNum 和 nextExpectedSeqNum，分别指示当前传输的数据包序号和下一个期待接收的数据包序号，它们与 Packet 中的 SN 和 NESN字段一起维护 Master 和 Slave 之间的重传机制。 transmitSeqNum 和nextExpectedSeqNum 在 connect 建立时都初始化为 0。</li>
+<li>发送数据包时，对于 SN 字段，若数据包为新传，则设置为自身 transmitSeqNum 取值，否者与上一次传输一致；对于 NESN 字段，始终设置为自身 nextExpectedSeqNum 取值。</li>
+<li>接收数据包时， transmitSeqNum 和 nextExpectedSeqNum 按照如下原则进行更新，若 SN 字 段 与 自 身 nextExpectedSeqNum 一 致 ， 则 表 明 该 数 据 包 为 重 传 ，nextExpectedSeqNum 不变；否者为新传，并且需要将自身 nextExpectedSeqNum 取反。若 NESN 字段与自身 transmitSeqNum 一致，则表明接收到 NACK，即上一次自己发送的数据包失败，需要重发；否者表明收到 ACK，需要发送新的数据包，并且将将自身 transmitSeqNum 取反。若接收到的数据包 CRC 错误，则不更新 transmitSeqNum 和 nextExpectedSeqNum，并重发上一次自己发送的数据包（判定收到了 NACK）<br><img src="/img/%E5%81%9C%E7%AD%89%E9%87%8D%E4%BC%A0%E6%96%AD%E5%BC%80.png" srcset="/img/loading.gif" lazyload alt="停等重传断开"></li>
+<li>Master（或 Slave）发送 LL_TERMINATE_IND PDU 到 Slave（或 Master），同时启动定 时器（Tterminate）；</li>
+<li>Slave（或 Master）收到后回复 ACK，同时关闭 connect；</li>
+<li>收到 ACK 的 Master （或 Slave）则判定 connect 关闭。</li>
+<li>若 Master（或 Slave）没有收到 ACK，其在 Tterminate 超时后仍然判定 connect 关闭，不在 发送数据包。</li>
+<li>若 Slave（或 Master）一直没有收到 LL_TERMINATE_IND PDU，则可由于SUPERVISION TIMER 超时而关闭 connect。</li>
+</ul>
 
                 
               </div>
