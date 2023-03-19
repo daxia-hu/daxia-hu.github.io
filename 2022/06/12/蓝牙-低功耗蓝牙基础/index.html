@@ -41,8 +41,12 @@
 <meta property="og:image" content="https://hudaxia.top/img/%E4%BB%8E%E6%9C%BA%E6%96%AD%E5%BC%80%E8%BF%9E%E6%8E%A5.png">
 <meta property="og:image" content="https://hudaxia.top/img/ble%E9%85%8D%E5%AF%B9%E8%BF%87%E7%A8%8B.png">
 <meta property="og:image" content="https://hudaxia.top/img/slavelatency.png">
+<meta property="og:image" content="https://hudaxia.top/img/ATTmod.png">
+<meta property="og:image" content="https://hudaxia.top/img/gap-profile.png">
+<meta property="og:image" content="https://hudaxia.top/img/gatt-profile.png">
+<meta property="og:image" content="https://hudaxia.top/img/gattprofile.png">
 <meta property="article:published_time" content="2022-06-12T09:36:34.000Z">
-<meta property="article:modified_time" content="2023-03-19T03:52:02.787Z">
+<meta property="article:modified_time" content="2023-03-19T08:03:26.789Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="BLE">
 <meta name="twitter:card" content="summary_large_image">
@@ -272,7 +276,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.1k 字
+          7.2k 字
         
       </span>
     
@@ -283,7 +287,7 @@
         
         
         
-          35 分钟
+          60 分钟
         
       </span>
     
@@ -539,10 +543,55 @@
 <li>传输密钥<br>如果是justWork方式会直接跳过这一步配对成功，其他方式会在这个阶段传输密钥为后续的通信进行加密。经典蓝牙的shared link key也是在这个阶段进行传输。</li>
 </ol>
 <h3 id="4-3-连接保持"><a href="#4-3-连接保持" class="headerlink" title="4.3 连接保持"></a>4.3 连接保持</h3><ol>
+<li>连接间隔<br>设备之间连接事件的时间间隔，单位是1.25ms，设置范围是7.5ms到4s。一版都会设置最大连接间隔和最小连接间隔，最大连接间隔指的是在没有数据通信空闲时通过最大连接间隔发空包来保持连接，最小连接间隔是在数据连续发送时的时间间隔。</li>
 <li>从机延迟（slave latency）<br>属于从设备的一个属性，如果设置为打开，则允许在设置的范围内跳过主机的连接事件不响应。如果设置为关闭，则必须响应主机所有的连接事件。可设置的范围是0-499<br><img src="/img/slavelatency.png" srcset="/img/loading.gif" lazyload alt="slavelatency"></li>
 <li>连接超时时间（supervision timeout）<br>主从机连续两次连接事件交互的最大事件间隔，如果超过时间则认为连接已经断开。可设置的范围大小是100ms-32s</li>
+<li>IOS设备对连接参数的要求</li>
 </ol>
-<h2 id="五、GAP、ATT和GATT"><a href="#五、GAP、ATT和GATT" class="headerlink" title="五、GAP、ATT和GATT"></a>五、GAP、ATT和GATT</h2><h2 id="六、数据传输"><a href="#六、数据传输" class="headerlink" title="六、数据传输"></a>六、数据传输</h2><p>蓝牙在数据传输的过程中使用快速跳频算法选择需要使用到的信道。</p>
+<p>IOS设备对连接参数有一定的要求，如果设置的参数不在要求范围内，则会产生连接不稳定或者连接断开的现象。</p>
+<ul>
+<li>Interval Max * (Slave Latency + 1) &lt;&#x3D;2s</li>
+<li>Interval Min &gt;&#x3D;20ms</li>
+<li>Interval Min + 20 ms &lt;&#x3D; Interval Max</li>
+<li>Slave Latency &lt;&#x3D; 4</li>
+<li>SupervisionTimeout &lt;&#x3D; 6 s</li>
+<li>Interval Max * ( Slave Latency + 1) * 3 &lt; SupervisionTimeout</li>
+</ul>
+<h2 id="五、GAP、ATT和GATT"><a href="#五、GAP、ATT和GATT" class="headerlink" title="五、GAP、ATT和GATT"></a>五、GAP、ATT和GATT</h2><p>GAP、ATT、GATT都属于蓝牙规范的内容，为应用层提供支持。</p>
+<h3 id="5-1-ATT"><a href="#5-1-ATT" class="headerlink" title="5.1 ATT"></a>5.1 ATT</h3><blockquote>
+<p>Attribute Protocol; a protocol for discovering, reading, and writing attributes on a peer device<br>The attribute protocol allows a device referred to as the server to expose a set of attributes and their associated values to a peer device referred to as the client. These attributes exposed by the server can be discovered, read, and written by a client, and can be indicated and notified by the server.</p>
+</blockquote>
+<p><img src="/img/ATTmod.png" srcset="/img/loading.gif" lazyload alt="attmod"><br>ATT提供了一种client和server之间对属性访问的规范，访问方式包含6种：</p>
+<ol>
+<li>Commands—PDUs sent to a server by a client that do not invoke a response.</li>
+<li>Requests—PDUs sent to a server by a client that invoke a response.</li>
+<li>Responses—PDUs sent to a client by a server in response to a request.</li>
+<li>Notifications—Unsolicited PDUs sent to a client by a server that do not invoke a confirmation.</li>
+<li>Indications—Unsolicited PDUs sent to a client by a server that invoke a confirmation.</li>
+<li>Confirmations—PDUs sent to a server by a client to confirm receipt of an indication.<br>ATT中定义的属性的类型使用16位的UUID表示，UUID一般位128位，只是在传输的过程中只传输特殊的16位的类型识别码。除了属性的类型ATT中还定义了属性的权限、属性的访问方法、MTU的交换、长属性等。</li>
+</ol>
+<h3 id="5-2-GAP"><a href="#5-2-GAP" class="headerlink" title="5.2 GAP"></a>5.2 GAP</h3><blockquote>
+<p>Generic Access Profile<br>This profile defines the generic procedures related to discovery of Bluetooth devices (idle mode procedures) and link management aspects of connecting to Bluetooth devices (connecting mode procedures). It also defines procedures related to use of different security levels. In addition, this profile includes common format requirements for parameters accessible on the user interface level.<br>The purpose of the Generic Access Profile is:To introduce definitions, recommendations and common requirements related to modes and access procedures that are to be used by transport and application profiles.<br>To describe how devices are to behave in standby and connecting states in order to guarantee that links and channels always can be established between Bluetooth devices, and that multi-profile operation is possible. Special focus is put on discovery, link establishment and security procedures.<br>To state requirements on user interface aspects, mainly coding schemes and names of procedures and parameters, that are needed to guarantee a satisfactory user experience.<br><img src="/img/gap-profile.png" srcset="/img/loading.gif" lazyload alt="gap"><br>从上面的图可以看出gap是包含了所有的蓝牙HOST协议。如发现、建立连接、断开连接、数据传输、安全管理、设备的角色配置等。GAP中定义的四种角色包含：</p>
+</blockquote>
+<ol>
+<li>Broadcaster Role：广播者，广播数据</li>
+<li>Observer Role：观察者，扫描发现广播者的广播数据</li>
+<li>Peripheral Role：从机角色，可以被连接的角色</li>
+<li>Central Role：主机角色，可以发起连接从机的角色</li>
+</ol>
+<h3 id="5-3-GATT"><a href="#5-3-GATT" class="headerlink" title="5.3 GATT"></a>5.3 GATT</h3><blockquote>
+<p>This specification defines the Generic Attribute Profile that describes a service framework using the Attribute Protocol for discovering services, and for reading and writing characteristic values on a peer device.<br>The Generic Attribute Profile (GATT) defines a service framework using the Attribute Protocol. This framework defines procedures and formats of services and their characteristics. The procedures defined include discovering, reading, writing, notifying and indicating characteristics, as well as configuring the broadcast of characteristics.<br><img src="/img/gatt-profile.png" srcset="/img/loading.gif" lazyload alt="gatt-profile"><br><img src="/img/gattprofile.png" srcset="/img/loading.gif" lazyload alt="gattprofile"></p>
+</blockquote>
+<ol>
+<li>层次结构：<ul>
+<li>一个GATT的profile由一个或者多个services组成</li>
+<li>一个service可以包含特征值characteristic values</li>
+<li>每个特征值必须包含properties、</li>
+</ul>
+</li>
+<li></li>
+</ol>
+<h2 id="六、数据传输"><a href="#六、数据传输" class="headerlink" title="六、数据传输"></a>六、数据传输</h2><p>这里的数据传输指的是在建立连接的基础上进行通信实现数据的传输。<br>蓝牙在数据传输的过程中使用快速跳频算法选择需要使用到的信道。</p>
 
                 
               </div>
