@@ -48,7 +48,7 @@
 <meta property="og:image" content="https://hudaxia.top/img/%E5%81%9C%E7%AD%89%E9%87%8D%E4%BC%A0.png">
 <meta property="og:image" content="https://hudaxia.top/img/%E5%81%9C%E7%AD%89%E9%87%8D%E4%BC%A0%E6%96%AD%E5%BC%80.png">
 <meta property="article:published_time" content="2022-06-12T09:36:34.000Z">
-<meta property="article:modified_time" content="2023-03-19T08:26:04.194Z">
+<meta property="article:modified_time" content="2023-03-20T02:06:46.811Z">
 <meta property="article:author" content="胡大侠">
 <meta property="article:tag" content="BLE">
 <meta name="twitter:card" content="summary_large_image">
@@ -401,7 +401,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：4 分钟前
+                    本文最后更新于：1 分钟前
                   
                 
               </p>
@@ -600,14 +600,14 @@
 <li>ble采用停等重传的机制进行数据传输：指的是每一次的数据通信必须要接收到ack才能认为当前数据传输完成，否则则会一直重复传输当前数据知道超时。<br><img src="/img/%E5%81%9C%E7%AD%89%E9%87%8D%E4%BC%A0.png" srcset="/img/loading.gif" lazyload alt="停等重传"></li>
 </ol>
 <ul>
-<li>每个 BLE 终端都维护两个 1 bit 参数： transmitSeqNum 和 nextExpectedSeqNum，分别指示当前传输的数据包序号和下一个期待接收的数据包序号，它们与 Packet 中的 SN 和 NESN字段一起维护 Master 和 Slave 之间的重传机制。 transmitSeqNum 和nextExpectedSeqNum 在 connect 建立时都初始化为 0。</li>
+<li>每个 BLE 终端都维护两个 1 bit 参数： transmitSeqNum 和 nextExpectedSeqNum，分别指示当前传输的数据包序号和下一个期待接收的数据包序号，它们与 Packet 中的 SN 和 NESN字段一起维护 Master 和 Slave 之间的重传机制。transmitSeqNum 和nextExpectedSeqNum 在 connect 建立时都初始化为 0。</li>
 <li>发送数据包时，对于 SN 字段，若数据包为新传，则设置为自身 transmitSeqNum 取值，否者与上一次传输一致；对于 NESN 字段，始终设置为自身 nextExpectedSeqNum 取值。</li>
 <li>接收数据包时， transmitSeqNum 和 nextExpectedSeqNum 按照如下原则进行更新，若 SN 字 段 与 自 身 nextExpectedSeqNum 一 致 ， 则 表 明 该 数 据 包 为 重 传 ，nextExpectedSeqNum 不变；否者为新传，并且需要将自身 nextExpectedSeqNum 取反。若 NESN 字段与自身 transmitSeqNum 一致，则表明接收到 NACK，即上一次自己发送的数据包失败，需要重发；否者表明收到 ACK，需要发送新的数据包，并且将将自身 transmitSeqNum 取反。若接收到的数据包 CRC 错误，则不更新 transmitSeqNum 和 nextExpectedSeqNum，并重发上一次自己发送的数据包（判定收到了 NACK）<br><img src="/img/%E5%81%9C%E7%AD%89%E9%87%8D%E4%BC%A0%E6%96%AD%E5%BC%80.png" srcset="/img/loading.gif" lazyload alt="停等重传断开"></li>
 <li>Master（或 Slave）发送 LL_TERMINATE_IND PDU 到 Slave（或 Master），同时启动定 时器（Tterminate）；</li>
 <li>Slave（或 Master）收到后回复 ACK，同时关闭 connect；</li>
 <li>收到 ACK 的 Master （或 Slave）则判定 connect 关闭。</li>
 <li>若 Master（或 Slave）没有收到 ACK，其在 Tterminate 超时后仍然判定 connect 关闭，不在 发送数据包。</li>
-<li>若 Slave（或 Master）一直没有收到 LL_TERMINATE_IND PDU，则可由于SUPERVISION TIMER 超时而关闭 connect。</li>
+<li>若 Slave（或 Master）一直没有收到 LL_TERMINATE_IND PDU，则可由于SUPERVISION TIMER 超时而断开 connect。</li>
 </ul>
 
                 
@@ -673,7 +673,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年3月19日</div>
+          <div>2023年3月20日</div>
         </div>
       
       
