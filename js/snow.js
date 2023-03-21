@@ -5,8 +5,8 @@
     documentHeight  = $(document).height(),
     documentWidth   = $(document).width(),
     defaults = {
-        minSize     : 5,
-        maxSize     : 10,
+        minSize     : 10,
+        maxSize     : 20,
         newOn       : 800,
         flakeColor  : "#00FF7F" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
     },
@@ -45,7 +45,7 @@ $(function(){
 function snowFall(snow) {
     /* 可配置属性 */
     snow = snow || {};
-    this.maxFlake = snow.maxFlake || 20;   /* 最多片数 */
+    this.maxFlake = snow.maxFlake || 10;   /* 最多片数 */
     this.flakeSize = snow.flakeSize || 10;  /* 雪花形状 */
     this.fallSpeed = snow.fallSpeed || 10;   /* 坠落速度 */
 }
