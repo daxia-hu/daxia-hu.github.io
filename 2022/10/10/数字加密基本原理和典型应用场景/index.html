@@ -1,0 +1,1072 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="胡大侠">
+  <meta name="keywords" content="学习">
+  
+    <meta name="description" content="一、加密技术（一）、数字加密的概念1.1 加密概念数据加密技术是指一条消息通过加密密钥和加密函数转换成无意义的密文，接收者通过解密函数和解密密钥将密文还原成明文。这样，我们就可以保护数据不被非法窃取和读取。提高计算机安全水平的基础是掌握数据加密的本质，数据加密由明文(未加密报文)、密文(加密报文)、加解密设备或算法、加解密密钥四部分组成。加密方法有很多种，但主要有对称加密算法、非对称加密算法和不可">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数字加密的基本原理和典型应用场景">
+<meta property="og:url" content="https://hudaxia.top/2022/10/10/%E6%95%B0%E5%AD%97%E5%8A%A0%E5%AF%86%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E5%92%8C%E5%85%B8%E5%9E%8B%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/index.html">
+<meta property="og:site_name" content="HuDaXia">
+<meta property="og:description" content="一、加密技术（一）、数字加密的概念1.1 加密概念数据加密技术是指一条消息通过加密密钥和加密函数转换成无意义的密文，接收者通过解密函数和解密密钥将密文还原成明文。这样，我们就可以保护数据不被非法窃取和读取。提高计算机安全水平的基础是掌握数据加密的本质，数据加密由明文(未加密报文)、密文(加密报文)、加解密设备或算法、加解密密钥四部分组成。加密方法有很多种，但主要有对称加密算法、非对称加密算法和不可">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1677204841451-be02f3d9-aaa9-4602-a865-22af2283ee2d.png#averageHue=%23f0f0f0&clientId=ub645df6b-8ac8-4&from=paste&height=265&id=u9742932b&name=image.png&originHeight=265&originWidth=642&originalType=binary&ratio=1&rotation=0&showTitle=false&size=19206&status=done&style=none&taskId=uc4be33a7-5636-418c-8ba5-a0561d14a0f&title=&width=642">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679624357633-6a578808-cd2e-49ca-8bda-694d47f270ab.png#averageHue=%23fcfcfb&clientId=ub80b88f0-84c7-4&from=paste&height=164&id=u032512ca&name=image.png&originHeight=164&originWidth=128&originalType=binary&ratio=1&rotation=0&showTitle=true&size=1875&status=done&style=none&taskId=ud92cb9bb-df08-4bba-a199-8a4cf4021d0&title=%E5%BC%82%E6%88%96%E7%9A%84%E8%BF%90%E7%AE%97%E5%85%AC%E5%BC%8F&width=128">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/svg/1561832/1679624410331-76d190b9-c3b1-40dc-aed8-9cb437aacef0.svg#clientId=ub80b88f0-84c7-4&from=paste&id=u24df7a21&originHeight=19&originWidth=86&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=uf5510766-570c-4e3f-b774-6c5209bbbb0&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/svg/1561832/1679624433821-9cd8b091-e108-4082-8891-1f9d21311152.svg#clientId=ub80b88f0-84c7-4&from=paste&id=uc39e9442&originHeight=19&originWidth=86&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u848d2928-09d3-450e-a015-269a44fd8b1&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/svg/1561832/1679624433868-fbe06d76-48ee-4fdf-a5e3-4fce65752914.svg#clientId=ub80b88f0-84c7-4&from=paste&id=ud42b2a53&originHeight=19&originWidth=119&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u00c6856a-c75d-4fca-822b-3b91ba9d785&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/svg/1561832/1679624433876-220c0507-2c52-4c20-87de-ada48689cbef.svg#clientId=ub80b88f0-84c7-4&from=paste&id=uab045c3c&originHeight=24&originWidth=329&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u46840b27-f34b-420c-8d26-71aa856159c&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/svg/1561832/1679624433860-b5b644b1-9d24-49da-bb36-65fcbda0ac46.svg#clientId=ub80b88f0-84c7-4&from=paste&id=u7069bfdb&originHeight=19&originWidth=119&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u4733d9ea-8a49-433a-936b-113e7a7ce0f&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1677210635080-7e49840d-5af3-4d7e-9ea2-ca6c2320814d.png#averageHue=%23fefefe&clientId=ub645df6b-8ac8-4&from=paste&height=648&id=uebf60779&name=image.png&originHeight=648&originWidth=822&originalType=binary&ratio=1&rotation=0&showTitle=true&size=48293&status=done&style=none&taskId=ua85dbfd0-9aa4-4b59-b00c-2857ee6d2c9&title=%E8%AF%A5%E7%BD%91%E7%AB%99%E6%8F%90%E4%BE%9B%E7%9A%84%E7%AD%BE%E5%90%8D%E9%AA%8C%E8%AF%81%E4%BF%A1%E6%81%AF&width=822">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679641493431-c3544eba-1d2c-4049-b74a-ddf0c69b4f8b.png#averageHue=%23fbfafa&clientId=ue0ca12d0-27ac-4&from=paste&height=172&id=ueecc7547&name=image.png&originHeight=172&originWidth=463&originalType=binary&ratio=1&rotation=0&showTitle=true&size=3892&status=done&style=none&taskId=u83e651aa-7dde-4f17-8715-7ba14122038&title=%E5%B8%B8%E7%94%A8%E6%95%A3%E5%88%97%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83&width=463">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544101246-41424e8e-3612-4271-9c1d-0eb6327839bc.png#averageHue=%23f8f6f4&clientId=u4cae96d3-217a-4&from=paste&id=u903ecf72&name=image.png&originHeight=756&originWidth=755&originalType=url&ratio=1&rotation=0&showTitle=false&size=46764&status=done&style=none&taskId=u44fcdf53-2c29-4d47-8c44-020ce6bf603&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544119470-271dc1e7-520a-424d-b255-5cdf320188b1.png#averageHue=%23f7f4f1&clientId=u4cae96d3-217a-4&from=paste&id=u69e41464&name=image.png&originHeight=286&originWidth=172&originalType=url&ratio=1&rotation=0&showTitle=false&size=5834&status=done&style=none&taskId=ucb01d2ab-83d3-4691-bdaf-57c31cf059f&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544129542-29da5a0a-6e69-4b3f-aa81-93f8311ee2e9.png#averageHue=%23f7f5f2&clientId=u4cae96d3-217a-4&from=paste&id=u8ac50f5d&name=image.png&originHeight=757&originWidth=756&originalType=url&ratio=1&rotation=0&showTitle=false&size=55413&status=done&style=none&taskId=ua071655e-36c0-4f8a-b04d-736c541553a&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544158465-3e1e5c1b-5409-4e17-bbfd-7578e0d7fd9f.png#averageHue=%23f8f6f4&clientId=u4cae96d3-217a-4&from=paste&id=ua8679ba6&name=image.png&originHeight=286&originWidth=286&originalType=url&ratio=1&rotation=0&showTitle=false&size=9244&status=done&style=none&taskId=u64d1bfda-94ad-407a-9006-aada20aa8c6&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544173170-447dcd5b-6f40-460e-9b16-8697e80ced37.png#averageHue=%23f7f5f3&clientId=u4cae96d3-217a-4&from=paste&id=u4abd675f&name=image.png&originHeight=997&originWidth=803&originalType=url&ratio=1&rotation=0&showTitle=false&size=88389&status=done&style=none&taskId=u665c9789-92d0-4193-bdad-0bcded2e60a&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544187537-c9f4c048-eded-4adc-be21-10fc84512eba.png#averageHue=%23f5f2f0&clientId=u4cae96d3-217a-4&from=paste&id=u166029ac&name=image.png&originHeight=314&originWidth=219&originalType=url&ratio=1&rotation=0&showTitle=false&size=12411&status=done&style=none&taskId=u815eba3b-4a9d-403b-8150-63c5cff34a6&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544197912-81b58df0-0de7-4eff-855e-860f1eeb9ece.png#averageHue=%23f7f5f3&clientId=u4cae96d3-217a-4&from=paste&id=u2f31bbd7&name=image.png&originHeight=997&originWidth=803&originalType=url&ratio=1&rotation=0&showTitle=false&size=86325&status=done&style=none&taskId=u706fb50a-9ab8-4624-ade7-ce690a6b613&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544210393-613e7eda-5fa1-4b67-9a27-261df7521b31.png#averageHue=%23f6f4f1&clientId=u4cae96d3-217a-4&from=paste&id=uc317797b&name=image.png&originHeight=314&originWidth=237&originalType=url&ratio=1&rotation=0&showTitle=false&size=12600&status=done&style=none&taskId=u6c3cdcdc-ac3e-4d5b-bb0c-79cf09e4988&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544220813-bb6d2db6-a10d-4b1b-8693-e98f41bb7c64.png#averageHue=%23f6f3f1&clientId=u4cae96d3-217a-4&from=paste&id=ub72349e2&name=image.png&originHeight=746&originWidth=750&originalType=url&ratio=1&rotation=0&showTitle=false&size=57286&status=done&style=none&taskId=ub9dce886-31c7-4a5d-8ef7-8aa5143777c&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544232498-bd588ed2-e7e5-402a-bdee-adf84be0c676.png#averageHue=%23f8f6f3&clientId=u4cae96d3-217a-4&from=paste&id=uedee3a96&name=image.png&originHeight=346&originWidth=245&originalType=url&ratio=1&rotation=0&showTitle=false&size=12367&status=done&style=none&taskId=u58b0686c-6fd5-4bb4-a6d8-d43d330ec94&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679539501549-a5f54a12-d4a2-4229-96f6-e5cd9c0f2e2d.png#averageHue=%23fcf9f8&clientId=u4cae96d3-217a-4&from=paste&height=318&id=u13e02c90&name=image.png&originHeight=318&originWidth=940&originalType=binary&ratio=1&rotation=0&showTitle=true&size=11457&status=done&style=none&taskId=u42fd33b2-95f1-4eb8-a734-c2f46f53dde&title=%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E6%A8%A1%E5%9E%8B&width=940">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679543070030-f6cc9d6e-f8a6-4a23-9e7f-6781d77632dd.png#averageHue=%23fafafa&clientId=u4cae96d3-217a-4&from=paste&id=u8dabb8c6&name=image.png&originHeight=1453&originWidth=1009&originalType=url&ratio=1&rotation=0&showTitle=true&size=376383&status=done&style=none&taskId=u7fa4b087-5a0f-4565-bd90-12e8a1ca999&title=AES%E5%8A%A0%E5%AF%86%E6%B5%81%E7%A8%8B">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/webp/1561832/1679543113152-4609587e-aacb-4e1d-ac72-a4d1e1ac6940.webp#averageHue=%23fcfcfc&clientId=u4cae96d3-217a-4&from=paste&id=ue8ff9614&originHeight=982&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=true&status=done&style=none&taskId=uf0d56be9-fe18-4201-ba0f-2da4360e92d&title=AES%E8%A7%A3%E5%AF%86%E6%B5%81%E7%A8%8B">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679623109207-07573c4f-bba5-45d9-b95c-8b49a75d90d6.png#averageHue=%23eaf0f0&clientId=ub80b88f0-84c7-4&from=paste&id=u31c26768&name=image.png&originHeight=627&originWidth=1200&originalType=url&ratio=1&rotation=0&showTitle=false&size=1065996&status=done&style=none&taskId=uabfe7d18-c4ed-4802-84c7-a7113c051ff&title=">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679641379632-07ccb447-d982-419f-8d9f-880704a42754.png#averageHue=%23fbfbfb&clientId=ue0ca12d0-27ac-4&from=paste&height=254&id=ueb78f4ec&name=image.png&originHeight=254&originWidth=715&originalType=binary&ratio=1&rotation=0&showTitle=true&size=9831&status=done&style=none&taskId=u7d4d2d86-56ed-41b3-ad0e-e1cb7dcd58f&title=%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AF%B9%E6%AF%94&width=715">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679625353678-cc9a48e0-94b8-45aa-b618-cef901d520f4.png#averageHue=%23fbfbfb&clientId=ub80b88f0-84c7-4&from=paste&height=527&id=u4c89121d&name=image.png&originHeight=527&originWidth=1048&originalType=binary&ratio=1&rotation=0&showTitle=false&size=21497&status=done&style=none&taskId=uf8342ae8-052e-4c32-a780-db1dab1fd8b&title=&width=1048">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679641440312-8a91ea04-c02f-4da2-bbe0-336b4568ad87.png#averageHue=%23fafaf9&clientId=ue0ca12d0-27ac-4&from=paste&height=170&id=u0acab091&name=image.png&originHeight=170&originWidth=722&originalType=binary&ratio=1&rotation=0&showTitle=true&size=5614&status=done&style=none&taskId=ua40c1c20-b696-4840-85ec-45be6d1d582&title=%E5%B8%B8%E7%94%A8%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AF%B9%E6%AF%94&width=722">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679643719244-dbf69220-c77d-4caf-973c-1f0643dc80b8.png#averageHue=%23f4f2f1&clientId=ue0ca12d0-27ac-4&from=paste&height=252&id=udffb994e&name=image.png&originHeight=252&originWidth=587&originalType=binary&ratio=1&rotation=0&showTitle=true&size=12158&status=done&style=none&taskId=u9005f976-25a1-424e-9196-fb0258b4deb&title=base64%E7%BC%96%E7%A0%81%E4%B8%BE%E4%BE%8B&width=587">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679644569735-47bf51de-c520-445b-a67d-abfc7a2083d1.png#averageHue=%2336362f&clientId=ue0ca12d0-27ac-4&from=paste&height=130&id=u3941c623&name=image.png&originHeight=130&originWidth=610&originalType=binary&ratio=1&rotation=0&showTitle=true&size=25591&status=done&style=none&taskId=uc2f57405-3139-45e9-b05c-dfed685ebb5&title=url%E7%BC%96%E7%A0%81%E4%B8%BE%E4%BE%8B&width=610">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679645835849-9ac3248a-5509-48d8-bbb1-b6d4593ed76b.png#averageHue=%23f9f9f9&clientId=ue0ca12d0-27ac-4&from=paste&height=485&id=u8d66c3da&name=image.png&originHeight=485&originWidth=1290&originalType=binary&ratio=1&rotation=0&showTitle=true&size=24014&status=done&style=none&taskId=uef1a4eb4-5a46-435a-897e-5c2cd24a985&title=%E7%AD%BE%E5%90%8D%E8%BF%87%E7%A8%8B&width=1290">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679645880299-f6383b70-3e18-4736-b324-561814efdfac.png#averageHue=%23fafafa&clientId=ue0ca12d0-27ac-4&from=paste&height=539&id=u85e730b9&name=image.png&originHeight=539&originWidth=1239&originalType=binary&ratio=1&rotation=0&showTitle=true&size=27124&status=done&style=none&taskId=ub6ec0c4c-9e70-426e-8e6c-5b5e7c7156f&title=%E9%AA%8C%E7%AD%BE%E8%BF%87%E7%A8%8B&width=1239">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679647482856-eecc912a-31ce-4af5-9981-8cae4a159b47.png#averageHue=%23fafafa&clientId=ue0ca12d0-27ac-4&from=paste&height=807&id=ud7c2993d&name=image.png&originHeight=807&originWidth=695&originalType=binary&ratio=1&rotation=0&showTitle=true&size=27624&status=done&style=none&taskId=uf3b24b24-1a5b-448e-aac1-5cc99baf93a&title=%E8%BF%9E%E6%8E%A5%E6%8F%A1%E6%89%8B%E5%8D%8F%E8%AE%AE&width=695">
+<meta property="article:published_time" content="2022-10-10T06:26:55.000Z">
+<meta property="article:modified_time" content="2023-03-24T09:09:02.113Z">
+<meta property="article:author" content="胡大侠">
+<meta property="article:tag" content="加密算法">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2023/png/1561832/1677204841451-be02f3d9-aaa9-4602-a865-22af2283ee2d.png#averageHue=%23f0f0f0&clientId=ub645df6b-8ac8-4&from=paste&height=265&id=u9742932b&name=image.png&originHeight=265&originWidth=642&originalType=binary&ratio=1&rotation=0&showTitle=false&size=19206&status=done&style=none&taskId=uc4be33a7-5636-418c-8ba5-a0561d14a0f&title=&width=642">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>数字加密的基本原理和典型应用场景 - HuDaXia</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"hudaxia.top","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":100,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","Options":"hover | always | touch","visible":"always","icon":"❡"},"progressbar":{"enable":true,"height_px":3,"color":"#13a","options":{"showSpinner":true,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":true}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 60vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>HuDaXia</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/books/">
+                <i class="iconfont icon-home-fill"></i>
+                读书
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="数字加密的基本原理和典型应用场景"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        胡大侠
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-10-10 14:26" pubdate>
+          2022年10月10日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          31 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
+  
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="加密"
+        id="heading-56563edf23b9d717dc63981b8836fc60" role="tab" data-toggle="collapse" href="#collapse-56563edf23b9d717dc63981b8836fc60"
+        aria-expanded="true"
+      >
+        加密
+        <span class="list-group-count">(1)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-56563edf23b9d717dc63981b8836fc60"
+           role="tabpanel" aria-labelledby="heading-56563edf23b9d717dc63981b8836fc60">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2022/10/10/%E6%95%B0%E5%AD%97%E5%8A%A0%E5%AF%86%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E5%92%8C%E5%85%B8%E5%9E%8B%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/" title="数字加密的基本原理和典型应用场景"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">数字加密的基本原理和典型应用场景</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+  </aside>
+
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">数字加密的基本原理和典型应用场景</h1>
+            
+              <p class="note note-info">
+                
+                  
+                    本文最后更新于：几秒前
+                  
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="一、加密技术"><a href="#一、加密技术" class="headerlink" title="一、加密技术"></a>一、加密技术</h2><h3 id="（一）、数字加密的概念"><a href="#（一）、数字加密的概念" class="headerlink" title="（一）、数字加密的概念"></a>（一）、数字加密的概念</h3><h4 id="1-1-加密概念"><a href="#1-1-加密概念" class="headerlink" title="1.1 加密概念"></a>1.1 加密概念</h4><p>数据加密技术是指一条消息通过加密密钥和加密函数转换成无意义的密文，接收者通过解密函数和解密密钥将密文还原成明文。这样，我们就可以保护数据不被非法窃取和读取。提高计算机安全水平的基础是掌握数据加密的本质，数据加密由<strong>明文(未加密报文)<strong>、</strong>密文(加密报文)<strong>、</strong>加解密设备或算法</strong>、<strong>加解密密钥</strong>四部分组成。加密方法有很多种，但主要有对称加密算法、非对称加密算法和不可逆加密算法。密钥加密有两种类型:分组和序列。<br><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1677204841451-be02f3d9-aaa9-4602-a865-22af2283ee2d.png#averageHue=%23f0f0f0&clientId=ub645df6b-8ac8-4&from=paste&height=265&id=u9742932b&name=image.png&originHeight=265&originWidth=642&originalType=binary&ratio=1&rotation=0&showTitle=false&size=19206&status=done&style=none&taskId=uc4be33a7-5636-418c-8ba5-a0561d14a0f&title=&width=642" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h4 id="1-2-硬件加密："><a href="#1-2-硬件加密：" class="headerlink" title="1.2 硬件加密："></a>1.2 硬件加密：</h4><ol>
+<li>链路加密：对网络中的指定传输链路实施加密。</li>
+<li>节点加密：在链路加密的基础上对传输的数据在节点的安全模块进行加密，解密也是在节点的安全模块内对数据进行解密。</li>
+<li>端对端加密：从源数据节点到目标节点数据始终采用加密的方式传输，数据在到达目标节点之前不以明文的方式出现。</li>
+</ol>
+<h4 id="1-3-异或运算"><a href="#1-3-异或运算" class="headerlink" title="1.3 异或运算"></a>1.3 异或运算</h4><blockquote>
+<p>这里写异或的原因是几乎所有的加密算法都应用了异或的原理。</p>
+</blockquote>
+<ol>
+<li>概念：异或是一个数学运算符，应用与逻辑运算。异或的数学符号为“⊕”，计算机符号为“xor”。</li>
+<li>运算公式：</li>
+</ol>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679624357633-6a578808-cd2e-49ca-8bda-694d47f270ab.png#averageHue=%23fcfcfb&clientId=ub80b88f0-84c7-4&from=paste&height=164&id=u032512ca&name=image.png&originHeight=164&originWidth=128&originalType=binary&ratio=1&rotation=0&showTitle=true&size=1875&status=done&style=none&taskId=ud92cb9bb-df08-4bba-a199-8a4cf4021d0&title=%E5%BC%82%E6%88%96%E7%9A%84%E8%BF%90%E7%AE%97%E5%85%AC%E5%BC%8F&width=128" srcset="/img/loading.gif" lazyload alt="image.png" title="异或的运算公式"></p>
+<ol start="3">
+<li>运算法则：<ol>
+<li>归零律：<img src="https://cdn.nlark.com/yuque/0/2023/svg/1561832/1679624410331-76d190b9-c3b1-40dc-aed8-9cb437aacef0.svg#clientId=ub80b88f0-84c7-4&from=paste&id=u24df7a21&originHeight=19&originWidth=86&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=uf5510766-570c-4e3f-b774-6c5209bbbb0&title=" srcset="/img/loading.gif" lazyload></li>
+<li>恒等律：<img src="https://cdn.nlark.com/yuque/0/2023/svg/1561832/1679624433821-9cd8b091-e108-4082-8891-1f9d21311152.svg#clientId=ub80b88f0-84c7-4&from=paste&id=uc39e9442&originHeight=19&originWidth=86&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u848d2928-09d3-450e-a015-269a44fd8b1&title=" srcset="/img/loading.gif" lazyload></li>
+<li>交换律： <img src="https://cdn.nlark.com/yuque/0/2023/svg/1561832/1679624433868-fbe06d76-48ee-4fdf-a5e3-4fce65752914.svg#clientId=ub80b88f0-84c7-4&from=paste&id=ud42b2a53&originHeight=19&originWidth=119&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u00c6856a-c75d-4fca-822b-3b91ba9d785&title=" srcset="/img/loading.gif" lazyload></li>
+<li>结合律：<img src="https://cdn.nlark.com/yuque/0/2023/svg/1561832/1679624433876-220c0507-2c52-4c20-87de-ada48689cbef.svg#clientId=ub80b88f0-84c7-4&from=paste&id=uab045c3c&originHeight=24&originWidth=329&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u46840b27-f34b-420c-8d26-71aa856159c&title=" srcset="/img/loading.gif" lazyload></li>
+<li>自反：<img src="https://cdn.nlark.com/yuque/0/2023/svg/1561832/1679624433860-b5b644b1-9d24-49da-bb36-65fcbda0ac46.svg#clientId=ub80b88f0-84c7-4&from=paste&id=u7069bfdb&originHeight=19&originWidth=119&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u4733d9ea-8a49-433a-936b-113e7a7ce0f&title=" srcset="/img/loading.gif" lazyload></li>
+</ol>
+</li>
+<li>应用场景：<ol>
+<li><p>位反转：0异或任何数，其结果等于任何数。1异或任何数，其结果等于任何数取反。</p>
+</li>
+<li><p>值替换场景：利用交换律实现两个变量的值替换不需要引入中间变量。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c">a = a ^ b;<br>b = a ^ b;<br>a = a ^ b;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>加密场景：通过明文和密钥的异或加密，通过密钥和密文的异或进行解密。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="（二）、哈希（摘要）算法"><a href="#（二）、哈希（摘要）算法" class="headerlink" title="（二）、哈希（摘要）算法"></a>（二）、哈希（摘要）算法</h2><h3 id="2-1-哈希算法的概念"><a href="#2-1-哈希算法的概念" class="headerlink" title="2.1 哈希算法的概念"></a>2.1 哈希算法的概念</h3><p>哈希算法、散列算法和摘要算法指的都是一个东西，是指根据目标文本生成具有固定长度的、不可逆的杂凑字符串（或叫做消息摘要）。<br>而加密是将目标文本转换成具有不同长度的、可逆的密文。Hash 算法严格上来说并不属于加密算法，一般都叫摘要算法或者签名算法。<br>哈希算法的与算法的最大区别是不可逆，这里的不可逆既指不能根据转换后的结果逆转回原文，也指对于两个输入，即使其转换结果相同也不能说这两个输入就一定相同。因为，Hash 算法的定义域是一个无限集合，但是值域确是一个有限集合，将一个无限集合映射到有限集合上，每个哈希结果都存在无数个可能的目标文本，因此哈希是一个多对一的映射，所以它也不存在逆映射。但是对于加密算法，它的结果往往取决于输入，其定义域和值域都是无限集合，明显是一个一一映射，对于一一映射，理论上都是可逆的。<br>哈希算法的特点是，不同的内容有可能生成一样的Hash Code，这里引入评价一个哈希算法的重要指标：碰撞率。常见的 Hash 算法有：MD5、SHA-1、HMAC、SHA-256 等。MD5的密钥长度是32个字符128个二进制位，所以MD5的碰撞率是1&#x2F;2^128<br>哈希算法的特点包含：</p>
+<ol>
+<li>算法的输出长度固定：散列函数可以接受任意长度的数据输入，但是输出的数据长度固定。</li>
+<li>雪崩效应：原始输入数据的改动，得到的输出会有非常大的变化。</li>
+<li>单向性：只能通过输入计算出hash code输出，但是不能从hash code得到原始数据。</li>
+<li>唯一性：因为目前流行的hash算法的碰撞率都极小，所以认为针对任何输出，输入都具有唯一性。</li>
+</ol>
+<h3 id="2-2-常用哈希算法的实现流程"><a href="#2-2-常用哈希算法的实现流程" class="headerlink" title="2.2 常用哈希算法的实现流程"></a>2.2 常用哈希算法的实现流程</h3><ol>
+<li>MD5<ol>
+<li>填充：如果输入信息的长度(bit)对512求余的结果不等于448，就需要填充使得对512求余结果等于448。填充的方法是填充一个1和n个0。填充完成后，信息的长度为N*512+448</li>
+<li>记录信息长度：用64位内存来存储填充前信息长度。这64位加在第一步结果的后面，这样信息长度就变为N*512 + 448 + 64 &#x3D; (N+1)*512</li>
+<li>装入四个幻数：准备四个整数常量A&#x3D;0X67452301L，B&#x3D;0XEFCDAB89L，C&#x3D;0X98BADCFEL，D&#x3D;0X10325476L</li>
+<li>循环运算：将数据分为512一组，，再将一组中的512位分为16个int32_,分组执行数据处理函数，循环执行处理函数…每一轮运算后加上上面的四幻数，依次循环加完所有的组数，最终得到的ABCD就是MD5的输出结果。</li>
+</ol>
+</li>
+</ol>
+<h3 id="2-3-哈希算法的应用场景"><a href="#2-3-哈希算法的应用场景" class="headerlink" title="2.3 哈希算法的应用场景"></a>2.3 哈希算法的应用场景</h3><ol>
+<li>文件传输</li>
+</ol>
+<p>在文件传输时，哈希算法的目的是为了保证文件的唯一性。比如在下载软件时，一般会单独提供该软件文件的md5的摘要或者sha摘要，文件下载完成后计算md5与软件提供方提供的md5进行对比，如果不一致则认为该软件文件已经被篡改。<br><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1677210635080-7e49840d-5af3-4d7e-9ea2-ca6c2320814d.png#averageHue=%23fefefe&clientId=ub645df6b-8ac8-4&from=paste&height=648&id=uebf60779&name=image.png&originHeight=648&originWidth=822&originalType=binary&ratio=1&rotation=0&showTitle=true&size=48293&status=done&style=none&taskId=ua85dbfd0-9aa4-4b59-b00c-2857ee6d2c9&title=%E8%AF%A5%E7%BD%91%E7%AB%99%E6%8F%90%E4%BE%9B%E7%9A%84%E7%AD%BE%E5%90%8D%E9%AA%8C%E8%AF%81%E4%BF%A1%E6%81%AF&width=822" srcset="/img/loading.gif" lazyload alt="image.png" title="该网站提供的签名验证信息"><br>(<a target="_blank" rel="noopener" href="https://www.sysmini.com/1266.html">极简系统-windows11 22H2</a>)</p>
+<ol start="2">
+<li>消息摘要</li>
+</ol>
+<p>当用户使用用户名密码登录网站时，网站服务器的数据库只针对用户密码的hash值进行保存，避免了密码明文在网络传输。网站验证密码时只对用户输入的密码签名和数据库中的签名进行比对。</p>
+<ol start="3">
+<li>键值对应</li>
+</ol>
+<p>在对数据进行管理时，如果需要查找数据可以根据数据的hash值进行查找，数据的hash值和原始数据组成键值对，在数据的删改查过程中提高效率。</p>
+<h3 id="2-3-哈希算法对比"><a href="#2-3-哈希算法对比" class="headerlink" title="2.3 哈希算法对比"></a>2.3 哈希算法对比</h3><p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679641493431-c3544eba-1d2c-4049-b74a-ddf0c69b4f8b.png#averageHue=%23fbfafa&clientId=ue0ca12d0-27ac-4&from=paste&height=172&id=ueecc7547&name=image.png&originHeight=172&originWidth=463&originalType=binary&ratio=1&rotation=0&showTitle=true&size=3892&status=done&style=none&taskId=u83e651aa-7dde-4f17-8715-7ba14122038&title=%E5%B8%B8%E7%94%A8%E6%95%A3%E5%88%97%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83&width=463" srcset="/img/loading.gif" lazyload alt="image.png" title="常用散列算法比较"></p>
+<h2 id="（三）、加密算法"><a href="#（三）、加密算法" class="headerlink" title="（三）、加密算法"></a>（三）、加密算法</h2><h3 id="3-1-按照加密密钥特点划分"><a href="#3-1-按照加密密钥特点划分" class="headerlink" title="3.1 按照加密密钥特点划分"></a>3.1 按照加密密钥特点划分</h3><ol>
+<li>分组加密<blockquote>
+<p>先将明文填充为小组个数的整数倍，再将明文分组，按照小组加密后混合小组的内容生成密文。常见的加密模式</p>
+<ul>
+<li>ECB：电子密码本格式，是指将明文组块独立加密后将加密结果直接作为密文分组。</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544101246-41424e8e-3612-4271-9c1d-0eb6327839bc.png#averageHue=%23f8f6f4&clientId=u4cae96d3-217a-4&from=paste&id=u903ecf72&name=image.png&originHeight=756&originWidth=755&originalType=url&ratio=1&rotation=0&showTitle=false&size=46764&status=done&style=none&taskId=u44fcdf53-2c29-4d47-8c44-020ce6bf603&title=" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544119470-271dc1e7-520a-424d-b255-5cdf320188b1.png#averageHue=%23f7f4f1&clientId=u4cae96d3-217a-4&from=paste&id=u69e41464&name=image.png&originHeight=286&originWidth=172&originalType=url&ratio=1&rotation=0&showTitle=false&size=5834&status=done&style=none&taskId=ucb01d2ab-83d3-4691-bdaf-57c31cf059f&title=" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<ul>
+<li>CBC：密文分组链接模式，将将每个明文分组与前一个密文分组进行异或运算再进行加密。第一个明文分组前面没有密文分组，需要IV</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544129542-29da5a0a-6e69-4b3f-aa81-93f8311ee2e9.png#averageHue=%23f7f5f2&clientId=u4cae96d3-217a-4&from=paste&id=u8ac50f5d&name=image.png&originHeight=757&originWidth=756&originalType=url&ratio=1&rotation=0&showTitle=false&size=55413&status=done&style=none&taskId=ua071655e-36c0-4f8a-b04d-736c541553a&title=" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544158465-3e1e5c1b-5409-4e17-bbfd-7578e0d7fd9f.png#averageHue=%23f8f6f4&clientId=u4cae96d3-217a-4&from=paste&id=ua8679ba6&name=image.png&originHeight=286&originWidth=286&originalType=url&ratio=1&rotation=0&showTitle=false&size=9244&status=done&style=none&taskId=u64d1bfda-94ad-407a-9006-aada20aa8c6&title=" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<ul>
+<li>CFB：密文反馈模式，将每一组的密文组作为密码算法的输入端产生新的密钥流，再将生成的密钥加密下一个明文。需要IV</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544173170-447dcd5b-6f40-460e-9b16-8697e80ced37.png#averageHue=%23f7f5f3&clientId=u4cae96d3-217a-4&from=paste&id=u4abd675f&name=image.png&originHeight=997&originWidth=803&originalType=url&ratio=1&rotation=0&showTitle=false&size=88389&status=done&style=none&taskId=u665c9789-92d0-4193-bdad-0bcded2e60a&title=" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544187537-c9f4c048-eded-4adc-be21-10fc84512eba.png#averageHue=%23f5f2f0&clientId=u4cae96d3-217a-4&from=paste&id=u166029ac&name=image.png&originHeight=314&originWidth=219&originalType=url&ratio=1&rotation=0&showTitle=false&size=12411&status=done&style=none&taskId=u815eba3b-4a9d-403b-8150-63c5cff34a6&title=" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<ul>
+<li>OFB：输出反馈模式，将密码加密算法的输出和明文进行异或生成密文分组</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544197912-81b58df0-0de7-4eff-855e-860f1eeb9ece.png#averageHue=%23f7f5f3&clientId=u4cae96d3-217a-4&from=paste&id=u2f31bbd7&name=image.png&originHeight=997&originWidth=803&originalType=url&ratio=1&rotation=0&showTitle=false&size=86325&status=done&style=none&taskId=u706fb50a-9ab8-4624-ade7-ce690a6b613&title=" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544210393-613e7eda-5fa1-4b67-9a27-261df7521b31.png#averageHue=%23f6f4f1&clientId=u4cae96d3-217a-4&from=paste&id=uc317797b&name=image.png&originHeight=314&originWidth=237&originalType=url&ratio=1&rotation=0&showTitle=false&size=12600&status=done&style=none&taskId=u6c3cdcdc-ac3e-4d5b-bb0c-79cf09e4988&title=" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<ul>
+<li>CTR：计数器模式，CTR与CFB和OFB一样，本质上都是将分组加密和序列加密结合得到密文分组。</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544220813-bb6d2db6-a10d-4b1b-8693-e98f41bb7c64.png#averageHue=%23f6f3f1&clientId=u4cae96d3-217a-4&from=paste&id=ub72349e2&name=image.png&originHeight=746&originWidth=750&originalType=url&ratio=1&rotation=0&showTitle=false&size=57286&status=done&style=none&taskId=ub9dce886-31c7-4a5d-8ef7-8aa5143777c&title=" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679544232498-bd588ed2-e7e5-402a-bdee-adf84be0c676.png#averageHue=%23f8f6f3&clientId=u4cae96d3-217a-4&from=paste&id=uedee3a96&name=image.png&originHeight=346&originWidth=245&originalType=url&ratio=1&rotation=0&showTitle=false&size=12367&status=done&style=none&taskId=u58b0686c-6fd5-4bb4-a6d8-d43d330ec94&title=" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+</blockquote>
+<ol start="2">
+<li>序列加密<blockquote>
+<p>根据密钥种子和S盒生成密钥，再将密钥和明文进行异或运算生成密文。解密端通过密钥种子和S盒生成密钥，再通过密钥和密文异或操作生成明文。</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="3-2-按照加解密的统一性划分"><a href="#3-2-按照加解密的统一性划分" class="headerlink" title="3.2 按照加解密的统一性划分"></a>3.2 按照加解密的统一性划分</h3><h4 id="3-2-1-对称加密算法"><a href="#3-2-1-对称加密算法" class="headerlink" title="3.2.1 对称加密算法"></a>3.2.1 对称加密算法</h4><blockquote>
+<p>加密过程和解密过程使用同一个密钥，则称为对称加密。</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679539501549-a5f54a12-d4a2-4229-96f6-e5cd9c0f2e2d.png#averageHue=%23fcf9f8&clientId=u4cae96d3-217a-4&from=paste&height=318&id=u13e02c90&name=image.png&originHeight=318&originWidth=940&originalType=binary&ratio=1&rotation=0&showTitle=true&size=11457&status=done&style=none&taskId=u42fd33b2-95f1-4eb8-a734-c2f46f53dde&title=%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E6%A8%A1%E5%9E%8B&width=940" srcset="/img/loading.gif" lazyload alt="image.png" title="对称加密模型"></p>
+<ol>
+<li>对称加密的应用场景<ol>
+<li>无线数据的安全传递：蓝牙、网络数据传输的过程中数据可能被抓包捕获，为了数据的安全性采用两端协商后的加密算法将数据以密文的形式传输，保证数据的安全性。</li>
+<li>数据的安全存储：数据以明文的方式存储在数据库中可以被数据库后台看到或者数据库可能被非法侵入访问，但是采用加密的方式存储数据，客户端读写数据时再解密，可以保证数据在数据库端被访问时的安全性。</li>
+</ol>
+</li>
+<li>常用对称加密算法</li>
+</ol>
+<ul>
+<li>AES<ul>
+<li>分组密码：将明文分成一段一段来分组加密生成密文，最后再将密文拼接生成密文</li>
+<li>padding：分组的过程中最后一组长度可能不够，在后面填充数据补齐。常用填充方式有：<ul>
+<li>PKCS5：末尾缺少n个字节就在末尾补上n个n</li>
+<li>PKCS7：末尾缺少n个字节，就在末尾补上多少个0</li>
+<li>NoPadding：不需要填充，就是明文需要自己保证数据可以是被分组的个数整除的</li>
+</ul>
+</li>
+<li>初始化向量IV：初始化IV使更加可靠，除了ECB和CTR两种加密模式，其他的加密模式需要IV来加密第一组明文。</li>
+<li>加密模式：AES支持四种加密模式：ECB、CBC、CFB、OFB。</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679543070030-f6cc9d6e-f8a6-4a23-9e7f-6781d77632dd.png#averageHue=%23fafafa&clientId=u4cae96d3-217a-4&from=paste&id=u8dabb8c6&name=image.png&originHeight=1453&originWidth=1009&originalType=url&ratio=1&rotation=0&showTitle=true&size=376383&status=done&style=none&taskId=u7fa4b087-5a0f-4565-bd90-12e8a1ca999&title=AES%E5%8A%A0%E5%AF%86%E6%B5%81%E7%A8%8B" srcset="/img/loading.gif" lazyload alt="image.png" title="AES加密流程"><br><img src="https://cdn.nlark.com/yuque/0/2023/webp/1561832/1679543113152-4609587e-aacb-4e1d-ac72-a4d1e1ac6940.webp#averageHue=%23fcfcfc&clientId=u4cae96d3-217a-4&from=paste&id=ue8ff9614&originHeight=982&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=true&status=done&style=none&taskId=uf0d56be9-fe18-4201-ba0f-2da4360e92d&title=AES%E8%A7%A3%E5%AF%86%E6%B5%81%E7%A8%8B" srcset="/img/loading.gif" lazyload alt="AES解密流程" title="AES解密流程"></p>
+<ul>
+<li>密钥加法：明文和密钥进行异或得到运算结果</li>
+<li>字节代换：通过明文和S_box找到对应的值进行替换</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679623109207-07573c4f-bba5-45d9-b95c-8b49a75d90d6.png#averageHue=%23eaf0f0&clientId=ub80b88f0-84c7-4&from=paste&id=u31c26768&name=image.png&originHeight=627&originWidth=1200&originalType=url&ratio=1&rotation=0&showTitle=false&size=1065996&status=done&style=none&taskId=uabfe7d18-c4ed-4802-84c7-a7113c051ff&title=" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<ul>
+<li>行移位：将矩阵数据按行移位，第0行移动0位，….第n行移动n位</li>
+<li>列混合：将生成的矩阵与一个常矩阵进行相乘</li>
+<li>DES</li>
+<li>RC</li>
+</ul>
+<ol start="3">
+<li>常用对称算法对比</li>
+</ol>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679641379632-07ccb447-d982-419f-8d9f-880704a42754.png#averageHue=%23fbfbfb&clientId=ue0ca12d0-27ac-4&from=paste&height=254&id=ueb78f4ec&name=image.png&originHeight=254&originWidth=715&originalType=binary&ratio=1&rotation=0&showTitle=true&size=9831&status=done&style=none&taskId=u7d4d2d86-56ed-41b3-ad0e-e1cb7dcd58f&title=%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AF%B9%E6%AF%94&width=715" srcset="/img/loading.gif" lazyload alt="image.png" title="对称加密算法对比"></p>
+<h4 id="3-2-2-非对称加密算法"><a href="#3-2-2-非对称加密算法" class="headerlink" title="3.2.2 非对称加密算法"></a>3.2.2 非对称加密算法</h4><blockquote>
+<p>加密过程和解密过程使用的不是同一个密钥，则称为非对称加密。密钥是以一个秘钥和一个公钥对的形式出现的，使用私钥加密的内容只能公钥进行解密，使用公钥加密的内容只能私钥进行解密。</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679625353678-cc9a48e0-94b8-45aa-b618-cef901d520f4.png#averageHue=%23fbfbfb&clientId=ub80b88f0-84c7-4&from=paste&height=527&id=u4c89121d&name=image.png&originHeight=527&originWidth=1048&originalType=binary&ratio=1&rotation=0&showTitle=false&size=21497&status=done&style=none&taskId=uf8342ae8-052e-4c32-a780-db1dab1fd8b&title=&width=1048" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<blockquote>
+<p>如上图，A有一个公钥、私钥对，A将明文通过私钥加密后和将加密后的密文传输给B，B通过A的公钥将密文进行解密为明文。</p>
+</blockquote>
+<ol>
+<li>常用应用场景<ol>
+<li>信息传递加密：发信者对数据使用私钥进行加密，收信者通过发信者的公钥进行解密</li>
+<li>传输秘钥：登录&#x2F;连接的过程中A先拿到B的公钥，再通过B的公钥将对称加密的秘钥和IV加密后传输给B，B使用秘钥进行解密。在后续的通信过程中使用解密后的秘钥和IV进行加解密传输。</li>
+</ol>
+</li>
+<li>常用非对称加密算法<ol>
+<li>RSA</li>
+<li>ECC</li>
+</ol>
+</li>
+<li>常用非对称加密算法对比</li>
+</ol>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679641440312-8a91ea04-c02f-4da2-bbe0-336b4568ad87.png#averageHue=%23fafaf9&clientId=ue0ca12d0-27ac-4&from=paste&height=170&id=u0acab091&name=image.png&originHeight=170&originWidth=722&originalType=binary&ratio=1&rotation=0&showTitle=true&size=5614&status=done&style=none&taskId=ua40c1c20-b696-4840-85ec-45be6d1d582&title=%E5%B8%B8%E7%94%A8%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AF%B9%E6%AF%94&width=722" srcset="/img/loading.gif" lazyload alt="image.png" title="常用非对称加密算法对比"></p>
+<h2 id="（四）编码算法"><a href="#（四）编码算法" class="headerlink" title="（四）编码算法"></a>（四）编码算法</h2><blockquote>
+<p>编码算法是指将明文按照确定编码方式编码后生成密文的算法，一般认为编码算法不属于加密算法。</p>
+</blockquote>
+<ul>
+<li>常用的编码算法<ol>
+<li>base64<ol>
+<li>将待转换的字符串分为每三个字节一组，每个字节占用8bit</li>
+<li>将上面的24个bit分为6个bit一组，分为4组</li>
+<li>在每6bit一组前面补上00，生成4个字节，再将这4个字节转换为对应的字符组成字符串</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679643719244-dbf69220-c77d-4caf-973c-1f0643dc80b8.png#averageHue=%23f4f2f1&clientId=ue0ca12d0-27ac-4&from=paste&height=252&id=udffb994e&name=image.png&originHeight=252&originWidth=587&originalType=binary&ratio=1&rotation=0&showTitle=true&size=12158&status=done&style=none&taskId=u9005f976-25a1-424e-9196-fb0258b4deb&title=base64%E7%BC%96%E7%A0%81%E4%B8%BE%E4%BE%8B&width=587" srcset="/img/loading.gif" lazyload alt="image.png" title="base64编码举例"></p>
+<ol start="2">
+<li>url编码<ol>
+<li>将待编码的字符根据ascll转换为16进制字符格式</li>
+<li>将16禁止字符前面的‘0x’替换为‘%’</li>
+</ol>
+</li>
+</ol>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679644569735-47bf51de-c520-445b-a67d-abfc7a2083d1.png#averageHue=%2336362f&clientId=ue0ca12d0-27ac-4&from=paste&height=130&id=u3941c623&name=image.png&originHeight=130&originWidth=610&originalType=binary&ratio=1&rotation=0&showTitle=true&size=25591&status=done&style=none&taskId=uc2f57405-3139-45e9-b05c-dfed685ebb5&title=url%E7%BC%96%E7%A0%81%E4%B8%BE%E4%BE%8B&width=610" srcset="/img/loading.gif" lazyload alt="image.png" title="url编码举例"></p>
+<h2 id="（五）、加密技术的典型应用场景"><a href="#（五）、加密技术的典型应用场景" class="headerlink" title="（五）、加密技术的典型应用场景"></a>（五）、加密技术的典型应用场景</h2><h3 id="5-1-固件升级验签"><a href="#5-1-固件升级验签" class="headerlink" title="5.1 固件升级验签"></a>5.1 固件升级验签</h3><p>固件升级验签是为了保证，打包的固件与用户最终下载的固件文件一致，过程中没有被篡改，签名和验签过程中使用了哈希算法和非对称加密算法</p>
+<ul>
+<li>哈希算法：计算固件文件的HASH值</li>
+<li>非对称加密算法：打包时对HASH值进行加密，验签时对签名信息进行解密</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679645835849-9ac3248a-5509-48d8-bbb1-b6d4593ed76b.png#averageHue=%23f9f9f9&clientId=ue0ca12d0-27ac-4&from=paste&height=485&id=u8d66c3da&name=image.png&originHeight=485&originWidth=1290&originalType=binary&ratio=1&rotation=0&showTitle=true&size=24014&status=done&style=none&taskId=uef1a4eb4-5a46-435a-897e-5c2cd24a985&title=%E7%AD%BE%E5%90%8D%E8%BF%87%E7%A8%8B&width=1290" srcset="/img/loading.gif" lazyload alt="image.png" title="签名过程"><br><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679645880299-f6383b70-3e18-4736-b324-561814efdfac.png#averageHue=%23fafafa&clientId=ue0ca12d0-27ac-4&from=paste&height=539&id=u85e730b9&name=image.png&originHeight=539&originWidth=1239&originalType=binary&ratio=1&rotation=0&showTitle=true&size=27124&status=done&style=none&taskId=ub6ec0c4c-9e70-426e-8e6c-5b5e7c7156f&title=%E9%AA%8C%E7%AD%BE%E8%BF%87%E7%A8%8B&width=1239" srcset="/img/loading.gif" lazyload alt="image.png" title="验签过程"></p>
+<h3 id="5-2-连接握手协议"><a href="#5-2-连接握手协议" class="headerlink" title="5.2 连接握手协议"></a>5.2 连接握手协议</h3><p>连接握手指的是已经建立稳定的传输层连接后，对后续的通信加密方式进行协商，保证数据能够正确传输。</p>
+<ul>
+<li>对称加密：握手之后数据的传输</li>
+<li>非对称加密：握手过程可以防止对称加密密钥的明文传输</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/1561832/1679647482856-eecc912a-31ce-4af5-9981-8cae4a159b47.png#averageHue=%23fafafa&clientId=ue0ca12d0-27ac-4&from=paste&height=807&id=ud7c2993d&name=image.png&originHeight=807&originWidth=695&originalType=binary&ratio=1&rotation=0&showTitle=true&size=27624&status=done&style=none&taskId=uf3b24b24-1a5b-448e-aac1-5cc99baf93a&title=%E8%BF%9E%E6%8E%A5%E6%8F%A1%E6%89%8B%E5%8D%8F%E8%AE%AE&width=695" srcset="/img/loading.gif" lazyload alt="image.png" title="连接握手协议"></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%8A%A0%E5%AF%86/" class="category-chain-item">加密</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/">#加密算法</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>数字加密的基本原理和典型应用场景</div>
+      <div>https://hudaxia.top/2022/10/10/数字加密基本原理和典型应用场景/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>胡大侠</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年10月10日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2023年3月24日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"zWp7bxFbnQQxWZWkwLMc4EYf-gzGzoHsz","appKey":"IU72Kze9wABWu9DLgGbaLH9k","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":true,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <i class="iconfont icon-love"></i> <i class="iconfont icon-love"></i> <i class="iconfont icon-love"></i> <i class="iconfont icon-love"></i> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+    <!-- 备案信息 ICP for China -->
+    <div class="beian">
+  <span>
+    <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+      京ICP证256763号
+    </a>
+  </span>
+  
+    
+      <span>
+        <a
+          href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=222876"
+          rel="nofollow noopener"
+          class="beian-police"
+          target="_blank"
+        >
+          
+            <span style="visibility: hidden; width: 0">|</span>
+            <img src="/img/police_beian.png" srcset="/img/loading.gif" lazyload alt="police-icon"/>
+          
+          <span>京公网安备1177788号</span>
+        </a>
+      </span>
+    
+  
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":true,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+  <!--动态线条背景-->
+  <script type="text/javascript" color="220,220,220" opacity='0.7' zIndex="-2" count="200"
+    src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+  </script>
+  <!-- 雪花特效 -->
+  <script type="text/javascript" src="\js\snow.js"></script>
+  <!-- 爆炸红心效果 -->
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="/js/firework.js"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":200,"height":200},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+
